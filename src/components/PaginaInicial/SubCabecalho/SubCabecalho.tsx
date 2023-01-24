@@ -1,4 +1,4 @@
-import styles from '../../../styles/SubCabecalho.module.css'
+import styles from './../../../styles/subCabecalho.module.css'
 import Link from 'next/link'
 
 

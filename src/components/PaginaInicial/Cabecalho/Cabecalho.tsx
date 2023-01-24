@@ -1,4 +1,4 @@
-import styles from '../../../styles/CabecalhoLayout.module.css'
+import styles from '../../../styles/cabecalhoLayout.module.css'
 import Link from 'next/link'
 
 export default function Cabecalho() {
