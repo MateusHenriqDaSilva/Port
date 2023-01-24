@@ -1,0 +1,78 @@
+.containerGlobal {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerLabels {
+    width: 50%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.coluna1 {
+    margin: 15px 10px 0px 0px;
+    padding: 20px;
+}
+
+.coluna2 {
+    padding: 20px;
+}
+
+.label {
+    display: flex;
+    font-size: 17px;
+}
+
+.barras {
+    width: 300px;
+    height: 20px;
+    margin-top: 10px;
+    border: 1px solid rgb(189, 189, 189);
+}
+
+.porcentagemBarra1 {
+    width: 275px;
+    height: 20px;
+    background: #ffc8dd;
+}
+
+.porcentagemBarra2 {
+    width: 260px;
+    height: 20px;
+    background: #cdb4db;
+}
+
+.porcentagemBarra3 {
+    width: 250px;
+    height: 20px;
+    background: #bde0fe;
+}
+
+.porcentagemBarra4 {
+    width: 235px;
+    height: 20px;
+    background: #e9edc9;
+}
+
+.porcentagemBarra5 {
+    width: 130px;
+    height: 20px;
+    background: #d6ccc2;
+}
+
+.porcentagemBarra6 {
+    width: 60px;
+    height: 20px;
+    background: #cce3de;
+}
+
+/* .porcentagemBarra7 {
+    width: 60px;
+    height: 20px;
+    background: #b7b7a4;
+} */

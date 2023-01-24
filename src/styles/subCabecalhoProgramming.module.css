@@ -1,0 +1,10 @@
+.ContainerGlobal{
+    display: flex;
+    height: 30px;
+    justify-content: center;
+}
+
+.cursor{
+    margin-left: 20px;
+    cursor: pointer;
+}
