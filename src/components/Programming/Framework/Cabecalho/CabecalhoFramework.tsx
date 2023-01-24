@@ -1,4 +1,4 @@
-import styles from './../../../../styles/cabecalhoProgrammingLanguages.module.css'
+import styles from './../../Framework/Cabecalho/cabecalhoFramework.module.css'
 
 export default function CabecalhoFramework() {
     return (
