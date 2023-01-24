@@ -44,8 +44,8 @@ export default function CorpoProgramming() {
                                     <Image className={styles.imagem}
                                         src={elemento.img}
                                         alt="Picture of the author"
-                                        width={300}
-                                        height={300}
+                                        width={210}
+                                        height={250}
                                     />
                                     <h1 className={styles.cartaoLetras} key={elemento.id}>{elemento.titulo}</h1>
                                 </div>

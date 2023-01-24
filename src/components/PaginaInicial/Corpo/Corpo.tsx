@@ -9,9 +9,10 @@ export default function Corpo() {
         <div className={styles.imagemEspacoGlobal}>
             <div className={styles.imagemEspaco}>
                 <Image className={styles.definicaoImagem}
-                    layout='responsive'
                     alt='Mateus Henrique'
                     src={imagem}
+                    width={800}
+                    height={800}
                 />
             </div>
             <div className={styles.espacoLinha}>
