@@ -1,4 +1,4 @@
-import styles from '../../../styles/CabecalhoDigitalMarketing.module.css'
+import styles from '../../../styles/cabecalhoDigitalMarketing.module.css'
 
 export default function CabecalhoDigitalMarketing() {
     return (

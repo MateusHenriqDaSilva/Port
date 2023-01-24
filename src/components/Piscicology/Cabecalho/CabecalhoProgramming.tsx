@@ -1,4 +1,4 @@
-import styles from '../../../styles/CabecalhoPiscicology.module.css'
+import styles from '../../../styles/cabecalhoPiscicology.module.css'
 
 export default function CabecalhoPiscicology() {
     return (

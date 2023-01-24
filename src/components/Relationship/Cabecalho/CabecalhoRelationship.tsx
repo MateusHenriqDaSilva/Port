@@ -1,4 +1,4 @@
-import styles from './../../../styles/CabecalhoRelationship.module.css'
+import styles from './../../../styles/cabecalhoRelationship.module.css'
 
 export default function CabecalhoRelationship() {
     return (
