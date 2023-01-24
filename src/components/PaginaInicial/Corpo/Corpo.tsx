@@ -1,4 +1,4 @@
-import styles from '../../../styles/Corpo.module.css'
+import styles from './../../../styles/Corpo.module.css'
 import Image from 'next/image'
 import imagem from '../../../../public/fotoMateus.png'
 import Link from 'next/link'
