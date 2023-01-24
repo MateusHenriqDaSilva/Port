@@ -28,7 +28,7 @@
 .linhaReta1 {
     background: #D7E9B9;
     width: 100px;
-    margin-left: -490px;
+    margin-left: -510px;
     height: 2px;
 }
 
@@ -81,7 +81,7 @@
 
 .quadrado1 {
     height: 20px;
-    margin-left: -500px;
+    margin-left: -520px;
     width: 160px;
     cursor: pointer;
     border-radius: 5px;
