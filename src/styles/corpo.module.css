@@ -28,7 +28,7 @@
 .linhaReta1 {
     background: #D7E9B9;
     width: 100px;
-    margin-left: -460px;
+    margin-left: -490px;
     height: 2px;
 }
 
@@ -193,7 +193,7 @@
 
 .quadrado6 {
     height: 20px;
-    margin-left: -180px;
+    margin-left: -200px;
     margin-top: 500px;
     width: 160px;;
     border-radius: 5px;
@@ -205,7 +205,7 @@
 
 .quadrado6:hover {
     height: 20px;
-    margin-left: -180px;
+    margin-left: -200px;
     margin-top: 500px;
     width: 160px;;
     border-radius: 5px;
