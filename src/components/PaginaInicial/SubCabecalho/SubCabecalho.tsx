@@ -34,12 +34,10 @@ export default function SubCabecalho() {
         <div className={styles.SubCabecalhoEspacoGlobal}>
             <div className={styles.SubCabecalhoEspaco}>
                 {
-                    listaMenuItens.map((elemento,key) => {
+                    listaMenuItens.map((elemento, key) => {
                         return (
-                            <Link href={elemento.link} passHref key={key}>
-                                <h1 className={styles.listaItens} key={elemento.id}>
-                                    {elemento.titulo}
-                                </h1>
+                            <Link href={elemento.link} passHref key={key} className={styles.listaItens}>
+                                {elemento.titulo}
                             </Link>
                         )
                     })

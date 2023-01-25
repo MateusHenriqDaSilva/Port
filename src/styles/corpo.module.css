@@ -261,9 +261,9 @@
 
 .quadrado6:hover {
     height: 20px;
-    margin-left: -200px;
+    margin-left: -220px;
     margin-top: 500px;
-    width: 160px;
+    width: 180px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 13px;
@@ -300,6 +300,10 @@
     .quadrado1 {
         margin-left: -480px;
     }
+
+    .quadrado1:hover {
+        margin-left: -480px;
+    }
 }
 
 @media only screen and (max-width: 1745px) {
@@ -309,6 +313,10 @@
     }
 
     .quadrado1 {
+        margin-left: -400px;
+    }
+
+    .quadrado1:hover {
         margin-left: -400px;
     }
 
@@ -324,6 +332,10 @@
     }
 
     .quadrado1 {
+        margin-left: -300px;
+    }
+
+    .quadrado1:hover {
         margin-left: -300px;
     }
 
@@ -348,6 +360,10 @@
     .quadrado1 {
         margin-left: -220px;
     }
+
+    .quadrado1:hover {
+        margin-left: -220px;
+    }
 }
 
 @media only screen and (max-width: 1383px) {
@@ -357,6 +373,10 @@
     }
 
     .quadrado1 {
+        margin-left: -220px;
+    }
+
+    .quadrado1:hover {
         margin-left: -220px;
     }
 
@@ -372,6 +392,10 @@
     }
 
     .quadrado1 {
+        margin-left: -170px;
+    }
+
+    .quadrado1:hover {
         margin-left: -170px;
     }
 
@@ -398,6 +422,10 @@
         margin-left: -520px;
     }
 
+    .quadrado1:hover {
+        margin-left: -520px;
+    }
+
     .linhaReta2 {
         margin-left: -220px;
     }
@@ -418,6 +446,10 @@
     }
 
     .quadrado1 {
+        margin-left: -420px;
+    }
+
+    .quadrado1:hover {
         margin-left: -420px;
     }
 
@@ -452,7 +484,18 @@
         margin-left: -360px;
     }
 
+    .quadrado1:hover {
+        font-size: 14px;
+        height: 25px;
+        margin-left: -360px;
+    }
+
     .quadrado2 {
+        font-size: 14px;
+        height: 25px;
+    }
+
+    .quadrado2:hover {
         font-size: 14px;
         height: 25px;
     }
@@ -462,7 +505,7 @@
         height: 25px;
     }
 
-    .quadrado4 {
+    .quadrado3:hover {
         font-size: 14px;
         height: 25px;
     }
@@ -480,7 +523,18 @@
         height: 25px;
     }
 
+    .quadrado5:hover {
+        font-size: 14px;
+        height: 25px;
+    }
+
     .quadrado4{
+        font-size: 14px;
+        height: 25px;
+        margin-left: -160px;
+    }
+
+    .quadrado4:hover {
         font-size: 14px;
         height: 25px;
         margin-left: -160px;
@@ -498,11 +552,20 @@
         margin-left: -230px;
     }
 
+    .quadrado5:hover{
+        margin-left: -230px;
+    }
+
     .linhaReta6{
         width: 200px;
     }
 
     .quadrado6{
+        font-size: 14px;
+        height: 25px;
+    }
+
+    .quadrado6:hover{
         font-size: 14px;
         height: 25px;
     }
@@ -534,7 +597,18 @@
         margin-left: -290px;
     }
 
+    .quadrado1:hover {
+        font-size: 14px;
+        height: 25px;
+        margin-left: -290px;
+    }
+
     .quadrado2 {
+        font-size: 14px;
+        height: 25px;
+    }
+
+    .quadrado2:hover {
         font-size: 14px;
         height: 25px;
     }
@@ -544,7 +618,7 @@
         height: 25px;
     }
 
-    .quadrado4 {
+    .quadrado3:hover {
         font-size: 14px;
         height: 25px;
     }
@@ -562,7 +636,18 @@
         height: 25px;
     }
 
+    .quadrado5:hover {
+        font-size: 14px;
+        height: 25px;
+    }
+
     .quadrado4{
+        font-size: 14px;
+        height: 25px;
+        margin-left: -160px;
+    }
+
+    .quadrado4:hover {
         font-size: 14px;
         height: 25px;
         margin-left: -160px;
@@ -580,11 +665,20 @@
         margin-left: -230px;
     }
 
+    .quadrado5:hover {
+        margin-left: -230px;
+    }
+
     .linhaReta6{
         width: 200px;
     }
 
     .quadrado6{
+        font-size: 14px;
+        height: 25px;
+    }
+
+    .quadrado6:hover{
         font-size: 14px;
         height: 25px;
     }
@@ -616,7 +710,18 @@
         margin-left: -290px;
     }
 
+    .quadrado1:hover {
+        font-size: 14px;
+        height: 25px;
+        margin-left: -290px;
+    }
+
     .quadrado2 {
+        font-size: 14px;
+        height: 25px;
+    }
+
+    .quadrado2:hover {
         font-size: 14px;
         height: 25px;
     }
@@ -626,7 +731,7 @@
         height: 25px;
     }
 
-    .quadrado4 {
+    .quadrado3:hover {
         font-size: 14px;
         height: 25px;
     }
@@ -644,7 +749,18 @@
         height: 25px;
     }
 
+    .quadrado5:hover {
+        font-size: 14px;
+        height: 25px;
+    }
+
     .quadrado4{
+        font-size: 14px;
+        height: 25px;
+        margin-left: -160px;
+    }
+
+    .quadrado4:hover {
         font-size: 14px;
         height: 25px;
         margin-left: -160px;
@@ -662,11 +778,20 @@
         margin-left: -230px;
     }
 
+    .quadrado5:hover{
+        margin-left: -230px;
+    }
+
     .linhaReta6{
         width: 200px;
     }
 
     .quadrado6{
+        font-size: 14px;
+        height: 25px;
+    }
+
+    .quadrado6:hover{
         font-size: 14px;
         height: 25px;
     }
@@ -710,7 +835,19 @@
         margin-left: -290px;
     }
 
+    .quadrado1:hover {
+        font-size: 14px;
+        height: 25px;
+        margin-left: -290px;
+    }
+
     .quadrado2 {
+        font-size: 14px;
+        height: 25px;
+        margin-left: -150px;
+    }
+
+    .quadrado2:hover {
         font-size: 14px;
         height: 25px;
         margin-left: -150px;
@@ -721,7 +858,7 @@
         height: 25px;
     }
 
-    .quadrado4 {
+    .quadrado3:hover {
         font-size: 14px;
         height: 25px;
     }
@@ -734,12 +871,13 @@
         margin-left: -270px;
     }
 
-    .quadrado5 {
+    .quadrado4{
         font-size: 14px;
         height: 25px;
+        margin-left: -160px;
     }
 
-    .quadrado4{
+    .quadrado4:hover {
         font-size: 14px;
         height: 25px;
         margin-left: -160px;
@@ -757,11 +895,20 @@
         margin-left: -230px;
     }
 
+    .quadrado5:hover{
+        margin-left: -230px;
+    }
+
     .linhaReta6{
         width: 200px;
     }
 
     .quadrado6{
+        font-size: 14px;
+        height: 25px;
+    }
+
+    .quadrado6:hover{
         font-size: 14px;
         height: 25px;
     }
@@ -804,7 +951,19 @@
         margin-left: -190px;
     }
 
+    .quadrado1:hover {
+        font-size: 14px;
+        height: 25px;
+        margin-left: -190px;
+    }
+
     .quadrado2 {
+        font-size: 14px;
+        height: 25px;
+        margin-left: -150px;
+    }
+
+    .quadrado2:hover {
         font-size: 14px;
         height: 25px;
         margin-left: -150px;
@@ -815,10 +974,11 @@
         height: 25px;
     }
 
-    .quadrado4 {
+    .quadrado3:hover {
         font-size: 14px;
         height: 25px;
     }
+
 
     .linhaReta2 {
         margin-left: -220px;
@@ -828,12 +988,13 @@
         margin-left: -270px;
     }
 
-    .quadrado5 {
+    .quadrado4{
         font-size: 14px;
         height: 25px;
+        margin-left: -160px;
     }
 
-    .quadrado4{
+    .quadrado4:hover{
         font-size: 14px;
         height: 25px;
         margin-left: -160px;
@@ -852,11 +1013,20 @@
         margin-left: -230px;
     }
 
+    .quadrado5:hover{
+        margin-left: -230px;
+    }
+
     .linhaReta6{
         width: 200px;
     }
 
     .quadrado6{
+        font-size: 14px;
+        height: 25px;
+    }
+
+    .quadrado6:hover{
         font-size: 14px;
         height: 25px;
     }
@@ -899,7 +1069,19 @@
         margin-left: -90px;
     }
 
+    .quadrado1:hover {
+        font-size: 14px;
+        height: 25px;
+        margin-left: -90px;
+    }
+
     .quadrado2 {
+        font-size: 14px;
+        height: 25px;
+        margin-left: -150px;
+    }
+
+    .quadrado2:hover {
         font-size: 14px;
         height: 25px;
         margin-left: -150px;
@@ -910,7 +1092,17 @@
         height: 25px;
     }
 
+    .quadrado3:hover {
+        font-size: 14px;
+        height: 25px;
+    }
+
     .quadrado4 {
+        font-size: 14px;
+        height: 25px;
+    }
+
+    .quadrado4:hover {
         font-size: 14px;
         height: 25px;
     }
@@ -923,12 +1115,13 @@
         margin-left: -270px;
     }
 
-    .quadrado5 {
+    .quadrado4{
         font-size: 14px;
         height: 25px;
+        margin-left: -160px;
     }
 
-    .quadrado4{
+    .quadrado4:hover{
         font-size: 14px;
         height: 25px;
         margin-left: -160px;
@@ -947,11 +1140,20 @@
         margin-left: -230px;
     }
 
+    .quadrado5:hover{
+        margin-left: -230px;
+    }
+
     .linhaReta6{
         width: 200px;
     }
 
     .quadrado6{
+        font-size: 14px;
+        height: 25px;
+    }
+
+    .quadrado6:hover{
         font-size: 14px;
         height: 25px;
     }
@@ -995,13 +1197,31 @@
         margin-left: 0px;
     }
 
+    .quadrado1:hover {
+        font-size: 20px;
+        height: 30px;
+        width: 200px;
+        margin-left: 0px;
+    }
+
     .quadrado2 {
         font-size: 20px;
         height: 30px;
         margin-left: -150px;
     }
 
+    .quadrado2:hover {
+        font-size: 20px;
+        height: 30px;
+        margin-left: -150px;
+    }
+
     .quadrado3 {
+        font-size: 20px;
+        height: 30px;
+    }
+
+    .quadrado3:hover {
         font-size: 20px;
         height: 30px;
     }
@@ -1014,12 +1234,13 @@
         margin-left: -270px;
     }
 
-    .quadrado5 {
+    .quadrado4{
         font-size: 20px;
         height: 30px;
+        margin-left:-160px;
     }
 
-    .quadrado4{
+    .quadrado4:hover{
         font-size: 20px;
         height: 30px;
         margin-left:-160px;
@@ -1035,6 +1256,14 @@
     }
 
     .quadrado5{
+        font-size: 20px;
+        height: 30px;
+        margin-left: -230px;
+    }
+
+    .quadrado5:hover{
+        font-size: 20px;
+        height: 30px;
         margin-left: -230px;
     }
 
@@ -1043,6 +1272,11 @@
     }
 
     .quadrado6{
+        font-size: 14px;
+        height: 25px;
+    }
+
+    .quadrado6:hover{
         font-size: 14px;
         height: 25px;
     }
@@ -1086,13 +1320,31 @@
         margin-left: 0px;
     }
 
+    .quadrado1:hover {
+        font-size: 20px;
+        height: 30px;
+        width: 200px;
+        margin-left: 0px;
+    }
+
     .quadrado2 {
         font-size: 20px;
         height: 30px;
         margin-left: -150px;
     }
 
+    .quadrado2:hover {
+        font-size: 20px;
+        height: 30px;
+        margin-left: -150px;
+    }
+
     .quadrado3 {
+        font-size: 20px;
+        height: 30px;
+    }
+
+    .quadrado3:hover {
         font-size: 20px;
         height: 30px;
     }
@@ -1105,12 +1357,13 @@
         margin-left: -270px;
     }
 
-    .quadrado5 {
+    .quadrado4{
         font-size: 20px;
         height: 30px;
+        margin-left:-160px;
     }
-
-    .quadrado4{
+    
+    .quadrado4:hover{
         font-size: 20px;
         height: 30px;
         margin-left:-160px;
@@ -1121,11 +1374,18 @@
     }
 
     .linhaReta5{
-
         margin-left: -250px;
     }
 
     .quadrado5{
+        font-size: 20px;
+        height: 30px;
+        margin-left: -230px;
+    }
+
+    .quadrado5:hover{
+        font-size: 20px;
+        height: 30px;
         margin-left: -230px;
     }
 
@@ -1134,6 +1394,11 @@
     }
 
     .quadrado6{
+        font-size: 14px;
+        height: 25px;
+    }
+
+    .quadrado6:hover{
         font-size: 14px;
         height: 25px;
     }
@@ -1177,13 +1442,31 @@
         margin-left: -60px;
     }
 
+    .quadrado1:hover {
+        font-size: 20px;
+        height: 30px;
+        width: 200px;
+        margin-left: -60px;
+    }
+
     .quadrado2 {
         font-size: 20px;
         height: 30px;
         margin-left: -150px;
     }
 
+    .quadrado2:hover {
+        font-size: 20px;
+        height: 30px;
+        margin-left: -150px;
+    }
+
     .quadrado3 {
+        font-size: 20px;
+        height: 30px;
+    }
+
+    .quadrado3:hover {
         font-size: 20px;
         height: 30px;
     }
@@ -1196,12 +1479,13 @@
         margin-left: -270px;
     }
 
-    .quadrado5 {
+    .quadrado4{
         font-size: 20px;
         height: 30px;
+        margin-left:-160px;
     }
 
-    .quadrado4{
+    .quadrado4:hover{
         font-size: 20px;
         height: 30px;
         margin-left:-160px;
@@ -1212,11 +1496,18 @@
     }
 
     .linhaReta5{
-
         margin-left: -250px;
     }
 
     .quadrado5{
+        font-size: 20px;
+        height: 30px;
+        margin-left: -230px;
+    }
+
+    .quadrado5:hover{
+        font-size: 20px;
+        height: 30px;
         margin-left: -230px;
     }
 
@@ -1225,6 +1516,11 @@
     }
 
     .quadrado6{
+        font-size: 14px;
+        height: 25px;
+    }
+
+    .quadrado6:hover{
         font-size: 14px;
         height: 25px;
     }
@@ -1269,13 +1565,31 @@
         margin-left: -60px;
     }
 
+    .quadrado1:hover {
+        font-size: 20px;
+        height: 30px;
+        width: 200px;
+        margin-left: -60px;
+    }
+
     .quadrado2 {
         font-size: 20px;
         height: 30px;
         margin-left: -150px;
     }
 
+    .quadrado2:hover {
+        font-size: 20px;
+        height: 30px;
+        margin-left: -150px;
+    }
+
     .quadrado3 {
+        font-size: 20px;
+        height: 30px;
+    }
+
+    .quadrado3:hover {
         font-size: 20px;
         height: 30px;
     }
@@ -1288,12 +1602,13 @@
         margin-left: -270px;
     }
 
-    .quadrado5 {
+    .quadrado4{
         font-size: 20px;
         height: 30px;
+        margin-left:-160px;
     }
 
-    .quadrado4{
+    .quadrado4:hover{
         font-size: 20px;
         height: 30px;
         margin-left:-160px;
@@ -1304,11 +1619,18 @@
     }
 
     .linhaReta5{
-
         margin-left: -250px;
     }
 
     .quadrado5{
+        font-size: 20px;
+        height: 30px;
+        margin-left: -230px;
+    }
+
+    .quadrado5:hover{
+        font-size: 20px;
+        height: 30px;
         margin-left: -230px;
     }
 
@@ -1317,6 +1639,11 @@
     }
 
     .quadrado6{
+        font-size: 14px;
+        height: 25px;
+    }
+
+    .quadrado6:hover{
         font-size: 14px;
         height: 25px;
     }
@@ -1361,13 +1688,31 @@
         margin-left: -60px;
     }
 
+    .quadrado1:hover {
+        font-size: 20px;
+        height: 30px;
+        width: 200px;
+        margin-left: -60px;
+    }
+
     .quadrado2 {
         font-size: 20px;
         height: 30px;
         margin-left: -150px;
     }
 
+    .quadrado2:hover {
+        font-size: 20px;
+        height: 30px;
+        margin-left: -150px;
+    }
+
     .quadrado3 {
+        font-size: 20px;
+        height: 30px;
+    }
+
+    .quadrado3:hover {
         font-size: 20px;
         height: 30px;
     }
@@ -1380,12 +1725,13 @@
         margin-left: -270px;
     }
 
-    .quadrado5 {
+    .quadrado4{
         font-size: 20px;
         height: 30px;
+        margin-left:-160px;
     }
 
-    .quadrado4{
+    .quadrado4:hover{
         font-size: 20px;
         height: 30px;
         margin-left:-160px;
@@ -1401,6 +1747,14 @@
     }
 
     .quadrado5{
+        font-size: 20px;
+        height: 30px;
+        margin-left: -230px;
+    }
+
+    .quadrado5:hover{
+        font-size: 20px;
+        height: 30px;
         margin-left: -230px;
     }
 
@@ -1409,6 +1763,11 @@
     }
 
     .quadrado6{
+        font-size: 14px;
+        height: 25px;
+    }
+
+    .quadrado6:hover{
         font-size: 14px;
         height: 25px;
     }

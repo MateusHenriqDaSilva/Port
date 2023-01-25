@@ -1,10 +1,8 @@
-.SubCabecalhoEspaco{
+.SubCabecalhoEspaco {
     display: flex;
     border-top: 1px solid rgb(226, 226, 226);
     flex-direction: column;
-}
-
-.SubCabecalhoEspaco{
+    width: 100%;
     height: 20px;
     display: flex;
     width: 100%;
@@ -15,31 +13,30 @@
     color: black;
 }
 
-.listaItens{
+.listaItens {
     display: flex;
     flex-direction: row;
     align-items: center;
     font-size: 14px;
     margin: 0px;
-    padding: 0px 20px;
+    padding: 10px 20px;
     justify-content: center;
 }
 
-.listaItens:hover{
+.listaItens:hover {
     display: flex;
-    margin: 0px;
-    cursor: pointer;
-    padding: 0px 20px;
     flex-direction: row;
-    background: #ffa9a9;
+    align-items: center;
+    font-size: 14px;
+    margin: 0px;
+    padding: 10px 20px;
     justify-content: center;
-    text-align: left;
+    background: #ffa9a9;
 }
 
-.bordaFinal{
+.bordaFinal {
     display: flex;
     width: 100%;
     justify-content: flex-end;
     border-bottom: 1px solid rgb(226, 226, 226);
 }
-
