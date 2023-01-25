@@ -14,7 +14,7 @@ const listaMenuItens = [
     },
     {
         id: 3,
-        titulo: 'Github',
+        titulo: 'Git',
         link: 'https://github.com/mateusprogaming'
     },
     {
