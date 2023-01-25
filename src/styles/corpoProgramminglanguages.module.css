@@ -73,20 +73,75 @@
 }
 
 @media only screen and (max-width: 400px) {
-    .ContainerGlobal {
+    .containerGlobal {
         display: flex;
-        height: 30px;
-        padding: 50px 0px 0px 50px;
+        width: 100%;
         justify-content: center;
         align-items: center;
-        text-align: center;
+        color: black;
     }
 
-    .link {
-        cursor: pointer;
+    .containerLabels {
+        width: 100%;
+        height: 300px;
+        display: flex;
         justify-content: center;
         align-items: center;
-        text-align: center;
+        flex-direction: row;        
+    }
+
+    .coluna1 {
+        z-index: 1;
+    }
+
+    .label {
+        display: flex;
+        height: 20px;
+        margin-top: 10px;
+        font-size: 11px;
+    }
+
+    .barras {
         width: 100%;
+        height: 20px;
+        margin-top: 10px;
+        margin-left: -120px;
+        border: 1px solid rgb(189, 189, 189);
+    }
+
+    .porcentagemBarra1 {
+        width: 275px;
+        height: 20px;
+        background: #ffc8dd;
+    }
+
+    .porcentagemBarra2 {
+        width: 260px;
+        height: 20px;
+        background: #cdb4db;
+    }
+
+    .porcentagemBarra3 {
+        width: 250px;
+        height: 20px;
+        background: #bde0fe;
+    }
+
+    .porcentagemBarra4 {
+        width: 235px;
+        height: 20px;
+        background: #e9edc9;
+    }
+
+    .porcentagemBarra5 {
+        width: 130px;
+        height: 20px;
+        background: #d6ccc2;
+    }
+
+    .porcentagemBarra6 {
+        width: 60px;
+        height: 20px;
+        background: #cce3de;
     }
 }
