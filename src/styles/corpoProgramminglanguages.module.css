@@ -3,6 +3,7 @@
     width: 100%;
     justify-content: center;
     align-items: center;
+    color: black;
 }
 
 .containerLabels {
@@ -71,8 +72,21 @@
     background: #cce3de;
 }
 
-/* .porcentagemBarra7 {
-    width: 60px;
-    height: 20px;
-    background: #b7b7a4;
-} */
+@media only screen and (max-width: 400px) {
+    .ContainerGlobal {
+        display: flex;
+        height: 30px;
+        padding: 50px 0px 0px 50px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .link {
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+}
