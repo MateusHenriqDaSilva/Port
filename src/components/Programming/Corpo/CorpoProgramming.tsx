@@ -34,27 +34,25 @@ const trabalhos = [
 
 export default function CorpoProgramming() {
     return (
-        <div className={styles.ContainerGlobal}>
-            <div className={styles.cartaoEspaco}>
-                {
-                    trabalhos.map((elemento, key) => {
-                        return (
-                            <Link href={elemento.url} passHref key={key}>
-                                <div className={styles.cartao} key={key}>
-                                    <Image className={styles.imagem}
-                                        src={elemento.img}
-                                        alt="Picture of the author"
-                                        width={210}
-                                        height={250}
-                                    />
-                                    <h1 className={styles.cartaoLetras} key={elemento.id}>{elemento.titulo}</h1>
-                                </div>
-                            </Link>
-                        )
-                    })
-                }
+        <div className={styles.cartaoEspaco}>
+            {
+                trabalhos.map((elemento, key) => {
+                    return (
+                        <Link href={elemento.url} passHref key={key}>
+                            <div className={styles.cartao} key={key}>
+                                <Image className={styles.imagem}
+                                    src={elemento.img}
+                                    alt="Picture of the author"
+                                    width={210}
+                                    height={250}
+                                />
+                                <h1 className={styles.cartaoLetras} key={elemento.id}>{elemento.titulo}</h1>
+                            </div>
+                        </Link>
+                    )
+                })
+            }
 
-            </div>
-        </div >
+        </div>
     )
 }

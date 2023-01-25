@@ -1,10 +1,11 @@
 .cartaoEspaco {
-    height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     color: black;
-    padding: 80px;
+    padding: 0px 80px;
 }
 
 .cartao {

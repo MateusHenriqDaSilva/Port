@@ -1,17 +1,17 @@
-.ContainerGlobal{
+.ContainerGlobal {
     display: flex;
-    height: 30px;
+    height: 80px;
     justify-content: center;
     align-items: center;
-    width:100%;
+    width: 100%;
     text-align: center;
     color: black;
-    padding-top: 50px;
 }
 
-.link{
+.link {
     cursor: pointer;
     justify-content: center;
+    padding: 0px 20px;
     align-items: center;
     color: black;
     text-align: center;
@@ -26,7 +26,7 @@
         text-align: center;
     }
 
-    .link{
+    .link {
         cursor: pointer;
         justify-content: center;
         align-items: center;
