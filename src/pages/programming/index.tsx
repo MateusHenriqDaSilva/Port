@@ -5,10 +5,10 @@ import SubCabecalhoProgramming from "../../components/Programming/SubCabecalhoPr
 
 export default function Programming() {
     return (
-        <>
+        <div className="container" style={{ paddingTop: '20px' }}>
             <CabecalhoProgramming />
             <SubCabecalhoProgramming />
             <CorpoProgramming />
-        </>
+        </div >
     )
 }
