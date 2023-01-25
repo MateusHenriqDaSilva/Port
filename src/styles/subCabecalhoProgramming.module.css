@@ -21,7 +21,8 @@
     .ContainerGlobal {
         display: flex;
         height: 30px;
-        padding: 50px 10px 10px 50px;
+        padding: 30px 120px 20px 120px;
+        font-size: 12px;
         justify-content: center;
         align-items: center;
         text-align: center;
