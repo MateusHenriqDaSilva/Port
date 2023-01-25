@@ -10,7 +10,6 @@
 }
 
 .link{
-    margin-left: 20px;
     cursor: pointer;
     justify-content: center;
     align-items: center;
@@ -28,7 +27,6 @@
     }
 
     .link{
-        margin-left: 20px;
         cursor: pointer;
         justify-content: center;
         align-items: center;
