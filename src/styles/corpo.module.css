@@ -1165,12 +1165,13 @@
     .imagemEspacoGlobal {
         display: flex;
         width: 100%;
+        justify-content: center;
     }
 
     .imagemEspaco {
         display: flex;
-        height: 300px;
-        width: 400px;
+        height: 100%;
+        width: 100%;
         z-index: 1;
         justify-content: left;
         align-items: center;
@@ -1180,6 +1181,7 @@
     .definicaoImagem{
         display: flex;
         padding: 0px;
+        width: 350px;
     }
 
     .espacoLinha {
