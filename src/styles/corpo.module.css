@@ -14,20 +14,20 @@
 
 .espacoLinha {
     display: flex;
-    width: 100px;
-    height: 500px;
+    width: 5%;
     margin-top: 135px;
 }
 
 .linhaReta {
-    width: 300px;
+    display: flex;
+    width: 24%;
     margin-left: -360px;
     height: 2px;
 }
 
 .linhaReta1 {
     background: #D7E9B9;
-    width: 100px;
+    width: 90%;
     margin-left: -510px;
     height: 2px;
 }
@@ -106,7 +106,7 @@
     margin-top: 100px;
     border: none;
     z-index: 1;
-    width: 160px;;
+    width: 160px;
     border-radius: 5px;
     background: #FD8A8A;
 }
@@ -116,7 +116,8 @@
     margin-left: -60px;
     margin-top: 100px;
     border: none;
-    width: 160px;;
+    width: 160px;
+    ;
     border-radius: 5px;
     box-shadow: 0px 0px 10px #ff4141;
 }
@@ -161,7 +162,8 @@
     margin-left: -0px;
     margin-top: 300px;
     border: none;
-    width: 160px;;
+    width: 160px;
+    ;
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 0px 0px 10px #727272;
@@ -172,7 +174,8 @@
     margin-left: -380px;
     margin-top: 400px;
     z-index: 1;
-    width: 160px;;
+    width: 160px;
+    ;
     border-radius: 5px;
     cursor: pointer;
     background: orange;
@@ -183,7 +186,8 @@
     height: 20px;
     margin-left: -380px;
     margin-top: 400px;
-    width: 160px;;
+    width: 160px;
+    ;
     border-radius: 5px;
     cursor: pointer;
     background: orange;
@@ -195,7 +199,8 @@
     height: 20px;
     margin-left: -200px;
     margin-top: 500px;
-    width: 160px;;
+    width: 160px;
+    ;
     border-radius: 5px;
     cursor: pointer;
     z-index: 1;
@@ -207,9 +212,115 @@
     height: 20px;
     margin-left: -200px;
     margin-top: 500px;
-    width: 160px;;
+    width: 160px;
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 0px 0px 10px #321bff;
     border: none;
+}
+
+@media only screen and (max-width: 1837px) {
+    .linhaReta2 {
+        background: #FD8A8A;
+        width: 300px;
+        margin-top: 100px;
+        margin-left: -130px;
+        height: 2px;
+    }
+}
+
+@media only screen and (max-width: 1782px) {
+    .linhaReta2 {
+        background: #FD8A8A;
+        width: 300px;
+        margin-top: 100px;
+        margin-left: -130px;
+        height: 2px;
+    }
+
+    .linhaReta1 {
+        width: 120px;
+    }
+
+    .quadrado1 {
+        margin-left: -480px;
+    }
+}
+
+@media only screen and (max-width: 1745px) {
+    .linhaReta1 {
+        width: 220px;
+        margin-left: -430px;
+    }
+
+    .quadrado1 {
+        margin-left: -400px;
+    }
+
+    .linhaReta2 {
+        margin-left: -250px;
+    }
+}
+
+@media only screen and (max-width: 1585px) {
+    .linhaReta1 {
+        width: 280px;
+        margin-left: -400px;
+    }
+
+    .quadrado1 {
+        margin-left: -300px;
+    }
+
+    .linhaReta2 {
+        margin-left: -250px;
+    }
+}
+
+@media only screen and (max-width: 1525px) {
+    .linhaReta1 {
+        width: 220px;
+        margin-left: -330px;
+    }
+}
+
+@media only screen and (max-width: 1389px) {
+    .linhaReta1 {
+        width: 280px;
+        margin-left: -330px;
+    }
+
+    .quadrado1 {
+        margin-left: -220px;
+    }
+}
+
+@media only screen and (max-width: 1383px) {
+    .linhaReta1 {
+        width: 220px;
+        margin-left: -280px;
+    }
+
+    .quadrado1 {
+        margin-left: -220px;
+    }
+
+    .linhaReta2 {
+        margin-left: -220px;
+    }
+}
+
+@media only screen and (max-width: 1283px) {
+    .linhaReta1 {
+        width: 260px;
+        margin-left: -270px;
+    }
+
+    .quadrado1 {
+        margin-left: -170px;
+    }
+
+    .linhaReta2 {
+        margin-left: -220px;
+    }
 }
