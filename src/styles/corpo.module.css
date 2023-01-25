@@ -1181,6 +1181,7 @@
         display: flex;
         padding: 0px;
         width: 400px;
+        height: 600px;
     }
 
     .espacoLinha {
@@ -1190,7 +1191,7 @@
 
     .linhaReta1 {
         width: 120px;
-        margin-left: -270px;
+        margin-left: -310px;
     }
 
     .quadrado1 {
@@ -1207,80 +1208,94 @@
 
     .linhaReta2{
         width: 200px;
+        margin-top: 80px;
         margin-left: -170px;
     }
 
     .quadrado2 {
         font-size: 14px;
+        margin-top: 80px;
         height: 25px;
         margin-left: -150px;
     }
 
     .quadrado2:hover {
         font-size: 14px;
+        margin-top: 80px;
         height: 25px;
         margin-left: -150px;
     }
 
     .linhaReta3{
         width: 200px;
+        margin-top: 150px;
         margin-left: -190px;
     }
 
     .quadrado3 {
         font-size: 14px;
         height: 25px;
+        margin-top: 150px;
         margin-left: -160px;
     }
 
     .quadrado3:hover {
         font-size: 14px;
         height: 25px;
+        margin-top: 150px;
         margin-left: -160px;
     }
 
     .linhaReta4{
         width: 200px;
+        margin-top: 220px;
         margin-left: -190px;
     }
 
     .quadrado4 {
         font-size: 14px;
         height: 25px;
+        margin-top: 220px;
         margin-left: -160px;
     }
 
     .quadrado4:hover {
         font-size: 14px;
         height: 25px;
+        margin-top: 250px;
         margin-left: -160px;
     }
 
     .linhaReta5{
         width: 200px;
+        margin-top: 280px;
         margin-left: -190px;
     }
 
     .quadrado5{
         font-size: 14px;
         height: 25px;
+        margin-top: 280px;
         margin-left: -160px;
     }
 
     .quadrado5:hover{
         font-size: 14px;
         height: 25px;
+        margin-top: 320px;
         margin-left: -160px;
     }
 
     .linhaReta6{
         width: 200px;
+        margin-top: 380px;
         margin-left: -190px;
     }
 
     .quadrado6{
         font-size: 14px;
         height: 25px;
+        margin-top: 380px;
         width: 130px;
         margin-left: -140px;
     }
