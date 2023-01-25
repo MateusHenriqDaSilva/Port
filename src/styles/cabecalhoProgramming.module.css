@@ -1,7 +1,29 @@
-.ContainerGlobal{
+.ContainerGlobal {
     display: flex;
     height: 60px;
     width: 100%;
     justify-content: center;
     text-align: center;
+    align-items: center;
+}
+
+.Titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 350px) {
+    .ContainerGlobal {
+        display: flex;
+        height: 60px;
+        width: 100%;
+        font-size: 12px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }
