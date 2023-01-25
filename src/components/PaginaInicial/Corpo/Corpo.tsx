@@ -24,7 +24,7 @@ export default function Corpo() {
                 <div className={styles.linhaReta6}></div>
             </div>
             <div className={styles.espacoQuadrado}>
-                <Link href='/programming' className={styles.quadrado1}>Programming Skills</Link>
+                <Link href='/programming' className={styles.quadrado1}>Programming</Link>
                 <Link href='/piscicology' className={styles.quadrado2}>Piscicology</Link>
                 <Link href='/communication' className={styles.quadrado3}>Communication</Link>
                 <Link href='/digitalMarketing' className={styles.quadrado4}>Digital Marketing</Link>
