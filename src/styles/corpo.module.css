@@ -932,7 +932,7 @@
     .definicaoImagem{
         display: flex;
         padding: 0px;
-        margin-right: 200px;
+        width: 350px;
     }
 
     .espacoLinha {
@@ -1050,8 +1050,8 @@
     .definicaoImagem{
         display: flex;
         padding: 0px;
+        width: 350px;
     }
-
     .espacoLinha {
         display: flex;
         margin-top: 135px;
