@@ -1039,18 +1039,13 @@
 
     .imagemEspaco {
         display: flex;
-        height: 500px;
         z-index: 1;
         justify-content: left;
         align-items: center;
         flex-direction: column;
     }
 
-    .definicaoImagem{
-        display: flex;
-        padding: 0px;
-        width: 400px;
-    }
+ 
     .espacoLinha {
         display: flex;
         margin-top: 135px;
@@ -1126,24 +1121,24 @@
 
     .linhaReta5{
         width: 200px;
-        margin-left: -190px;
+        margin-left: -220px;
     }
 
     .quadrado5{
         font-size: 14px;
         height: 25px;
-        margin-left: -160px;
+        margin-left: -190px;
     }
 
     .quadrado5:hover{
         font-size: 14px;
         height: 25px;
-        margin-left: -160px;
+        margin-left: -190px;
     }
 
     .linhaReta6{
         width: 200px;
-        margin-left: -190px;
+        margin-left: -220px;
     }
 
     .quadrado6{
@@ -1156,7 +1151,8 @@
     .quadrado6:hover{
         font-size: 14px;
         height: 25px;
-        margin-left: -190px;
+        width: 130px;
+        margin-left: -140px;
     }
 }
 
@@ -1191,13 +1187,13 @@
 
     .linhaReta1 {
         width: 120px;
-        margin-left: -310px;
+        margin-left: -330px;
     }
 
     .quadrado1 {
         font-size: 14px;
         height: 25px;
-        margin-left: -190px;
+        margin-left: -220px;
     }
 
     .quadrado1:hover {
