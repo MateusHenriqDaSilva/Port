@@ -1161,7 +1161,7 @@
     }
 }
 
-@media only screen and (max-width: 501px) {
+@media only screen and (max-width: 450px) {
     .imagemEspacoGlobal {
         display: flex;
         width: 100%;
@@ -1169,7 +1169,8 @@
 
     .imagemEspaco {
         display: flex;
-        height: 500px;
+        height: 300px;
+        width: 400px;
         z-index: 1;
         justify-content: left;
         align-items: center;
@@ -1187,8 +1188,8 @@
     }
 
     .linhaReta1 {
-        width: 190px;
-        margin-left: -370px;
+        width: 120px;
+        margin-left: -270px;
     }
 
     .quadrado1 {
