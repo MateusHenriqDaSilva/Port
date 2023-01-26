@@ -1199,7 +1199,7 @@
     .quadrado1:hover {
         font-size: 14px;
         height: 25px;
-        margin-left: -190px;
+        margin-left: -220px;
     }
 
     .linhaReta2{
@@ -1258,7 +1258,7 @@
     .quadrado4:hover {
         font-size: 14px;
         height: 25px;
-        margin-top: 250px;
+        margin-top: 220px;
         margin-left: -160px;
     }
 
@@ -1278,7 +1278,7 @@
     .quadrado5:hover{
         font-size: 14px;
         height: 25px;
-        margin-top: 320px;
+        margin-top: 280px;
         margin-left: -160px;
     }
 
@@ -1299,6 +1299,8 @@
     .quadrado6:hover{
         font-size: 14px;
         height: 25px;
-        margin-left: -190px;
+        margin-top: 380px;
+        width: 130px;
+        margin-left: -140px;
     }
 }
