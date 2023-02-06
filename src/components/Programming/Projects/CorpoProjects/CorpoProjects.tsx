@@ -29,8 +29,8 @@ export default function CorpoProjects() {
             {
                 listaOfProject.map((elemento, key) => {
                     return (
-                        <Link href={elemento.url} passHref>
-                            <div className={styles.containerCardSession} key={key}>
+                        <Link href={elemento.url} passHref key={key}>
+                            <div className={styles.containerCardSession} >
                                 <Image className={styles.imagem}
                                     src={elemento.img}
                                     alt="Picture of the author"
