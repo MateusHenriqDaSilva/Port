@@ -27,7 +27,7 @@ const trabalhos = [
         titulo: 'Projects',
         data: '07/08/1997',
         horas: '20:30',
-        url: '/projects',
+        url: '/programming/projects',
         img: imgCosmo
     },
 ]
