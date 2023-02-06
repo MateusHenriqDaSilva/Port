@@ -5,8 +5,10 @@
 }
 
 .containerCardSession{
-    height: 160px;
-    width: 160px;
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    background: rgb(255, 227, 227);
     font-size: 12px;
     text-align: center;
     justify-content: center;
@@ -16,19 +18,18 @@
 }
 
 .containerCardSession:hover{
-    height: 160px;
-    width: 160px;
+    height: 200px;
+    width: 200px;
     font-size: 12px;
     text-align: center;
     justify-content: center;
-    box-shadow: 3px 3px 3px rgb(255, 25, 25);
-    border: 1px solid rgb(255, 19, 19);
+    box-shadow: 3px 3px 3px rgb(255, 55, 55);
+    border: 1px solid rgb(255, 47, 47);
     border-radius: 6px;
 }
 
 .containerCabecalho{
     font-size: 15px;
-    
 }
 
 .containerCorpo{
