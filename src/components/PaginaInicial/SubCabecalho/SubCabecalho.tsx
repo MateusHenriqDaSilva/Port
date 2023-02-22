@@ -15,7 +15,7 @@ const listaMenuItens = [
     {
         id: 3,
         titulo: 'Git',
-        link: 'https://github.com/mateusprogaming'
+        link: 'https://github.com/MateusHenriqDaSilva'
     },
     {
         id: 4,
