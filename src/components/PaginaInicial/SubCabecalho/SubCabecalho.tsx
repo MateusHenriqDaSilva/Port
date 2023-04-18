@@ -5,7 +5,7 @@ import Link from 'next/link'
 const listaMenuItens = [
     {
         id: 1,
-        titulo: 'Instragram',
+        titulo: 'Instagram',
         link: 'https://www.instagram.com/_teus.exe/'
     }, {
         id: 2,
