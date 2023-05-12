@@ -29,9 +29,9 @@
     align-items: center;
     font-size: 14px;
     margin: 0px;
-    padding: 10px 20px;
     justify-content: center;
-    background: #ffa9a9;
+    background: rgb(209, 209, 209);
+    background: linear-gradient(90deg, rgba(231, 231, 231, 0.61) 0%, rgba(255,169,101,0.1923144257703081) 37%, rgba(255, 185, 185, 0.288) 97%);
 }
 
 .bordaFinal {

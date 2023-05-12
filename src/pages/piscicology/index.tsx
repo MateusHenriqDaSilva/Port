@@ -1,4 +1,4 @@
-import CabecalhoPiscicology from "../../components/Piscicology/Cabecalho/CabecalhoProgramming";
+import CabecalhoPiscicology from "../../components/Piscicology/CabecalhoProgramming";
 
 export default function Piscicology() {
     return (

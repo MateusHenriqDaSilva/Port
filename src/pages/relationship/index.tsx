@@ -1,4 +1,4 @@
-import CabecalhoRelationship from "../../components/Relationship/Cabecalho/CabecalhoRelationship";
+import CabecalhoRelationship from "../../components/Relationship/CabecalhoRelationship";
 
 export default function Relationship() {
     return (

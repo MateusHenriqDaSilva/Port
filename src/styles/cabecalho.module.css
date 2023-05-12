@@ -1,0 +1,11 @@
+.cabecalhoEspaco{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.cabecalhoNome{
+    color: black;
+
+}

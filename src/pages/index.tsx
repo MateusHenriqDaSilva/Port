@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
-import Cabecalho from '../components/PaginaInicial/Cabecalho/Cabecalho'
-import Corpo from '../components/PaginaInicial/Corpo/Corpo'
-import SubCabecalho from '../components/PaginaInicial/SubCabecalho/SubCabecalho'
+import Corpo from '../components/PaginaInicial/Corpo'
+import SubCabecalho from '../components/PaginaInicial/SubCabecalho'
+import Cabecalho from '../components/PaginaInicial/Cabecalho'
 
 const Home: NextPage = () => {
   return (

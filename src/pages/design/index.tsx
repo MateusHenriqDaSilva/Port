@@ -1,4 +1,4 @@
-import CabecalhoDesign from "../../components/Design/Cabecalho/CabecalhoDesign";
+import CabecalhoDesign from "../../components/Design/CabecalhoDesign";
 
 export default function Design() {
     return (
