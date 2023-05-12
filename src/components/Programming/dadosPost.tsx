@@ -20,8 +20,7 @@ export const contentBlog: IContentBlog[] = [
         link: "/programming/post",
         post: [
             {
-                header: "Aumento do uso de dispositivos móveis para navegar na internet, a responsividade tornou-se uma necessidade para garantir que seu site ou aplicativo seja acessível a todos os usuários",
-                text: `Se adapta às telas de diferentes tamanhos e orientações, tornando-o mais fácil de navegar e interagir com o conteúdo`,
+                text: `Aumento do uso de dispositivos móveis para navegar na internet, a responsividade tornou-se uma necessidade para garantir que seu site ou aplicativo seja acessível a todos os usuários`,
             },{
                 text: `Se adapta às telas de diferentes tamanhos e orientações, tornando-o mais fácil de navegar e interagir com o conteúdo, para isso copie o exemplo de HTML abaixo:`,
                 code: `<!DOCTYPE html>
