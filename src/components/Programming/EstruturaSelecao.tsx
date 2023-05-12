@@ -1,4 +1,4 @@
-import styles from "../../styles/EstruturaSelecao.module.css"
+import styles from "../../styles/estruturaSelecao.module.css"
 
 interface MyNestedObject {
     id: number;
