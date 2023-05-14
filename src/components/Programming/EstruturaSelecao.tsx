@@ -1,15 +1,14 @@
 import styles from "../../styles/estruturaSelecao.module.css"
 
 interface MyNestedObject {
-    id: number;
-    description: string;
+    description: string
     link?: string
 }
 
 interface MyObject {
-    id: number;
-    title: string;
-    skills: MyNestedObject[];
+    id: number
+    title: string
+    skills: MyNestedObject[]
 }
 
 export default function EstruturaSelecao(props: MyObject) {
@@ -19,10 +18,10 @@ export default function EstruturaSelecao(props: MyObject) {
             <div key={props.id}>
                 <h2 className={styles.title}>{props.title}</h2>
                 <ul className={styles.listaSelecionado}>
-                    {props.skills.map((element) => (
+                    {props.skills.map((element, index) => (
                         <>
                             <a className={styles.link} href={element.link}>
-                                <li className={styles.selecionado} key={element.id}>{element.description}</li>
+                                <li className={styles.selecionado} key={index}>{element.description}</li>
                             </a>
                         </>
                     ))}

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from 'react'
 import styles from '../../../styles/subCabecalhoCorpoProgramminglanguages.module.css'
 import EstruturaSelecao from '../EstruturaSelecao'
 
@@ -8,37 +8,28 @@ const languages = [
         title: "HTML",
         skills: [
             {
-                id: 1,
                 description: "Sintaxe do HTML",
-                link: "http://localhost:3000/programming/post/1",
+                link: "/programming/post/1",
             }, {
-                id: 2,
                 description: "Estrutura do documento",
-                link: "http://localhost:3000/programming/post/2",
+                link: "/programming/post/2",
             }, {
-                id: 3,
                 description: "Tags e atributos",
-                link: "http://localhost:3000/programming/post/3",
+                link: "/programming/post/3",
             }, {
-                id: 4,
                 description: "Semântica do HTML",
-                link: "http://localhost:3000/programming/post/4",
+                link: "/programming/post/4",
             }, {
-                id: 5,
                 description: "CSS",
-                link: "http://localhost:3000/programming/post/7",
+                link: "/programming/post/7",
             }, {
-                id: 6,
                 description: "Acessibilidade",
             }, {
-                id: 7,
                 description: "SEO",
             }, {
-                id: 8,
                 description: "Responsividade",
-                link: "http://localhost:3000/programming/post/8",
+                link: "/programming/post/8",
             }, {
-                id: 9,
                 description: "Boas práticas de programação:",
             }
         ]
@@ -47,34 +38,24 @@ const languages = [
         title: "CSS",
         skills: [
             {
-                id: 1,
                 description: "Box model",
             }, {
-                id: 2,
                 description: "Seletores",
             }, {
-                id: 3,
                 description: "Propriedades CSS",
             }, {
-                id: 4,
                 description: "Layouts",
             }, {
-                id: 5,
                 description: "Posicionamento",
             }, {
-                id: 6,
                 description: "Flexbox",
             }, {
-                id: 7,
                 description: "Animações e transições",
             }, {
-                id: 8,
                 description: "Pré-processadores CSS",
             }, {
-                id: 9,
                 description: "Metodologias CSS",
             }, {
-                id: 10,
                 description: "Boas práticas de programação",
             },
         ]
@@ -83,22 +64,16 @@ const languages = [
         title: "Javascript",
         skills: [
             {
-                id: 1,
                 description: "DOM",
             }, {
-                id: 2,
                 description: "Eventos",
             }, {
-                id: 3,
                 description: "Manipulação de elementos HTML",
             }, {
-                id: 4,
                 description: "AJAX",
             }, {
-                id: 5,
                 description: "jQuery",
             }, {
-                id: 6,
                 description: "JSON",
             }
         ]
@@ -107,34 +82,24 @@ const languages = [
         title: "Typescript",
         skills: [
             {
-                id: 1,
                 description: "JavaScript",
             }, {
-                id: 2,
                 description: "Sintaxe do TypeScript",
             }, {
-                id: 3,
                 description: "Tipos de dados e declarações de tipos",
             }, {
-                id: 4,
                 description: "Interfaces e classes",
             }, {
-                id: 5,
                 description: "Módulos e namespaces",
             }, {
-                id: 6,
                 description: "Generics",
             }, {
-                id: 7,
                 description: "Decoradores",
             }, {
-                id: 8,
                 description: "Ferramentas de desenvolvimento",
             }, {
-                id: 9,
                 description: "Conhecimento de bibliotecas e frameworks",
             }, {
-                id: 10,
                 description: "Boas práticas de programação",
             }
         ]
@@ -143,25 +108,18 @@ const languages = [
         title: "Python",
         skills: [
             {
-                id: 1,
                 description: "Sintaxe básica de Python",
             }, {
-                id: 2,
                 description: "Bibliotecas e módulos padrão do Python",
             }, {
-                id: 3,
                 description: "Estruturas de dados em Python",
             }, {
-                id: 4,
                 description: "Programação orientada a objetos em Python",
             }, {
-                id: 5,
                 description: "Bibliotecas populares em Python",
             }, {
-                id: 7,
                 description: "Testes e depuração em Python",
             }, {
-                id: 8,
                 description: "Boas práticas de codificação em Python",
             }
         ]
@@ -170,112 +128,183 @@ const languages = [
         title: "Java",
         skills: [
             {
-                id: 1,
                 description: "Sintaxe básica de Java",
             }, {
-                id: 2,
                 description: "Programação orientada a objetos em Java",
             }, {
-                id: 1,
                 description: "Estruturas de dados em Java",
             }, {
-                id: 1,
                 description: "Bibliotecas padrão do Java",
             }, {
-                id: 1,
                 description: "Desenvolvimento de aplicativos da web em Java",
             }, {
-                id: 1,
                 description: "Desenvolvimento de aplicativos desktop em Java",
             }, {
-                id: 1,
                 description: "Concorrência e paralelismo em Java",
             }, {
-                id: 1,
                 description: "Testes e depuração em Java",
             }, {
-                id: 1,
                 description: "Boas práticas de codificação em Java",
             },
+        ]
+    }, {
+        id: 7,
+        title: "PHP",
+        skills: [
+            {
+                description: "Fundamentos do PHP",
+            }, {
+                description: "Orientação a objetos",
+            }, {
+                description: "Frameworks PHP",
+            }, {
+                description: "Banco de dados",
+            }, {
+                description: "HTML, CSS e JavaScript",
+            }, {
+                description: "Testes",
+            }, {
+                description: "APIs",
+            }, {
+                description: "Segurança",
+            },
+        ]
+    }, {
+        id: 8,
+        title: "C#",
+        skills: [
+            {
+                description: "Programação orientada a objetos (POO)",
+            }, {
+                description: "Frameworks e bibliotecas",
+            }, {
+                description: "Desenvolvimento de aplicações web",
+            }, {
+                description: "Banco de dados",
+            }, {
+                description: "Padrões de design",
+            }, {
+                description: "Boas práticas de codificação",
+            }
         ]
     }
 ]
 
 export default function SubCabecalhoCorpoProgramminglanguages() {
-    const [popUp1, setPopUp1] = useState(true);
-    const [popUp2, setPopUp2] = useState(false);
-    const [popUp3, setPopUp3] = useState(false);
-    const [popUp4, setPopUp4] = useState(false);
-    const [popUp5, setPopUp5] = useState(false);
-    const [popUp6, setPopUp6] = useState(false);
+    const [popUp1, setPopUp1] = useState(true)
+    const [popUp2, setPopUp2] = useState(false)
+    const [popUp3, setPopUp3] = useState(false)
+    const [popUp4, setPopUp4] = useState(false)
+    const [popUp5, setPopUp5] = useState(false)
+    const [popUp6, setPopUp6] = useState(false)
+    const [popUp7, setPopUp7] = useState(false)
+    const [popUp8, setPopUp8] = useState(false)
 
     const divStyles1 = {
         boxShadow: popUp1 ? "0px 0px 6px black" : "none",
-    };
+    }
     const divStyles2 = {
         boxShadow: popUp2 ? "0px 0px 6px black" : "none",
-    };
+    }
     const divStyles3 = {
         boxShadow: popUp3 ? "0px 0px 6px black" : "none",
-    };
+    }
     const divStyles4 = {
         boxShadow: popUp4 ? "0px 0px 6px black" : "none",
-    };
+    }
     const divStyles5 = {
         boxShadow: popUp5 ? "0px 0px 6px black" : "none",
-    };
+    }
     const divStyles6 = {
         boxShadow: popUp6 ? "0px 0px 6px black" : "none",
-      };
+    }
+    const divStyles7 = {
+        boxShadow: popUp7 ? "0px 0px 6px black" : "none",
+    }
+    const divStyles8 = {
+        boxShadow: popUp8 ? "0px 0px 6px black" : "none",
+    }
 
     function movimentoBotao1() {
-        setPopUp1(!popUp1);
-        setPopUp2(false);
-        setPopUp3(false);
-        setPopUp4(false);
-        setPopUp5(false);
-        setPopUp6(false);
-    };
+        setPopUp1(!popUp1)
+        setPopUp2(false)
+        setPopUp3(false)
+        setPopUp4(false)
+        setPopUp5(false)
+        setPopUp6(false)
+        setPopUp7(false)
+        setPopUp8(false)
+    }
     function movimentoBotao2() {
-        setPopUp1(false);
-        setPopUp2(!popUp2);
-        setPopUp3(false);
-        setPopUp4(false);
-        setPopUp5(false);
-        setPopUp6(false);
-    };
+        setPopUp1(false)
+        setPopUp2(!popUp2)
+        setPopUp3(false)
+        setPopUp4(false)
+        setPopUp5(false)
+        setPopUp6(false)
+        setPopUp7(false)
+        setPopUp8(false)
+    }
     function movimentoBotao3() {
-        setPopUp1(false);
-        setPopUp2(false);
-        setPopUp3(!popUp3);
-        setPopUp4(false);
-        setPopUp5(false);
-        setPopUp6(false);
-    };
+        setPopUp1(false)
+        setPopUp2(false)
+        setPopUp3(!popUp3)
+        setPopUp4(false)
+        setPopUp5(false)
+        setPopUp6(false)
+        setPopUp7(false)
+        setPopUp8(false)
+    }
     function movimentoBotao4() {
-        setPopUp1(false);
-        setPopUp2(false);
-        setPopUp3(false);
-        setPopUp4(!popUp4);
-        setPopUp5(false);
-        setPopUp6(false);
-    };
+        setPopUp1(false)
+        setPopUp2(false)
+        setPopUp3(false)
+        setPopUp4(!popUp4)
+        setPopUp5(false)
+        setPopUp6(false)
+        setPopUp7(false)
+        setPopUp8(false)
+    }
     function movimentoBotao5() {
-        setPopUp1(false);
-        setPopUp2(false);
-        setPopUp3(false);
-        setPopUp4(false);
-        setPopUp5(!popUp5);
-        setPopUp6(false);
-    };
+        setPopUp1(false)
+        setPopUp2(false)
+        setPopUp3(false)
+        setPopUp4(false)
+        setPopUp5(!popUp5)
+        setPopUp6(false)
+        setPopUp7(false)
+        setPopUp8(false)
+    }
     function movimentoBotao6() {
-        setPopUp1(false);
-        setPopUp2(false);
-        setPopUp3(false);
-        setPopUp4(false);
-        setPopUp5(false);
-        setPopUp6(!popUp6);
-    };
+        setPopUp1(false)
+        setPopUp2(false)
+        setPopUp3(false)
+        setPopUp4(false)
+        setPopUp5(false)
+        setPopUp6(!popUp6)
+        setPopUp7(false)
+        setPopUp8(false)
+    }
+    function movimentoBotao7() {
+        setPopUp1(false)
+        setPopUp2(false)
+        setPopUp3(false)
+        setPopUp4(false)
+        setPopUp5(false)
+        setPopUp6(false)
+        setPopUp7(!popUp7)
+        setPopUp8(false)
+    }
+    function movimentoBotao8() {
+        setPopUp1(false)
+        setPopUp2(false)
+        setPopUp3(false)
+        setPopUp4(false)
+        setPopUp5(false)
+        setPopUp6(false)
+        setPopUp7(false)
+        setPopUp8(!popUp8)
+    }
 
     return (
         <div className={styles.containerGlobal}>
@@ -295,6 +324,8 @@ export default function SubCabecalhoCorpoProgramminglanguages() {
                         <div style={divStyles4} className={styles.barras} onClick={movimentoBotao4}><div className={styles.porcentagemBarra4}></div></div>
                         <div style={divStyles5} className={styles.barras} onClick={movimentoBotao5}><div className={styles.porcentagemBarra5}></div></div>
                         <div style={divStyles6} className={styles.barras} onClick={movimentoBotao6}><div className={styles.porcentagemBarra6}></div></div>
+                        <div style={divStyles7} className={styles.barras} onClick={movimentoBotao7}><div className={styles.porcentagemBarra7}></div></div>
+                        <div style={divStyles8} className={styles.barras} onClick={movimentoBotao8}><div className={styles.porcentagemBarra8}></div></div>
                     </div>
                 </div>
                 <div className={styles.containerSkills}>
@@ -310,6 +341,10 @@ export default function SubCabecalhoCorpoProgramminglanguages() {
                         <EstruturaSelecao id={languages[4].id} title={languages[4].title} skills={languages[4].skills} />
                     }{popUp6 &&
                         <EstruturaSelecao id={languages[5].id} title={languages[5].title} skills={languages[5].skills} />
+                    }{popUp7 &&
+                        <EstruturaSelecao id={languages[6].id} title={languages[6].title} skills={languages[6].skills} />
+                    }{popUp8 &&
+                        <EstruturaSelecao id={languages[7].id} title={languages[7].title} skills={languages[7].skills} />
                     }
                 </div>
             </div >

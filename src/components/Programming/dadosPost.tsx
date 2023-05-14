@@ -14,6 +14,150 @@ type MyNestedObject = {
 
 export const contentBlog: IContentBlog[] = [
     {
+        id: '9',
+        title: "C# Codigos Flexiveis com Polimorfismo",
+        description: "Polimorfismo é a capacidade de um objeto assumir muitas formas. Em C#, isso é feito através de herança e interfaces. O polimorfismo permite que um objeto seja tratado como um objeto de sua classe base ou como um objeto de uma de suas classes derivadas. Isso significa que, em vez de escrever código separado para cada classe derivada, você pode escrever um código genérico para a classe base e usá-lo com todas as classes derivadas",
+        link: "/programming/post",
+        post: [
+            {
+                text: `Aprender polimorfismo em C# é importante porque é um conceito fundamental da programação orientada a objetos e permite criar um código mais flexível, modular e reutilizável`,
+            }, {
+                text: `Polimorfismo em C# é importante porque ajuda a escrever código mais flexível, modular e reutilizável, economizando tempo de codificação e facilitando a manutenção`,
+            }, {
+                text: `Para isso utilizamos os seguintes comandos abaixo dentro de Program.cs`,
+                code: `# Lendo c# do zero
+                ## Dotnet sdk download
+                Link: https://dotnet.microsoft.com/en-us/download
+                Terminal: dotnet new console
+                Executar codigo: dotnet run
+                `
+            }, {
+                text: `Primeiro programa inicial C# Polimorfismo`,
+                code: `using System;
+
+                namespace Funcoes
+                {
+                    \tclass Exemplos
+                    \t{
+                        \t\tstatic void Main(string[] args)
+                        \t\t{
+                            \t\t\t// Polimorfismo
+                            \t\t\tConsole.WriteLine("Sons de diferentes Tipos de Pessoas");
+                            \t\t\t// Objeto Humano Instanciado
+                            \t\t\tIPessoa humano = new Humano();
+                            \t\t\thumano.Som();
+                            \t\t\t// Objeto Ogro
+                            \t\t\tIPessoa ogro = new Ogro();
+                            \t\t\togro.Som();
+                            \t\t\t// Objeto Elfo
+                            \t\t\tIPessoa elfo = new Elfo();
+                            \t\t\telfo.Som();
+                
+                            \t\t\t// Definindo sons de diferentes pessoas 
+                            \t\t\tConsole.WriteLine("Sons aleatorios de diferentes pessoas");
+                            \t\t\t// Criando uma fabrica de pessoas aleatoriamente
+                            \t\t\tIPessoa pessoa = PessoaProducao.GetPessoa();
+                            \t\t\tConsole.WriteLine("aleatorio: 1");
+                            \t\t\t// chamando funcao interna para criar som 
+                            \t\t\tPessoaProducao.CriarSom(pessoa);
+                            \t\t\tConsole.WriteLine("aleatorio: 2");
+                            \t\t\tpessoa = PessoaProducao.GetPessoa();
+                            \t\t\t// chamando funcao interna para criar som 
+                            \t\t\tPessoaProducao.CriarSom(pessoa);
+                            \t\t\tConsole.WriteLine("aleatorio: 3");
+                            \t\t\tpessoa = PessoaProducao.GetPessoa();
+                            \t\t\t// chamando funcao interna para criar som 
+                            \t\t\tPessoaProducao.CriarSom(pessoa);
+                
+                            \t\t\tConsole.ReadKey();
+                    \t\t}
+                
+                    \t\t\t// Definindo Interface Super Types
+                    \t\t\tinterface IPessoa
+                    \t\t\t{
+                        \t\t\t\t  void Som();
+                        \t\t\t}
+                        \t\t\t// Criando a classe pessoa de forma abstrata e os metodos abstratos
+                        \t\t\tabstract class Pessoa {
+                            \t\t\t\tpublic abstract void Som();
+                            \t\t\t}
+                            \t\t\t// Classes abstratas de Tipos de Pessoas 
+                            \t\t\t// Difinicao da Classe humano e override nas classes
+                
+                            \t\t\t// Ao usar override, estamos dizendo ao compilador que o método na subclasse deve substituir o comportamento do método da superclasse, 
+                            \t\t\t// em vez de simplesmente ocultá-lo. Dessa forma, a subclasse herda a funcionalidade do método da superclasse, 
+                            \t\t\t// mas também pode adicionar ou modificar comportamentos específicos, de acordo com as necessidades da subclasse.
+                            \t\t\tclass Humano : IPessoa
+                            \t\t\t{
+                                \t\t\t\tpublic void Som()
+                                \t\t\t{
+                                    \t\t\t\tConsole.WriteLine("Inteligencia educação resolve tudo !!!");
+                                    \t\t\t}
+                                    \t\t\t}
+                                    \t\t\t// Definicao da classe Ogro
+                                    \t\t\tclass Ogro : IPessoa
+                                    \t\t\t\t{
+                                        \t\t\t\tpublic void Som()
+                                        \t\t\t{
+                                            \t\t\t\tConsole.WriteLine("Ola seres inferiores !!!");
+                                            \t\t\t}
+                                            \t\t}
+                                            \t\t// Definicao da classe Elfo
+                                            \t\tclass Elfo : IPessoa
+                                            \t\t{
+                                                \t\t\tpublic void Som()
+                                                \t\t{
+                                                    \t\t\tConsole.WriteLine("Humanos Fracos e inuteis !!!");
+                                                    \t\t}
+                        \t\t}
+                        \t\t// Criando a classe abstrata de producao de pessoas 
+                        \t\tclass PessoaProducao
+                        \t\t{
+                            \t\t\t// Definindo um metodo STATIC dentro da classe pessoa
+                            \t\t\tinternal static IPessoa GetPessoa()
+                            \t\t\t{
+                                \t\t\t\tIPessoa pessoa;
+                                \t\t\t\t// Instanciando uma classe random
+                                \t\t\t\tRandom random = new Random();
+                                \t\t\t\t// Definindo temporariamente os numeros aleatorios
+                                \t\t\t\tint temporario = random.Next(0, 3);
+                                \t\t\t\t// Verificação da criação de fabrica aleatoria utilizando switch
+                                \t\t\t\tpessoa = temporario switch
+                                \t\t\t{
+                                    \t\t\t\t0 => new Humano(),
+                                    \t\t\t\t1 => new Ogro(),
+                                    \t\t\t\t_ => new Elfo()
+                                    \t\t\t};
+                                    \t\t\t// verificação de fabrica aleatoria utilizando IF
+                                    \t\t\t// if (temporario == 0)
+                                    \t\t\t// {
+                                        \t\t\t\t//     pessoa = new Humano();
+                                        \t\t\t// }
+                                        \t\t\t// else if (temporario == 1)
+                                        \t\t\t// {
+                                            \t\t\t\t//     pessoa = new Ogro();
+                                            \t\t\t// }
+                                            \t\t\t// else
+                                            \t\t\t// {
+                                                \t\t\t\t//     pessoa = new Elfo();
+                                                \t\t\t// }
+                
+                                                \t\t\t// Retorna o objeto criado
+                                                \t\t\t\treturn pessoa;
+                                                \t\t\t}
+                                                \t\t\t// Funcao interna da classe estatica para criar som de pessoas 
+                            
+                                                \t\t\tinternal static void CriarSom(IPessoa pessoa)
+                                                \t\t\t{
+                                                    \t\t\t\tpessoa.Som();
+                                                    \t\t\t}
+                                                    \t\t}
+                    \t}
+                }
+                `
+            }
+        ]
+    }, {
         id: '8',
         title: "Responsive",
         description: "A responsividade é uma técnica de desenvolvimento de interfaces que permite que um site ou aplicativo se adapte a diferentes tamanhos de tela e dispositivos, garantindo que o conteúdo seja exibido de maneira clara e legível em todas as resoluções",
@@ -21,7 +165,7 @@ export const contentBlog: IContentBlog[] = [
         post: [
             {
                 text: `Aumento do uso de dispositivos móveis para navegar na internet, a responsividade tornou-se uma necessidade para garantir que seu site ou aplicativo seja acessível a todos os usuários`,
-            },{
+            }, {
                 text: `Se adapta às telas de diferentes tamanhos e orientações, tornando-o mais fácil de navegar e interagir com o conteúdo, para isso copie o exemplo de HTML abaixo:`,
                 code: `<!DOCTYPE html>
                 <html lang="en">
@@ -84,7 +228,7 @@ export const contentBlog: IContentBlog[] = [
     \t</div>
                 </body>
                 </html>`
-            },{
+            }, {
                 header: "Aumento do uso de dispositivos móveis para navegar na internet, a responsividade tornou-se uma necessidade para garantir que seu site ou aplicativo seja acessível a todos os usuários",
                 text: `Fornecem uma experiência de usuário melhor e mais consistente em todas as plataformas`,
                 code: `*{
@@ -212,7 +356,7 @@ export const contentBlog: IContentBlog[] = [
                 }`
             }
         ]
-    },{
+    }, {
         id: '7',
         title: "CSS",
         description: "É uma ferramenta poderosa que pode ajudá-lo a levar o design do seu website para o próximo nível",
@@ -221,7 +365,7 @@ export const contentBlog: IContentBlog[] = [
             {
                 header: "Benefícios do CSS é que ele permite separar o design e o layout do seu site do próprio conteúdo",
                 text: `isso significa que você pode fazer alterações no design do seu site sem ter que editar cada página individualmente`,
-            },{
+            }, {
                 text: `Siga abaixo conforme o codigo HTML`,
                 code: `<!DOCTYPE html>
                 <html lang="en">
@@ -265,7 +409,7 @@ export const contentBlog: IContentBlog[] = [
                   \t</div>
                 </body>
                 </html>`
-            },{
+            }, {
                 header: "Siga abaixo conforme o codigo CSS",
                 text: `Todos os passo a passo para execução estão nas aulas anterior ou no video`,
                 code: `*{
@@ -351,7 +495,7 @@ export const contentBlog: IContentBlog[] = [
                 }`
             },
         ]
-    },{
+    }, {
         id: '6',
         title: "Lendo atributos HTML com CSS",
         description: "Os atributos CSS de um elemento, é possível identificar quais estilos estão sendo aplicados e quais não estão. Isso pode ajudar a resolver problemas de layout e de compatibilidade entre diferentes navegadores",
@@ -363,13 +507,13 @@ export const contentBlog: IContentBlog[] = [
                 code: `<div class="quadrado">
                 \tQuadrado
             </div>`
-            },{
+            }, {
                 header: "Definindo dois atributos:",
                 text: `Lendo os atributos CSS, é possível modificar a aparência de um elemento em resposta a eventos, como quando o mouse passa sobre o elemento ou quando o usuário clica nele`,
                 code: `<div class="quadrado verde">
                 \tQuadrado
             </div>`
-            },{
+            }, {
                 header: "Chamando os atributos dentro do CSS sendo possivel chamar os atributos em JAVASCRIPT",
                 text: `Porem o foco é mais no HTML e um pouco de CSS mais para frente irei ensinar detalhadamente, lendo atributos HTML com CSS"`,
                 code: `<div class="quadrado verde">

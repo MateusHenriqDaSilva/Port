@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { useState } from 'react'
 import styles from '../../../styles/corpoFramework.module.css'
-import EstruturaSelecao from '../EstruturaSelecao';
+import EstruturaSelecao from '../EstruturaSelecao'
 
 const languages = [
     {
@@ -8,265 +8,269 @@ const languages = [
         title: "React",
         skills: [
             {
-                id: 1,
                 description: `Hooks "useState, useEffect, useContext"`,
             }, {
-                id: 2,
                 description: "Renderização condicional",
             }, {
-                id: 3,
                 description: "HOC (Higher-Order Component)",
             }, {
-                id: 4,
                 description: "Gerenciamento de estado",
             }, {
-                id: 5,
                 description: "SSR (Server-Side Rendering)",
             }, {
-                id: 6,
                 description: "Otimização de desempenho",
             }, {
-                id: 7,
                 description: "Testes",
             }, {
-                id: 8,
                 description: "Design Patterns",
             }
         ]
     }, {
         id: 2,
-        title: "CSS",
+        title: "Angular",
         skills: [
             {
-                id: 1,
-                description: "Box model",
+                description: "Fundamentos do JavaScript",
             }, {
-                id: 2,
-                description: "Seletores",
+                description: "TypeScript",
             }, {
-                id: 3,
-                description: "Propriedades CSS",
+                description: "Arquitetura de componentes e módulos",
             }, {
-                id: 4,
-                description: "Layouts",
+                description: "RxJS",
             }, {
-                id: 5,
-                description: "Posicionamento",
+                description: "Rotas e navegação",
             }, {
-                id: 6,
-                description: "Flexbox",
+                description: "Injeção de dependência",
             }, {
-                id: 7,
-                description: "Animações e transições",
+                description: "Testes",
             }, {
-                id: 8,
-                description: "Pré-processadores CSS",
+                description: "Animações",
             }, {
-                id: 9,
-                description: "Metodologias CSS",
+                description: "Desempenho",
             }, {
-                id: 10,
-                description: "Boas práticas de programação",
+                description: "Boas práticas",
             },
         ]
     }, {
         id: 3,
-        title: "Javascript",
+        title: "Vue.js",
         skills: [
             {
-                id: 1,
-                description: "DOM",
+                description: "JavaScript, HTML e CSS",
             }, {
-                id: 2,
-                description: "Eventos",
+                description: "Arquitetura e padrões de design",
             }, {
-                id: 3,
-                description: "Manipulação de elementos HTML",
+                description: "Ferramentas de desenvolvimento",
             }, {
-                id: 4,
-                description: "AJAX",
+                description: "Práticas recomendadas",
             }, {
-                id: 5,
-                description: "jQuery",
-            }, {
-                id: 6,
-                description: "JSON",
+                description: "Outras tecnologias relacionadas",
             }
         ]
     }, {
         id: 4,
-        title: "Typescript",
+        title: "Laravel",
         skills: [
             {
-                id: 1,
-                description: "JavaScript",
+                description: "PHP",
             }, {
-                id: 2,
-                description: "Sintaxe do TypeScript",
+                description: "HTML e CSS",
             }, {
-                id: 3,
-                description: "Tipos de dados e declarações de tipos",
+                description: "Banco de dados",
             }, {
-                id: 4,
-                description: "Interfaces e classes",
+                description: "Arquitetura e padrões de design",
             }, {
-                id: 5,
-                description: "Módulos e namespaces",
-            }, {
-                id: 6,
-                description: "Generics",
-            }, {
-                id: 7,
-                description: "Decoradores",
-            }, {
-                id: 8,
                 description: "Ferramentas de desenvolvimento",
             }, {
-                id: 9,
-                description: "Conhecimento de bibliotecas e frameworks",
-            }, {
-                id: 10,
-                description: "Boas práticas de programação",
+                description: "Práticas recomendadas",
             }
         ]
     }, {
         id: 5,
-        title: "Python",
+        title: "Django",
         skills: [
             {
-                id: 1,
-                description: "Sintaxe básica de Python",
+                description: "Python",
             }, {
-                id: 2,
-                description: "Bibliotecas e módulos padrão do Python",
+                description: "Funcionalidades",
             }, {
-                id: 3,
-                description: "Estruturas de dados em Python",
+                description: "HTML, CSS e JavaScript",
             }, {
-                id: 4,
-                description: "Programação orientada a objetos em Python",
+                description: "Banco de dados",
             }, {
-                id: 5,
-                description: "Bibliotecas populares em Python",
+                description: "Arquitetura e padrões de design",
             }, {
-                id: 7,
-                description: "Testes e depuração em Python",
-            }, {
-                id: 8,
-                description: "Boas práticas de codificação em Python",
+                description: "Ferramentas de desenvolvimento",
             }
         ]
     }, {
         id: 6,
-        title: "Java",
+        title: "Spring",
         skills: [
             {
-                id: 1,
-                description: "Sintaxe básica de Java",
+                description: "Java",
             }, {
-                id: 2,
-                description: "Programação orientada a objetos em Java",
+                description: "Funcionalidades",
             }, {
-                id: 1,
-                description: "Estruturas de dados em Java",
+                description: "Bancos de dados relacionais",
             }, {
-                id: 1,
-                description: "Bibliotecas padrão do Java",
+                description: "Arquitetura e padrões de design",
             }, {
-                id: 1,
-                description: "Desenvolvimento de aplicativos da web em Java",
+                description: "Ferramentas de desenvolvimento",
+            }
+        ]
+    }, {
+        id: 7,
+        title: "Express.js",
+        skills: [
+            {
+                description: "JavaScript",
             }, {
-                id: 1,
-                description: "Desenvolvimento de aplicativos desktop em Java",
+                description: "Node.js",
             }, {
-                id: 1,
-                description: "Concorrência e paralelismo em Java",
+                description: "Funcionalidades",
             }, {
-                id: 1,
-                description: "Testes e depuração em Java",
+                description: "Bancos de dados",
             }, {
-                id: 1,
-                description: "Boas práticas de codificação em Java",
-            },
+                description: "APIs RESTful",
+            }, {
+                description: "Ferramentas de desenvolvimento",
+            }
+        ]
+    }, {
+        id: 8,
+        title: "ASP.NET",
+        skills: [
+            {
+                description: "C#",
+            }, {
+                description: ".NET Framework",
+            }, {
+                description: "Funcionalidades",
+            }, {
+                description: "Bancos de dados relacionais",
+            }, {
+                description: "Arquitetura e padrões de design",
+            }
         ]
     }
 ]
 
 export default function CorpoFramework() {
-    const [popUp1, setPopUp1] = useState(true);
-    const [popUp2, setPopUp2] = useState(false);
-    const [popUp3, setPopUp3] = useState(false);
-    const [popUp4, setPopUp4] = useState(false);
-    const [popUp5, setPopUp5] = useState(false);
-    const [popUp6, setPopUp6] = useState(false);
+    const [popUp1, setPopUp1] = useState(true)
+    const [popUp2, setPopUp2] = useState(false)
+    const [popUp3, setPopUp3] = useState(false)
+    const [popUp4, setPopUp4] = useState(false)
+    const [popUp5, setPopUp5] = useState(false)
+    const [popUp6, setPopUp6] = useState(false)
+    const [popUp7, setPopUp7] = useState(false)
+    const [popUp8, setPopUp8] = useState(false)
 
     const divStyles1 = {
         boxShadow: popUp1 ? "0px 0px 6px black" : "none",
-    };
+    }
     const divStyles2 = {
         boxShadow: popUp2 ? "0px 0px 6px black" : "none",
-    };
+    }
     const divStyles3 = {
         boxShadow: popUp3 ? "0px 0px 6px black" : "none",
-    };
+    }
     const divStyles4 = {
         boxShadow: popUp4 ? "0px 0px 6px black" : "none",
-    };
+    }
     const divStyles5 = {
         boxShadow: popUp5 ? "0px 0px 6px black" : "none",
-    };
+    }
     const divStyles6 = {
         boxShadow: popUp6 ? "0px 0px 6px black" : "none",
-      };
+    }
+    const divStyles7 = {
+        boxShadow: popUp7 ? "0px 0px 6px black" : "none",
+    }
+    const divStyles8 = {
+        boxShadow: popUp8 ? "0px 0px 6px black" : "none",
+    }
 
     function movimentoBotao1() {
-        setPopUp1(!popUp1);
-        setPopUp2(false);
-        setPopUp3(false);
-        setPopUp4(false);
-        setPopUp5(false);
-        setPopUp6(false);
-    };
+        setPopUp1(!popUp1)
+        setPopUp2(false)
+        setPopUp3(false)
+        setPopUp4(false)
+        setPopUp5(false)
+        setPopUp6(false)
+        setPopUp7(false)
+        setPopUp8(false)
+    }
     function movimentoBotao2() {
-        setPopUp1(false);
-        setPopUp2(!popUp2);
-        setPopUp3(false);
-        setPopUp4(false);
-        setPopUp5(false);
-        setPopUp6(false);
-    };
+        setPopUp1(false)
+        setPopUp2(!popUp2)
+        setPopUp3(false)
+        setPopUp4(false)
+        setPopUp5(false)
+        setPopUp6(false)
+        setPopUp7(false)
+        setPopUp8(false)
+    }
     function movimentoBotao3() {
-        setPopUp1(false);
-        setPopUp2(false);
-        setPopUp3(!popUp3);
-        setPopUp4(false);
-        setPopUp5(false);
-        setPopUp6(false);
-    };
+        setPopUp1(false)
+        setPopUp2(false)
+        setPopUp3(!popUp3)
+        setPopUp4(false)
+        setPopUp5(false)
+        setPopUp6(false)
+        setPopUp7(false)
+        setPopUp8(false)
+    }
     function movimentoBotao4() {
-        setPopUp1(false);
-        setPopUp2(false);
-        setPopUp3(false);
-        setPopUp4(!popUp4);
-        setPopUp5(false);
-        setPopUp6(false);
-    };
+        setPopUp1(false)
+        setPopUp2(false)
+        setPopUp3(false)
+        setPopUp4(!popUp4)
+        setPopUp5(false)
+        setPopUp6(false)
+        setPopUp7(false)
+        setPopUp8(false)
+    }
     function movimentoBotao5() {
-        setPopUp1(false);
-        setPopUp2(false);
-        setPopUp3(false);
-        setPopUp4(false);
-        setPopUp5(!popUp5);
-        setPopUp6(false);
-    };
+        setPopUp1(false)
+        setPopUp2(false)
+        setPopUp3(false)
+        setPopUp4(false)
+        setPopUp5(!popUp5)
+        setPopUp6(false)
+        setPopUp7(false)
+        setPopUp8(false)
+    }
     function movimentoBotao6() {
-        setPopUp1(false);
-        setPopUp2(false);
-        setPopUp3(false);
-        setPopUp4(false);
-        setPopUp5(false);
-        setPopUp6(!popUp6);
-    };
+        setPopUp1(false)
+        setPopUp2(false)
+        setPopUp3(false)
+        setPopUp4(false)
+        setPopUp5(false)
+        setPopUp6(!popUp6)
+        setPopUp7(false)
+        setPopUp8(false)
+    }
+    function movimentoBotao7() {
+        setPopUp1(false)
+        setPopUp2(false)
+        setPopUp3(false)
+        setPopUp4(false)
+        setPopUp5(false)
+        setPopUp6(false)
+        setPopUp7(!popUp7)
+        setPopUp8(false)
+    }
+    function movimentoBotao8() {
+        setPopUp1(false)
+        setPopUp2(false)
+        setPopUp3(false)
+        setPopUp4(false)
+        setPopUp5(false)
+        setPopUp6(false)
+        setPopUp7(false)
+        setPopUp8(!popUp8)
+    }
 
     return (
         <div className={styles.containerGlobal}>
@@ -286,6 +290,8 @@ export default function CorpoFramework() {
                         <div style={divStyles4} className={styles.barras} onClick={movimentoBotao4}><div className={styles.porcentagemBarra4}></div></div>
                         <div style={divStyles5} className={styles.barras} onClick={movimentoBotao5}><div className={styles.porcentagemBarra5}></div></div>
                         <div style={divStyles6} className={styles.barras} onClick={movimentoBotao6}><div className={styles.porcentagemBarra6}></div></div>
+                        <div style={divStyles7} className={styles.barras} onClick={movimentoBotao7}><div className={styles.porcentagemBarra7}></div></div>
+                        <div style={divStyles8} className={styles.barras} onClick={movimentoBotao8}><div className={styles.porcentagemBarra8}></div></div>
                     </div>
                 </div>
                 <div className={styles.containerSkills}>
@@ -301,6 +307,10 @@ export default function CorpoFramework() {
                         <EstruturaSelecao id={languages[4].id} title={languages[4].title} skills={languages[4].skills} />
                     }{popUp6 &&
                         <EstruturaSelecao id={languages[5].id} title={languages[5].title} skills={languages[5].skills} />
+                    }{popUp7 &&
+                        <EstruturaSelecao id={languages[6].id} title={languages[6].title} skills={languages[6].skills} />
+                    }{popUp8 &&
+                        <EstruturaSelecao id={languages[7].id} title={languages[7].title} skills={languages[7].skills} />
                     }
                 </div>
             </div >

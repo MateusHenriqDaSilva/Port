@@ -105,6 +105,18 @@
     background: #618685;
 }
 
+.porcentagemBarra7 {
+    width: 60px;
+    height: 18px;
+    background: #618685;
+}
+
+.porcentagemBarra8 {
+    width: 60px;
+    height: 18px;
+    background: #618685;
+}
+
 @media only screen and (max-width: 1450px) {
     .containerGlobal {
         display: flex;
