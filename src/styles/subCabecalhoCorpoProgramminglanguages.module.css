@@ -94,27 +94,27 @@
 }
 
 .porcentagemBarra5 {
-    width: 130px;
+    width: 220px;
     height: 18px;
     background: #d6ccc2;
 }
 
 .porcentagemBarra6 {
-    width: 60px;
+    width: 230px;
     height: 18px;
-    background: #cce3de;
+    background: #03254e;
 }
 
 .porcentagemBarra7 {
-    width: 60px;
+    width: 260px;
     height: 18px;
-    background: #cce3de;
+    background: #545677;
 }
 
 .porcentagemBarra8 {
-    width: 60px;
+    width: 100px;
     height: 18px;
-    background: #cce3de;
+    background: #eb9fef;
 }
 
 @media only screen and (max-width: 1450px) {
@@ -174,7 +174,7 @@
     
     .label {
         display: flex;
-        margin-top: 20px;
+        margin-top: 15px;
         font-size: 13px;
     }
     .barras:hover {
@@ -281,7 +281,7 @@
     
     .label {
         display: flex;
-        margin-top: 20px;
+        margin-top: 15px;
         font-size: 13px;
     }
     .barras:hover {
