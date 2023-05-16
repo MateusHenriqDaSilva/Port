@@ -14,6 +14,410 @@ type MyNestedObject = {
 
 export const contentBlog: IContentBlog[] = [
     {
+        id: '12',
+        title: "C#: PARTE 1: SRP - Desvendando os segredos dos Princípios Importantes: a chave para um código magnético e irresistível. ",
+        description: "Desvendando a essência do desenvolvimento de software de elite, encontramos um acrônimo mágico chamado SOLID. Prepare-se para embarcar em uma jornada de descoberta, onde os segredos para criar sistemas robustos, flexíveis e de fácil manutenção serão revelados, Cada princípio desbloqueia novas possibilidades, aprimorando nossas habilidades como desenvolvedores e transformando nosso código em uma obra-prima técnica.",
+        link: "/programming/post",
+        post: [
+            {
+                text: `Desbravar o mundo de SOLID é como encontrar um tesouro escondido no vasto universo da programação, Cada princípio desbloqueia novas possibilidades, aprimorando nossas habilidades como desenvolvedores e transformando nosso código em uma obra-prima técnica`,
+                code: `using System;
+
+                // • Princípio de Responsabilidade Única (SRP)
+                // • Princípio Aberto/Fechado (OCP)
+                // • Princípio da Substituição de Liskov (LSP)
+                // • Princípio de Segregação de Interface (ISP)
+                // • Princípio de Inversão de Dependência (DIP) 
+                
+                // Princípio de Responsabilidade Única (SRP) - SRP EXAMPLE: 
+
+                // Criar uma classe monstro onde monstro tem uma caixa de detalhes, tem seu nivel de conhecimento, e um ID Auto-Generativo
+                
+                class Monstro
+                {
+                    \tpublic string id;
+                    \tpublic string primeiroNome;
+                    \tpublic string segundoNome;
+                    \tpublic double experiencia;
+                
+                    \tpublic void gerarMonstro(string primeiroNome, string segundoNome, double experiencia)
+                    \t{
+                        \t\tthis.primeiroNome = primeiroNome;
+                        \t\tthis.segundoNome = segundoNome;
+                        \t\tthis.experiencia = experiencia;
+                        \t\tid = "Não gerar ID";
+                    \t}
+                
+                    \tpublic void mostrarDetalhes()
+                    \t{
+                        \t\tConsole.WriteLine($"O nome do Monstro: {primeiroNome} {segundoNome}");
+                        \t\tConsole.WriteLine($"Experiencia do monstro: {experiencia}");
+                    \t}
+                
+                    \tpublic string checarNivelDoMonstro()
+                    \t{
+                        \t\tif (experiencia < 1000)
+                            \t\t\treturn "Facil";
+                        \t\telse if (experiencia > 1000 && experiencia < 10000)
+                            \t\t\treturn "Medio";
+                        \t\telse
+                            \t\t\treturn "Dificil";
+                        \t\t}
+                
+                    \t\tpublic string gerarId()
+                    \t\t{
+                        \t\t\tint random = new Random().Next(1000);
+                        \t\t\tid = string.Concat(primeiroNome[0], random);
+                        \t\t\treturn id;
+                    \t\t}
+                \t}
+                
+                
+                
+                \t// --------------------------------------------------------------------------------------------------------------------------
+                \t// Exemplo de SRP 2
+                \tclass Monstro2
+                \t{
+                    \t\tpublic string id;
+                    \t\tpublic string primeiroNome;
+                    \t\tpublic string segundoNome;
+                    \t\tpublic double experiencia;
+                
+                    \t\tpublic void gerarMonstro(string primeiroNome, string segundoNome, double experiencia)
+                    \t\t{
+                        \t\t\tthis.primeiroNome = primeiroNome;
+                        \t\t\tthis.segundoNome = segundoNome;
+                        \t\t\tthis.experiencia = experiencia;
+                        \t\t\tid = "Não gerar ID";
+                    \t\t}
+                
+                    \t\tpublic void mostrarDetalhes()
+                    \t\t{
+                        \t\t\tConsole.WriteLine($"O nome do Monstro: {primeiroNome} {segundoNome}");
+                        \t\t\tConsole.WriteLine($"Experiência do monstro: {experiencia}");
+                    \t\t}
+                \t}
+                
+                \tclass ChecarNivel
+                \t{
+                    \t\tpublic string checarNivelDoMonstro(double experiencia)
+                    \t\t\t{
+                        \t\t\t\tif (experiencia < 1000)
+                        \t\t\t\t\treturn "Facil";
+                        \t\t\t\telse if (experiencia > 1000 && experiencia < 10000)
+                            \t\t\t\t\treturn "Medio";
+                        \t\t\t\telse
+                            \t\t\t\t\treturn "Dificil";
+                        \t\t\t\t}
+                    \t\t\t}
+                
+                \t\t\tclass GerarId
+                \t\t\t{
+                \t\t\t\tpublic string gerarId(string primeiroNome)
+                \t\t\t{
+                \t\t\t\tint random = new Random().Next(1000);
+                \t\t\t\tstring id = string.Concat(primeiroNome[0], random);
+                \t\t\t\treturn id;
+                \t\t\t}
+                
+                \t\t\tpublic void mostrarDetalhes(string primeiroNome, string segundoNome, double experiencia)
+                \t\t\t{
+                    \t\t\t\tConsole.WriteLine($"O nome do Monstro: {primeiroNome} {segundoNome}");
+                    \t\t\t\tConsole.WriteLine($"Experiencia do monstro: {experiencia}");
+                    \t\t\t}
+                    \t\t}
+                
+                    \t\tclass MapearMonstro
+                    \t\t\t{
+                        \t\t\t\tpublic static void mostrarMonstroDetalhes(Monstro2 monstro)
+                        \t\t\t{
+                            \t\t\t\tmonstro.mostrarDetalhes();
+                            \t\t\t}
+                
+                            \t\t\tpublic static void mostrarMonstroId(Monstro2 monstro)
+                            \t\t\t{
+                                \t\t\t\tGerarId idGerador = new GerarId();
+                                \t\t\t\tstring monstroId = idGerador.gerarId(monstro.primeiroNome);
+                                \t\t\t\tConsole.WriteLine($"O monstro id: {monstroId}");
+                                \t\t\t}
+                
+                                \t\t\tpublic static void mostrarNivelMonstro(Monstro2 monstro)
+                                \t\t\t{
+                                    \t\t\t\tChecarNivel checarNivel = new ChecarNivel();
+                                    \t\t\t\tstring nivel = checarNivel.checarNivelDoMonstro(monstro.experiencia);
+                                    \t\t\t\tConsole.WriteLine($"Esse monstro é: {nivel}");
+                                    \t\t\t}
+                                    \t\t}
+                
+                                    \t\tclass Program
+                                    \t\t{
+                                        \t\t\tstatic void Main(string[] args)
+                                        \t\t{
+                                            \t\t\ttry
+                                            \t\t{
+                                                \t\t// Exemplo 1
+                                                \t\tConsole.WriteLine("*** Demonstracao do SRP ***");
+                                                \t\tMonstro tartaruga = new Monstro();
+                                                \t\ttartaruga.gerarMonstro("Tartaruga", "Pequena", 200);
+                                                \t\ttartaruga.mostrarDetalhes();
+                                                \t\tstring monstroId = tartaruga.gerarId();
+                                                \t\tConsole.WriteLine($"O monstro id: {monstroId}");
+                                                \t\tConsole.WriteLine($"Essa tartaruga tem a experiencia: {tartaruga.checarNivelDoMonstro()}");
+                                                \t\tConsole.WriteLine("*********");
+                                                \t\tMonstro tartarugaMedia = new Monstro();
+                                                \t\ttartarugaMedia.gerarMonstro("tartaruga", "media", 700);
+                                                \t\ttartarugaMedia.mostrarDetalhes();
+                                                \t\tstring tartarugaMediaId = tartarugaMedia.gerarId();
+                                                \t\tConsole.WriteLine($"A tartaruga media tem a experiencia: {tartarugaMedia.checarNivelDoMonstro()}");
+                                                \t\t// Exemplo 2
+                                                \t\tConsole.WriteLine("*** Demonstracao do SRP MAIN 2***");
+                                                \t\tMonstro2 tartaruga1 = new Monstro2();
+                                                \t\ttartaruga1.gerarMonstro("Tartaruga", "Pequena", 200);
+                                                \t\tMapearMonstro.mostrarMonstroDetalhes(tartaruga1);
+                                                \t\tMapearMonstro.mostrarMonstroId(tartaruga1);
+                                                \t\tMapearMonstro.mostrarNivelMonstro(tartaruga1);
+                                                \t\tConsole.WriteLine("*********");
+                                                \t\tMonstro2 tartarugaMedia2 = new Monstro2();
+                                                \t\ttartarugaMedia2.gerarMonstro("Tartaruga", "Média", 5000);
+                                                \t\tMapearMonstro.mostrarMonstroDetalhes(tartarugaMedia2);
+                                                \t\tMapearMonstro.mostrarMonstroId(tartarugaMedia2);
+                                                \t\tMapearMonstro.mostrarNivelMonstro(tartarugaMedia2);
+                                                \t}
+                                                \tcatch (Exception ex)
+                                                \t{
+                                                    \t\tConsole.WriteLine($"Error: {ex}");
+                                                    \t}
+                    }
+                }
+                `
+            },
+        ]
+    }, {
+        id: '11',
+        title: "C#: O poderoso impacto de um simples comentário transformador.",
+        description: "Compreensão e manutenção do código, Colaboração e trabalho em equipe, Legibilidade e clareza, Documentação, Depuração e resolução de problemas",
+        link: "/programming/post",
+        post: [
+            {
+                text: `Utilização de comentários na programação é essencial para melhorar a compreensão, a colaboração, a legibilidade e a manutenção do código`,
+                code: `// Testando se 2 é maior que 3?
+                Console.WriteLine(2 > 3);
+                /* Usando multi linha 
+                -----------------
+                para comentarios */
+                
+                // Example 1
+                
+                /* Criando a classe Jogador que contem 3 atributos vida e saude e leitura 
+                Criando a classe Jogador que contem 2 metodos RecuperarVida e RecuperarEstamina*/
+                
+                class Jogador
+                {
+                    \t/* readonly é garantir a imutabilidade de um campo após sua 
+                    \tatribuição inicial. Isso pode ser útil em situações 
+                    \tem que você deseja ter um valor constante ou que não 
+                    \tpode ser modificado após a inicialização */
+                    \treadonly double vida;
+                    \treadonly double saude;
+                    \treadonly string nome = "Leitura";
+                
+                    \tpublic RecuperarVida(double vida)
+                    \t{
+                        \t\tvida = vida + 20;
+                        \t}
+                
+                        \tpublic RecuperarSaude(double saude)
+                        \t{
+                            \t\tsaude = saude + 20;
+                            \t}
+                
+                            \tpublic RecuperarVidaESaude(double vida, double saude)
+                            \t{
+                                \t\tsaude = saude + 10;
+                                \t\tvida = vida + 10;
+                                \t}
+                
+                                \tpublic Saudacao()
+                                \t{
+                                    \t\tConsole.WriteLine($"{nome}: \n Ola, Player2");
+                                    \t}
+                
+                                    \tpublic Motivar()
+                                    \t{
+                                        \t\tConsole.WriteLine($"{nome}: Junto iremos vencer");
+                                        \t\tConsole.WriteLine("Pra cima !!!");
+                                        \t}
+                }
+                
+                class Program
+                {
+                    \tstatic void Main(string[] args)
+                    \t{
+                        \t\ttry
+                        \t\t\t{
+                            \t\t\t\tConsole.WriteLine("Enchendo a Vida");
+                            \t\t\t\t// Instanciando o Objeto vida
+                            \t\t\t\tJogador player1 = new();
+                            \t\t\t\t// Chamada do metodo recuperar vida no player1
+                            \t\t\t\tplayer1.RecuperarVida();
+                            \t\t\t\t// Chamada do metodo recuperar saude no player1
+                            \t\t\t\tConsole.WriteLine("Enchendo a Saude");
+                            \t\t\t\tplayer1.RecuperarSaude();
+                            \t\t\t\t// Chamada do metodo recuperar vida e saude no player1
+                            \t\t\t\tConsole.WriteLine("Enchendo a Saude e Vida");
+                            \t\t\t\tplayer1.RecuperarVidaESaude();
+                            \t\t\t\t// Chamada do metodo Saudar
+                            \t\t\t\tplayer1.Saudacao();
+                            \t\t\t\t// Chamada do metodo Motivar
+                            \t\t\t\tplayer1.motivar();
+                            \t\t\t}
+                            \t\tcatch (Exception ex)
+                            \t\t{
+                                \t\t\tConsole.WriteLine($"Error: {ex}");
+                                \t\t}
+                                \t}
+                }`
+            },
+        ]
+    }, {
+        id: '10',
+        title: "C# Classes abstratas ou interface?",
+        description: "Classes abstratas e interfaces são conceitos fundamentais na programação orientada a objetos. Ambos são mecanismos para definir contratos ou estruturas que as classes devem seguir, mas existem diferenças importantes entre eles",
+        link: "/programming/post",
+        post: [
+            {
+                text: `classe abstrata é uma classe que não pode ser instanciada diretamente, ou seja, você não pode criar objetos dessa classe. Ela serve como um modelo para outras classes que estendem ou herdam dela`,
+            }, {
+                text: `interface é uma lista de métodos abstratos, ou seja, métodos sem implementação. Ela define um contrato que as classes devem seguir, especificando os métodos que elas devem implementar`,
+                code: `# Lendo c# do zero
+                ## Dotnet sdk download
+                Link: https://dotnet.microsoft.com/en-us/download
+                Terminal: dotnet new console
+                Executar codigo: dotnet run
+                `
+            }, {
+                text: `classes abstratas são usadas quando você quer fornecer uma implementação base comum para um conjunto de classes relacionadas, permitindo que elas estendam essa funcionalidade. As interfaces, por sua vez, são usadas para definir contratos que as classes devem seguir, independentemente de sua hierarquia, permitindo uma maior flexibilidade na implementação de comportamentos`,
+                code: `
+                using Juizes;
+
+// Definindo namespace
+namespace Futebols
+{
+    \tabstract class Futebol
+    \t{
+        \t\tprotected string nomeJogador = string.Empty;
+        \t\tprotected Juiz juiz;
+        \t\tprotected string registrarNumero = string.Empty;
+        \t\tpublic abstract void SetComportamento(Juiz juiz);
+        \t\tpublic abstract void DisplayDetalhes();
+        \t}
+
+        \tclass Carrinho : Futebol
+        \t{
+            \t\tpublic Carrinho(string id)
+            \t{
+                \t\tregistrarNumero = id;
+                \t\tnomeJogador = "Jogador";
+                \t\tjuiz = new FaltaSemPoderes();
+                \t}
+
+                \tpublic override void SetComportamento(Juiz juiz)
+                \t{
+                    \t\tthis.juiz = juiz;
+                    \t}
+
+                    \tpublic override void DisplayDetalhes()
+                    \t{
+                        \t\tConsole.WriteLine("Carrinho: " + registrarNumero);
+                        \t\tjuiz.Apitar();
+                        \t}
+                        \t}
+
+                        \tclass Sobrenatural : Futebol
+                        \t{
+                            \t\tpublic Sobrenatural(string id)
+                            \t\t{
+                                \t\t\tregistrarNumero = id;
+                                \t\t\tnomeJogador = "jogador";
+                                \t\t\tjuiz = new FaltaComPoder();
+                                \t\t}
+
+                                \t\tpublic override void SetComportamento(Juiz juiz)
+                                \t\t{
+                                    \t\t\tthis.juiz = juiz;
+                                    \t\t}
+
+                                    \t\tpublic override void DisplayDetalhes()
+                                    \t\t{
+                                        \t\t\tConsole.WriteLine("Sobrenatural: " + registrarNumero);
+                                        \t\t\tjuiz.Apitar();
+                                        \t\t}
+                                        \t}
+}
+
+namespace Juizes
+{
+    \tinterface Juiz
+    \t\t{
+        \t\t\tvoid Apitar();
+        \t\t}
+
+        \t\tclass FaltaSemPoderes : Juiz
+        \t\t{
+            \t\tpublic void Apitar()
+            \t\t\t{
+                \t\t\t\tConsole.WriteLine("Cometeu falta sem usar poder");
+                \t\t\t}
+                \t\t}
+
+                \t\tclass FaltaComPoder : Juiz
+                \t\t{
+                    \t\t\tpublic void Apitar()
+                    \t\t{
+                        \t\t\tConsole.WriteLine("Cometeu falta com poder");
+                        \t\t}
+                        \t}
+}
+
+class Program
+{
+    \tstatic void Main(string[] args)
+    \t{
+        \t\ttry
+        \t\t{
+            \t\t\tConsole.WriteLine("***Comecou o jogo de Futebol Sobrenatural***");
+            \t\t\tConsole.WriteLine("Using a Carrinho");
+            \t\t\tFutebols.Futebol futebol = new Futebols.Carrinho("B001");
+            \t\t\tfutebol.DisplayDetalhes();
+            \t\t\tConsole.WriteLine("****************");
+            \t\t\tJuizes.Juiz Apitar = new Juizes.FaltaSemPoderes();
+            \t\t\tConsole.WriteLine("Definindo compotamento do juiz e verificando no painel falta sem poder");
+            \t\t\tfutebol.SetComportamento(Apitar);
+            \t\t\tfutebol.DisplayDetalhes();
+            \t\t\tConsole.WriteLine("****************");
+            \t\t\tConsole.WriteLine("Usando falta com poderes");
+            \t\t\tfutebol = new Futebols.Sobrenatural("A002");
+            \t\t\tConsole.WriteLine("Definindo compotamento do juiz e verificando no painel falta com poder");
+            \t\t\tApitar = new Juizes.FaltaSemPoderes();
+            \t\t\tfutebol.SetComportamento(Apitar);
+            \t\t\tfutebol.DisplayDetalhes();
+            \t\t\tConsole.WriteLine("****************");
+            \t\t\tConsole.WriteLine("Definindo compotamento do juiz e verificando no painel falta com poder");
+            \t\t\tApitar = new Juizes.FaltaComPoder();
+            \t\t\tfutebol.SetComportamento(Apitar);
+            \t\t\tfutebol.DisplayDetalhes();
+            \t\t\tConsole.WriteLine("****************");
+        \t\t}
+        \t\tcatch (Exception ex)
+        \t\t{
+            \t\t\tConsole.WriteLine($"Error: {ex}");
+            \t\t}
+    \t}
+}
+                `
+            }
+        ]
+    }, {
         id: '9',
         title: "C# Codigos Flexiveis com Polimorfismo",
         description: "Polimorfismo é a capacidade de um objeto assumir muitas formas. Em C#, isso é feito através de herança e interfaces. O polimorfismo permite que um objeto seja tratado como um objeto de sua classe base ou como um objeto de uma de suas classes derivadas. Isso significa que, em vez de escrever código separado para cada classe derivada, você pode escrever um código genérico para a classe base e usá-lo com todas as classes derivadas",
