@@ -14,6 +14,165 @@ type MyNestedObject = {
 
 export const contentBlog: IContentBlog[] = [
     {
+        id: '13',
+        title: "C#: PARTE 2: OCP - O Princípio Aberto/Fechado (Open/Closed Principle - OCP)",
+        description: "é um dos princípios do SOLID, um conjunto de princípios de design de software que visam promover a construção de código mais modular, extensível e de fácil manutenção.",
+        link: "/programming/post",
+        post: [
+            {
+                text: `Um produto mais flexível, fácil de manter e adaptável às necessidades dos clientes. Você mantém o softwate fechado para modificações e aberto para extensões, permitindo que ele evolua e cresça sem comprometer sua integridade e qualidade`,
+                code: `using System;
+                using System.Collections.Generic;
+                
+                // • Princípio de Responsabilidade Única (SRP)
+                // • Princípio Aberto/Fechado (OCP)
+                // • Princípio da Substituição de Liskov (LSP)
+                // • Princípio de Segregação de Interface (ISP)
+                // • Princípio de Inversão de Dependência (DIP) 
+                
+                /*é um dos princípios do SOLID, um conjunto de princípios de design de software que visam promover a construção de código mais modular, extensível e de fácil manutenção.
+                
+                O OCP estabelece que uma entidade de software (uma classe, 
+                módulo, função, etc.) deve estar aberta para extensão, mas 
+                fechada para modificação. Em outras palavras, o comportamento de
+                uma entidade deve poder ser estendido sem a necessidade de alterar 
+                seu código fonte*/
+                
+                // OCP EXAMPLE: 
+                // Criar uma classe monstro onde monstro tem uma caixa de detalhes, tem seu nivel de conhecimento, e um ID Auto-Generativo
+                
+                class Program
+                {
+                    \tstatic void Main(string[] args)
+                    \t{
+                        \t\ttry
+                        \t\t{
+                            \t\t\tConsole.WriteLine("*** Demonstração do OCP ***");
+                            \t\t\tList<Jogador> guerreiroJogadores = Ajudante.CriarListaDeJogadorArqueiro();
+                            \t\t\tList<Jogador> arqueiroJogadores = Ajudante.CriarListaDeJogadorGuerreiro();
+                            \t\t\tConsole.WriteLine("=== Resultados ===");
+                            \t\t\tforeach (Jogador jogador in guerreiroJogadores)
+                            \t\t\t{
+                                \t\t\t\tConsole.WriteLine(jogador);
+                                \t\t\t}
+                                \t\t\tforeach (Jogador jogador in arqueiroJogadores)
+                                \t\t\t{
+                                    \t\t\t\tConsole.WriteLine(jogador);
+                                    \t\t\t}
+                                    \t\t\t// Para jogadores guerreiros
+                                    \t\t\tIDecidirVocacao decidirJogador = new DecidirVocacaoGuerreiro();
+                                    \t\t\tforeach (Jogador jogador in guerreiroJogadores)
+                                    \t\t\t{
+                                        \t\t\t\tdecidirJogador.EscolherVocacao(jogador);
+                                        \t\t\t}
+                                        \t\t\t// Para jogadores arqueiros
+                                        \t\t\tdecidirJogador = new DecidirVocacaoArqueiro();
+                                        \t\t\tforeach (Jogador jogador in arqueiroJogadores)
+                                        \t\t\t{
+                                            \t\t\t\tdecidirJogador.EscolherVocacao(jogador);
+                                            \t\t\t}
+                                            \t\t}
+                                            \t\tcatch (Exception ex)
+                                            \t\t{
+                                                \t\t\tConsole.WriteLine($"Error: {ex}");
+                                                \t\t}
+                    \t}
+                }
+                
+                class Jogador
+                {
+                    \tinternal string nome;
+                    \tinternal string registrarNumero;
+                    \tinternal double nivel;
+                    \tinternal string vocacao;
+                
+                    \tpublic Jogador(string nome, string registrarNumero, double nivel, string vocacao)
+                    \t{
+                        \t\tthis.nome = nome;
+                        \t\tthis.registrarNumero = registrarNumero;
+                        \t\tthis.nivel = nivel;
+                        \t\tthis.vocacao = vocacao;
+                        \t}
+                
+                        \tpublic override string ToString()
+                        \t{
+                            \t\treturn $@"
+                            \t\tNome: {nome}
+                            \t\tRegistrar número: {registrarNumero}
+                            \t\tNível: {nivel}
+                            \t\tVocação: {vocacao}
+                            \t\t***********
+                            \t\t";
+                            \t}
+                }
+                
+                interface IDecidirVocacao
+                {
+                    \tvoid EscolherVocacao(Jogador jogador);
+                }
+                
+                class DecidirVocacaoArqueiro : IDecidirVocacao
+                {
+                    \tpublic void EscolherVocacao(Jogador jogador)
+                    \t{
+                        \t\tif (jogador.vocacao == "arqueiro")
+                        \t\t{
+                            \t\t\tif (jogador.nivel > 20)
+                            \t\t\t{
+                                \t\t\t\tConsole.WriteLine($"{jogador.registrarNumero} recebeu a vocação Arqueiro especialista em bestas");
+                                \t\t\t}
+                                \t\t}
+                                \t}
+                }
+                
+                \tclass DecidirVocacaoGuerreiro : IDecidirVocacao
+                \t{
+                    \t\tpublic void EscolherVocacao(Jogador jogador)
+                    \t\t{
+                        \t\t\tif (jogador.vocacao == "guerreiro")
+                        \t\t\t{
+                            \t\t\t\tif (jogador.nivel > 20)
+                            \t\t\t{
+                                \t\t\t\tConsole.WriteLine($"{jogador.registrarNumero} recebeu a distinção de guerreiro especialista em espadas de 2 mãos");
+                                \t\t\t}
+                                \t\t}
+                                \t}
+                }
+                
+                class Ajudante
+                {
+                    \tpublic static List<Jogador> CriarListaDeJogadorArqueiro()
+                    \t{
+                        \t\tJogador alienados = new Jogador("Alienados", "001", 20, "guerreiro");
+                        \t\tJogador springs = new Jogador("Springs", "002", 40, "guerreiro");
+                
+                        \t\tList<Jogador> jogadores = new List<Jogador>
+                        \t\t{
+                            \t\talienados,
+                            \t\tsprings
+                            \t\t};
+                            \t\treturn jogadores;
+                            \t}
+                
+                            \tpublic static List<Jogador> CriarListaDeJogadorGuerreiro()
+                            \t{
+                                \t\tJogador clonados = new Jogador("Clonados", "003", 20, "arqueiro");
+                                \t\tJogador revelados = new Jogador("Revelados", "004", 40, "arqueiro");
+                
+                                \t\tList<Jogador> jogadores = new List<Jogador>
+                                \t\t{
+                                    \t\t\tclonados,
+                                    \t\t\trevelados
+                                    \t\t\t};
+                
+                                    \t\treturn jogadores;
+                    \t}
+                }
+                `
+            },
+        ]
+    },
+    {
         id: '12',
         title: "C#: PARTE 1: SRP - Desvendando os segredos dos Princípios Importantes: a chave para um código magnético e irresistível. ",
         description: "Desvendando a essência do desenvolvimento de software de elite, encontramos um acrônimo mágico chamado SOLID. Prepare-se para embarcar em uma jornada de descoberta, onde os segredos para criar sistemas robustos, flexíveis e de fácil manutenção serão revelados, Cada princípio desbloqueia novas possibilidades, aprimorando nossas habilidades como desenvolvedores e transformando nosso código em uma obra-prima técnica.",
