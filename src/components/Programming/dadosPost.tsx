@@ -14,6 +14,128 @@ type MyNestedObject = {
 
 export const contentBlog: IContentBlog[] = [
     {
+        id: '17',
+        title: "O princípio DRY sugere que cada parte do conhecimento em um sistema de software deve ter uma representação única, uma única fonte confiável e autoritativa.",
+        description: "DRY Principle enfatiza a importância de evitar a repetição desnecessária de informações ou lógica em um programa. Quando você repete código em várias partes do seu sistema, aumenta a complexidade, a dificuldade de manutenção e o risco de introduzir erros. Além disso, torna o código mais difícil de ser alterado e atualizado no futuro.",
+        link: "/programming/post",
+        post: [
+            {
+                text: `O princípio DRY nos ensina que, na programação e em muitos aspectos da vida, evitar a repetição desnecessária nos torna mais eficientes, nos poupa tempo e nos permite criar com consistência. O DRY é como um molde mágico que nos ajuda a esculpir nossas criações com maestria, economizando esforços e nos permitindo brilhar em tudo o que fazemos!`,
+            }, {
+                text: "Quando a sede da simplicidade encontra a elegância da eficiência, nasce o poder transformador do princípio Dry.",
+                code: `using System;
+
+                class Program
+                {
+                    \tstatic void Main(string[] args)
+                    \t{
+                        \t\ttry
+                        \t\t{
+                            \t\t\tConsole.WriteLine("--- Demonstração do princípio DRY ---");
+                            \t\t\tGameInformacao gameInformacao = new("SuperGame");
+                            \t\t\tGamePreco gamePreco = new();
+                            \t\t\tsuperGame.MostrarPreco();
+                            \t\t\tGame game = new(gameInformacao, gamePreco);
+                            \t\t\tgame = new Game(gameInformacao, gamePreco);
+                            \t\t\tgame.SobreJogo();
+                            \t\t\tgame.MostrarPreco();
+                            \t\t\tgame.MostrarPrecoComDesconto();
+                            \t\t\tsuperGame.MostrarPrecoComDesconto();
+                            \t\t\tsuperGame.MostrarPrecoAntesDoDesconto();
+                        \t\t}
+                        \t\tcatch (Exception ex)
+                        \t\t{
+                            \t\t\tConsole.WriteLine($"mensagem {ex}");
+                        \t\t}
+                    \t}
+                }
+                
+                public class GameInformacao
+                {
+                    \treadonly string empresaNome { get; set; }
+                    \treadonly string gameNome { get; set; }
+                    \treadonly string version { get; set; }
+                    \treadonly double anosNoMercado { get; set; }
+                
+                    \tpublic GameInformacao(string gameName)
+                    \t{
+                        \t\tempresaNome = "SuperGame da empresa MDJV";
+                        \t\tgameNome = "SuperGame";
+                        \t\tversion = "1.0";
+                        \t\tanosNoMercado = 10;
+                    \t}
+                
+                    \tpublic void MostrarPrecoComDesconto()
+                    \t{
+                        \t\tConsole.WriteLine("\nDetalhes de preço do jogo SuperGame da empresa MDJV:");
+                        \t\tConsole.WriteLine($"Versão: 1.0\nPreço: {atualPreco}");
+                    \t}
+                
+                    \tpublic void SobreJogo()
+                    \t{
+                        \t\tConsole.WriteLine($"\n Game name: {gameNome}");
+                        \t\tConsole.WriteLine($"Ano no mercado: {anosNoMercado}");
+                        \t\tConsole.WriteLine($"version ocorrencia: {version}");
+                        \t\tConsole.WriteLine($"essa é a compania {empresaNome}");
+                    \t}
+                    public void MostrarPrecoAntesDoDesconto()
+                    {
+                        \tConsole.WriteLine("\nDetalhes de preço do jogo SuperGame da empresa MDJV:");
+                        \tConsole.WriteLine("Desconto aplicado:");
+                        \tConsole.WriteLine($"Jogo: {gameNome}\nVersão: {version} \nDesconto: {descontoPreco}");
+                    }
+                }
+                
+                class GamePreco
+                {
+                    \tpublic double Preco { get; set; }
+                    \tpublic double DescontoPreco { get; set; }
+                    \tpublic void MostrarPreco()
+                    \t{
+                        \t\tPreco = 1000;
+                        \t\tdescontoPreco = 800;
+                    \t}
+                }
+                
+                class Game
+                {
+                    \treadonly string empresaNome;
+                    \treadonly string gameNome;
+                    \treadonly double minimoIdade;
+                    \treadonly string version;
+                    \treadonly double atualPreco;
+                    \treadonly double descontoPreco;
+                    \tpublic Game(GameInformacao gameInformacao, GamePreco gamePreco)
+                    \t{
+                        \t\tempresaNome = gameInformacao.empresaNome;
+                        \t\tgameNome = gameInformacao.gameNome;
+                        \t\tversion = gameInformacao.version;
+                        \t\tanosNoMercado = gameInformacao.minimoIdade;
+                        \t\tatualPreco = gamePreco.Preco;
+                        \t\tdescontoPreco = gamePreco.DescontoPreco;
+                    \t}
+                
+                    \tpublic void SobreOGame(){
+                        \t\tConsole.WriteLine($"Game name: {gameNome}");
+                        \t\tConsole.WriteLine($"Anos da empresa: {anosNoMercado}");
+                        \t\tConsole.WriteLine($"Versão: {versao}");
+                        \t\tConsole.WriteLine($"Nome da empresa: {empresaNome}");
+                    \t}
+                
+                    \tpublic void mostrarPreco(){
+                        \t\tConsole.WriteLine($"{empresaNome} {gameNome} preco detalhes: ");
+                    \t}
+                
+                    \tpublic void MostrarPrecoComDesconto(){
+                        \t\tConsole.WriteLine($"\n {empresaNome} oferta de desconto BlackFriday");
+                        \t\tConsole.WriteLine($"\n Detalhes do preco com desconto");
+                        \t\tConsole.WriteLine($"\n {gameNome}  versao: {versao} Desconto Preco: {descontoPreco} ");
+                    \t}
+                }
+                `
+            }
+        ]
+    }, {
         id: '16',
         title: "C# PARTE 5: Princípio da Inversão de Dependência - DIP",
         description: "DIP é um princípio da programação orientada a objetos que estabelece que os módulos de alto nível não devem depender diretamente dos módulos de baixo nível. Em vez disso, ambos devem depender de abstrações",
@@ -74,8 +196,7 @@ export const contentBlog: IContentBlog[] = [
                 }`
             },
         ]
-    },
-    {
+    }, {
         id: '15',
         title: "C#: PARTE 4: ISP é um princípio da programação orientada a objetos que promove a divisão de interfaces em partes menores e coesas",
         description: "O ISP declara que as interfaces devem ser específicas para os requisitos de cada cliente, evitando que as classes dependam de métodos que não são relevantes para elas. Em vez de ter uma única interface abrangente que abarque todos os métodos possíveis, o ISP incentiva a criação de várias interfaces mais especializadas",
@@ -84,88 +205,88 @@ export const contentBlog: IContentBlog[] = [
             {
                 text: `Imagine que você está montando um quebra-cabeça incrível com várias peças. O Princípio da Segregação de Interfaces (ISP) é como dividir as peças em conjuntos menores e temáticos, para que você possa escolher apenas os conjuntos de peças que se encaixam no seu quebra-cabeça e descartar as peças que não são relevantes. Dessa forma, você evita bagunça, economiza tempo e cria uma imagem perfeita do seu quebra-cabeça, sem se preocupar com peças fora do lugar.`,
                 code: `using System;
-using System.Collections.Generic;
+                        using System.Collections.Generic;
 
-interface IMagia
-{
-    \tvoid DarMagia();
-}
+                        interface IMagia
+                        {
+                            \tvoid DarMagia();
+                        }
 
-interface ICanalizarMagia
-{
-    \tvoid CanalizarMagia();
-}
+                        interface ICanalizarMagia
+                        {
+                            \tvoid CanalizarMagia();
+                        }
 
-interface IEncherVida
-{
-    \tvoid EncherVida();
-}
+                        interface IEncherVida
+                        {
+                            \tvoid EncherVida();
+                        }
 
-class EncherMetadeDaVida : IEncherVida
-{
-    \tpublic void EncherVida()
-    \t{
-        \t\tConsole.WriteLine("Recuperando metade da vida");
-    \t}
-}
+                        class EncherMetadeDaVida : IEncherVida
+                        {
+                            \tpublic void EncherVida()
+                            \t{
+                                \t\tConsole.WriteLine("Recuperando metade da vida");
+                            \t}
+                        }
 
-class EncherVidaToda : IEncherVida
-{
-    \tpublic void EncherVida()
-    \t{
-        \t\tConsole.WriteLine("Recuperando a vida toda");
-    \t}
-}
+                        class EncherVidaToda : IEncherVida
+                        {
+                            \tpublic void EncherVida()
+                            \t{
+                                \t\tConsole.WriteLine("Recuperando a vida toda");
+                            \t}
+                        }
 
-class MagiaAvancada : IMagia, ICanalizarMagia
-{
-    \tpublic void DarMagia()
-    \t{
-        \t\tConsole.WriteLine("Usando magia avançada");
-    \t}
+                        class MagiaAvancada : IMagia, ICanalizarMagia
+                        {
+                            \tpublic void DarMagia()
+                            \t{
+                                \t\tConsole.WriteLine("Usando magia avançada");
+                            \t}
 
-    \tpublic void CanalizarMagia()
-    \t{
-        \t\tConsole.WriteLine("Canalizando magia");
-    \t}
-}
+                            \tpublic void CanalizarMagia()
+                            \t{
+                                \t\tConsole.WriteLine("Canalizando magia");
+                            \t}
+                        }
 
-class MagiaBasica : IMagia
-{
-    \tpublic void DarMagia()
-    \t{
-        \t\tConsole.WriteLine("Usando magia básica");
-    \t}
-}
+                        class MagiaBasica : IMagia
+                        {
+                            \tpublic void DarMagia()
+                            \t{
+                                \t\tConsole.WriteLine("Usando magia básica");
+                            \t}
+                        }
 
-class Program
-{
-    \tstatic void Main(string[] args)
-    \t{
-        \t\ttry
-        \t\t{
-            \t\t\tConsole.WriteLine("--- Demonstração do ISP ---");
-            \t\t\tIMagia magia = new MagiaAvancada();
-            \t\t\tmagia.DarMagia();
-            \t\t\t((ICanalizarMagia)magia).CanalizarMagia();
+                        class Program
+                        {
+                            \tstatic void Main(string[] args)
+                            \t{
+                                \t\ttry
+                                \t\t{
+                                    \t\t\tConsole.WriteLine("--- Demonstração do ISP ---");
+                                    \t\t\tIMagia magia = new MagiaAvancada();
+                                    \t\t\tmagia.DarMagia();
+                                    \t\t\t((ICanalizarMagia)magia).CanalizarMagia();
 
-            \t\t\tList<IMagia> magias = new List<IMagia>
-            \t\t\t{
-                \t\t\t\tnew MagiaAvancada(),
-                \t\t\t\tnew MagiaBasica()
-            \t\t\t};
+                                    \t\t\tList<IMagia> magias = new List<IMagia>
+                                    \t\t\t{
+                                        \t\t\t\tnew MagiaAvancada(),
+                                        \t\t\t\tnew MagiaBasica()
+                                    \t\t\t};
 
-            \t\t\tforeach (IMagia magiaItem in magias)
-            \t\t\t{
-                \t\t\t\tmagiaItem.DarMagia();
-            \t\t\t}
-        \t\t}
-        \t\tcatch (Exception ex)
-        \t\t{
-            \t\t\tConsole.WriteLine($"Error: {ex}");
-        \t\t}
-    \t}
-}
+                                    \t\t\tforeach (IMagia magiaItem in magias)
+                                    \t\t\t{
+                                        \t\t\t\tmagiaItem.DarMagia();
+                                    \t\t\t}
+                                \t\t}
+                                \t\tcatch (Exception ex)
+                                \t\t{
+                                    \t\t\tConsole.WriteLine($"Error: {ex}");
+                                \t\t}
+                            \t}
+                        }
                 `
             },
         ]
