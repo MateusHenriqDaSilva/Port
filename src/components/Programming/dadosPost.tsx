@@ -27,85 +27,85 @@ export const contentBlog: IContentBlog[] = [
 
                 class Program
                 {
-                    \nstatic void Main(string[] args)
-                    \n{
-                        \n\ntry
-                        \n\n{
-                            \n\n\n//  Criando Leao
-                            \n\n\nFabricarMonstro fabricarMonstro = new FabricarLeao();
-                            \n\n\n7u8IMonstro monstro = fabricarMonstro.fazerMonstro("black");
-                            \n\n\nmonstro.mostrarMonstro();
-                            \n\n\n// Criando tigres
-                            \n\n\nfabricarMonstro = new FabricarTigre();
-                            \n\n\nmonstro = fabricarMonstro.fazerMonstro("blue");
-                            \n\n\nmonstro.mostrarMonstro();
-                        \n\n}
-                        \n\ncatch (Exception ex)
-                        \n\n{
-                            \n\n\nConsole.WriteLine($"Mensagem: {ex.Message}");
-                        \n\n}
-                    \n}
+                    \tstatic void Main(string[] args)
+                    \t{
+                        \t\ttry
+                        \t\t{
+                            \t\t\t//  Criando Leao
+                            \t\t\tFabricarMonstro fabricarMonstro = new FabricarLeao();
+                            \t\t\t7u8IMonstro monstro = fabricarMonstro.fazerMonstro("black");
+                            \t\t\tmonstro.mostrarMonstro();
+                            \t\t\t// Criando tigres
+                            \t\t\tfabricarMonstro = new FabricarTigre();
+                            \t\t\tmonstro = fabricarMonstro.fazerMonstro("blue");
+                            \t\t\tmonstro.mostrarMonstro();
+                        \t\t}
+                        \t\tcatch (Exception ex)
+                        \t\t{
+                            \t\t\tConsole.WriteLine($"Mensagem: {ex.Message}");
+                        \t\t}
+                    \t}
                 }
                 
                 // Regiao dos monstros
                 interface IMonstro
                 {
-                    \n\nvoid mostrarMonstro();
+                    \t\tvoid mostrarMonstro();
                 }
                 
                 class Tigre : IMonstro
                 {
-                    \npublic Tigre()
-                    \n{
-                        \n\nConsole.WriteLine("\n O tigre foi criado.");
-                    \n}
+                    \tpublic Tigre()
+                    \t{
+                        \t\tConsole.WriteLine("\t O tigre foi criado.");
+                    \t}
                 
-                    \npublic void mostrarMonstro()
-                    \n{
-                        \n\nConsole.WriteLine("\"ROAAAAAAAAAARRRRRRRR\"");
-                    \n}
+                    \tpublic void mostrarMonstro()
+                    \t{
+                        \t\tConsole.WriteLine("\"ROAAAAAAAAAARRRRRRRR\"");
+                    \t}
                 }
                 
                 class Leao : IMonstro
                 {
-                    \npublic Leao()
-                    \n{
-                        \n\nConsole.WriteLine("\n Leao foi criado.");
-                    \n}
+                    \tpublic Leao()
+                    \t{
+                        \t\tConsole.WriteLine("\t Leao foi criado.");
+                    \t}
                 
-                    \npublic void mostrarMonstro()
-                    \n{
-                        \n\nConsole.WriteLine("\n Uf!! Roarddss!!");
-                    \n}
+                    \tpublic void mostrarMonstro()
+                    \t{
+                        \t\tConsole.WriteLine("\t Uf!! Roarddss!!");
+                    \t}
                 }
                 
                 // Regiao de fabricacao
                 abstract class FabricarMonstro
                 {
-                    \npublic IMonstro fazerMonstro(string cor)
-                    \n{
-                        \n\nConsole.WriteLine($"\n O mosntro criado com a cor: {cor}");
-                        \n\nIMonstro monstro = criarMonstro();
-                        \n\nreturn monstro;
-                    \n}
+                    \tpublic IMonstro fazerMonstro(string cor)
+                    \t{
+                        \t\tConsole.WriteLine($"\t O mosntro criado com a cor: {cor}");
+                        \t\tIMonstro monstro = criarMonstro();
+                        \t\treturn monstro;
+                    \t}
                 
-                    \npublic abstract IMonstro criarMonstro();
+                    \tpublic abstract IMonstro criarMonstro();
                 }
                 
                 class FabricarTigre : FabricarMonstro
                 {
-                    \npublic override IMonstro criarMonstro()
-                    \n{
-                        \n\nreturn new Tigre();
-                    \n}
+                    \tpublic override IMonstro criarMonstro()
+                    \t{
+                        \t\treturn new Tigre();
+                    \t}
                 }
                 
                 class FabricarLeao : FabricarMonstro
                 {
-                    \npublic override IMonstro criarMonstro()
-                    \n{
-                        \n\nreturn new Leao();
-                    \n}
+                    \tpublic override IMonstro criarMonstro()
+                    \t{
+                        \t\treturn new Leao();
+                    \t}
                 }
                 `
             }
