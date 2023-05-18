@@ -14,6 +14,103 @@ type MyNestedObject = {
 
 export const contentBlog: IContentBlog[] = [
     {
+        id: '18',
+        title: "Desvende o poder da modularidade: Crie com maestria usando fábricas!",
+        description: "Com a técnica das Fábricas, você ganha flexibilidade, escalabilidade e uma base sólida para aprimorar o seu código sem medo. Prepare-se para dominar o caos e criar um software resiliente e elegante. Separe, crie e transforme o seu código usando Fábricas!",
+        link: "/programming/post",
+        post: [
+            {
+                text: `Imagine um mundo onde o código mutável não é mais um emaranhado de incertezas e dores de cabeça. Com a técnica "Separate Changeable Code Using Factories" (Separe o Código Mutável Usando Fábricas), você desvenda os segredos para desvincular o indomável.`,
+            }, {
+                text: "Abraçe o poder da modularidade e flexibilidade ao separar o código mutável utilizando a mágica arte das fábricas!",
+                code: `using System;
+
+                class Program
+                {
+                    \nstatic void Main(string[] args)
+                    \n{
+                        \n\ntry
+                        \n\n{
+                            \n\n\n//  Criando Leao
+                            \n\n\nFabricarMonstro fabricarMonstro = new FabricarLeao();
+                            \n\n\n7u8IMonstro monstro = fabricarMonstro.fazerMonstro("black");
+                            \n\n\nmonstro.mostrarMonstro();
+                            \n\n\n// Criando tigres
+                            \n\n\nfabricarMonstro = new FabricarTigre();
+                            \n\n\nmonstro = fabricarMonstro.fazerMonstro("blue");
+                            \n\n\nmonstro.mostrarMonstro();
+                        \n\n}
+                        \n\ncatch (Exception ex)
+                        \n\n{
+                            \n\n\nConsole.WriteLine($"Mensagem: {ex.Message}");
+                        \n\n}
+                    \n}
+                }
+                
+                // Regiao dos monstros
+                interface IMonstro
+                {
+                    \n\nvoid mostrarMonstro();
+                }
+                
+                class Tigre : IMonstro
+                {
+                    \npublic Tigre()
+                    \n{
+                        \n\nConsole.WriteLine("\n O tigre foi criado.");
+                    \n}
+                
+                    \npublic void mostrarMonstro()
+                    \n{
+                        \n\nConsole.WriteLine("\"ROAAAAAAAAAARRRRRRRR\"");
+                    \n}
+                }
+                
+                class Leao : IMonstro
+                {
+                    \npublic Leao()
+                    \n{
+                        \n\nConsole.WriteLine("\n Leao foi criado.");
+                    \n}
+                
+                    \npublic void mostrarMonstro()
+                    \n{
+                        \n\nConsole.WriteLine("\n Uf!! Roarddss!!");
+                    \n}
+                }
+                
+                // Regiao de fabricacao
+                abstract class FabricarMonstro
+                {
+                    \npublic IMonstro fazerMonstro(string cor)
+                    \n{
+                        \n\nConsole.WriteLine($"\n O mosntro criado com a cor: {cor}");
+                        \n\nIMonstro monstro = criarMonstro();
+                        \n\nreturn monstro;
+                    \n}
+                
+                    \npublic abstract IMonstro criarMonstro();
+                }
+                
+                class FabricarTigre : FabricarMonstro
+                {
+                    \npublic override IMonstro criarMonstro()
+                    \n{
+                        \n\nreturn new Tigre();
+                    \n}
+                }
+                
+                class FabricarLeao : FabricarMonstro
+                {
+                    \npublic override IMonstro criarMonstro()
+                    \n{
+                        \n\nreturn new Leao();
+                    \n}
+                }
+                `
+            }
+        ]
+    },{
         id: '17',
         title: "O princípio DRY sugere que cada parte do conhecimento em um sistema de software deve ter uma representação única, uma única fonte confiável e autoritativa.",
         description: "DRY Principle enfatiza a importância de evitar a repetição desnecessária de informações ou lógica em um programa. Quando você repete código em várias partes do seu sistema, aumenta a complexidade, a dificuldade de manutenção e o risco de introduzir erros. Além disso, torna o código mais difícil de ser alterado e atualizado no futuro.",
