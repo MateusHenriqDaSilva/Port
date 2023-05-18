@@ -14,6 +14,278 @@ type MyNestedObject = {
 
 export const contentBlog: IContentBlog[] = [
     {
+        id: '16',
+        title: "C# PARTE 5: Princípio da Inversão de Dependência - DIP",
+        description: "DIP é um princípio da programação orientada a objetos que estabelece que os módulos de alto nível não devem depender diretamente dos módulos de baixo nível. Em vez disso, ambos devem depender de abstrações",
+        link: "/programming/post",
+        post: [
+            {
+                text: `No mágico mundo do código, o Princípio da Inversão de Dependência (DIP) é como a dança encantada que permite que os módulos se libertem das amarras das implementações concretas e se movam harmoniosamente com a flexibilidade das abstrações`,
+                code: `using System;
+
+                interface IDeposito
+                {
+                    \tvoid salvarNoDeposito(string id);
+                }
+                
+                class Deposito : IDeposito
+                {
+                    \treadonly IDeposito deposito;
+                
+                    \tpublic Deposito(IDeposito deposito)
+                    \t{
+                        \t\tthis.deposito = deposito;
+                    \t}
+                
+                    \tpublic void salvarNoDeposito(string id)
+                    \t{
+                        \t\tConsole.WriteLine($"O id: {id} salvo no Deposito");
+                    \t}
+                }
+                
+                class DepositoDinheiro : IDeposito
+                {
+                    \tpublic void salvarNoDeposito(string id)
+                    \t{
+                        \t\tConsole.WriteLine($"O id: {id} está salvo no depósito");
+                    \t}
+                }
+                
+                class Program
+                {
+                    \tstatic void Main(string[] args)
+                    \t{
+                        \t\ttry
+                        \t\t{
+                            \t\t\tIDeposito deposito = new Deposito(null);
+                            \t\t\tDeposito usarDeposito = new Deposito(deposito);
+                            \t\t\tusarDeposito.salvarNoDeposito("0001");
+                
+                            \t\t\t// Usando deposito
+                            \t\t\tdeposito = new DepositoDinheiro();
+                            \t\t\tusarDeposito = new Deposito(deposito);
+                            \t\t\tusarDeposito.salvarNoDeposito("0002");
+                        \t\t}
+                        \t\tcatch (Exception ex)
+                        \t\t{
+                            \t\t\tConsole.WriteLine($"Error: {ex}");
+                        \t\t}
+                    \t}
+                }`
+            },
+        ]
+    },
+    {
+        id: '15',
+        title: "C#: PARTE 4: ISP é um princípio da programação orientada a objetos que promove a divisão de interfaces em partes menores e coesas",
+        description: "O ISP declara que as interfaces devem ser específicas para os requisitos de cada cliente, evitando que as classes dependam de métodos que não são relevantes para elas. Em vez de ter uma única interface abrangente que abarque todos os métodos possíveis, o ISP incentiva a criação de várias interfaces mais especializadas",
+        link: "/programming/post",
+        post: [
+            {
+                text: `Imagine que você está montando um quebra-cabeça incrível com várias peças. O Princípio da Segregação de Interfaces (ISP) é como dividir as peças em conjuntos menores e temáticos, para que você possa escolher apenas os conjuntos de peças que se encaixam no seu quebra-cabeça e descartar as peças que não são relevantes. Dessa forma, você evita bagunça, economiza tempo e cria uma imagem perfeita do seu quebra-cabeça, sem se preocupar com peças fora do lugar.`,
+                code: `using System;
+using System.Collections.Generic;
+
+interface IMagia
+{
+    \tvoid DarMagia();
+}
+
+interface ICanalizarMagia
+{
+    \tvoid CanalizarMagia();
+}
+
+interface IEncherVida
+{
+    \tvoid EncherVida();
+}
+
+class EncherMetadeDaVida : IEncherVida
+{
+    \tpublic void EncherVida()
+    \t{
+        \t\tConsole.WriteLine("Recuperando metade da vida");
+    \t}
+}
+
+class EncherVidaToda : IEncherVida
+{
+    \tpublic void EncherVida()
+    \t{
+        \t\tConsole.WriteLine("Recuperando a vida toda");
+    \t}
+}
+
+class MagiaAvancada : IMagia, ICanalizarMagia
+{
+    \tpublic void DarMagia()
+    \t{
+        \t\tConsole.WriteLine("Usando magia avançada");
+    \t}
+
+    \tpublic void CanalizarMagia()
+    \t{
+        \t\tConsole.WriteLine("Canalizando magia");
+    \t}
+}
+
+class MagiaBasica : IMagia
+{
+    \tpublic void DarMagia()
+    \t{
+        \t\tConsole.WriteLine("Usando magia básica");
+    \t}
+}
+
+class Program
+{
+    \tstatic void Main(string[] args)
+    \t{
+        \t\ttry
+        \t\t{
+            \t\t\tConsole.WriteLine("--- Demonstração do ISP ---");
+            \t\t\tIMagia magia = new MagiaAvancada();
+            \t\t\tmagia.DarMagia();
+            \t\t\t((ICanalizarMagia)magia).CanalizarMagia();
+
+            \t\t\tList<IMagia> magias = new List<IMagia>
+            \t\t\t{
+                \t\t\t\tnew MagiaAvancada(),
+                \t\t\t\tnew MagiaBasica()
+            \t\t\t};
+
+            \t\t\tforeach (IMagia magiaItem in magias)
+            \t\t\t{
+                \t\t\t\tmagiaItem.DarMagia();
+            \t\t\t}
+        \t\t}
+        \t\tcatch (Exception ex)
+        \t\t{
+            \t\t\tConsole.WriteLine($"Error: {ex}");
+        \t\t}
+    \t}
+}
+                `
+            },
+        ]
+    }, {
+        id: '14',
+        title: "C#: PARTE 3: O Princípio da Substituição de Liskov (LSP)",
+        description: "LSP diz que você pode substituir uma classe base por qualquer uma de suas classes derivadas sem quebrar o funcionamento do programa",
+        link: "/programming/post",
+        post: [
+            {
+                header: `Se um objeto parece um pato, nada como um pato e faz quack como um pato, então pode ser tratado como um pato!`,
+                text: `LSP afirma que se uma classe A é uma subclasse de uma classe B, então A deve ser capaz de substituir B em qualquer lugar onde B é usado, sem que isso cause comportamentos indesejados ou erros`,
+                code: `using System;
+                using System.Collections.Generic;
+                
+                interface MineracaoAnterior
+                {
+                    \tvoid CarregarMineracaoAnterior();
+                }
+                
+                interface ProcessarNovaMineracao
+                {
+                    \tvoid ProcessarNovaMineracao();
+                }
+                
+                class Program
+                {
+                    \tstatic void Main(string[] args)
+                    \t{
+                        \ttry
+                        \t{
+                            \t\tConsole.WriteLine("--- Demonstração LSP ---");
+                            \t\tAjudarJogador ajudar = new AjudarJogador();
+                            \t\t// Instanciando 2 registros de jogador
+                            \t\tRegistrarJogador jogador1 = new RegistrarJogador("jogador1");
+                            \t\tRegistrarJogador jogador2 = new RegistrarJogador("jogador2");
+                            \t\t// Chamando a classe AjudarJogador e adicionando jogadores
+                            \t\tajudar.AdicionarJogador(jogador1);
+                            \t\tajudar.AdicionarJogador(jogador2);
+                            \t\t// Processando mineração
+                            \t\tajudar.MostrarMineracaoAnterior();
+                            \t\tajudar.ProcessarNovaMineracao();
+                            \t\t// Adicionando jogador convidado para minerar
+                            \t\tJogadorConvidado jogadorConvidado1 = new JogadorConvidado();
+                            \t\tajudar.AdicionarJogador(jogadorConvidado1);
+                            \t}
+                            \tcatch (Exception ex)
+                            \t{
+                                \t\tConsole.WriteLine($"Error: {ex}");
+                                \t}
+                    }
+                }
+                
+                class RegistrarJogador : MineracaoAnterior, ProcessarNovaMineracao
+                {
+                    \treadonly string nome;
+                
+                    \tpublic RegistrarJogador(string nome)
+                    \t{
+                        \t\tthis.nome = nome;
+                        \t}
+                
+                        \tpublic void CarregarMineracaoAnterior()
+                        \t{
+                            \t\tConsole.WriteLine($"Recuperando últimos detalhes de mineração de {nome}");
+                            \t}
+                
+                            \tpublic void ProcessarNovaMineracao()
+                            \t{
+                                \t\tConsole.WriteLine($"Processando requisição de ocorrência de mineração para {nome}");
+                                \t}
+                }
+                
+                class AjudarJogador
+                {
+                    \treadonly List<MineracaoAnterior> jogadores = new List<MineracaoAnterior>();
+                
+                    \tpublic void AdicionarJogador(MineracaoAnterior jogador)
+                    \t{
+                        \t\tjogadores.Add(jogador);
+                        \t}
+                
+                        \tpublic void MostrarMineracaoAnterior()
+                        \t{
+                            \t\tforeach (MineracaoAnterior jogador in jogadores)
+                            \t{
+                                \t\tjogador.CarregarMineracaoAnterior();
+                                \t\tConsole.WriteLine("-----------");
+                                \t}
+                    }
+                
+                    public void ProcessarNovaMineracao()
+                    {
+                        \tforeach (ProcessarNovaMineracao jogador in jogadores)
+                        \t{
+                            \t\tjogador.ProcessarNovaMineracao();
+                            \t\tConsole.WriteLine("------------");
+                            \t}
+                    }
+                }
+                
+                class JogadorConvidado : MineracaoAnterior, ProcessarNovaMineracao
+                {
+                    \treadonly List<MineracaoAnterior> mineracaoAnterior = new List<MineracaoAnterior>();
+                    \treadonly List<ProcessarNovaMineracao> processarNovaMineracao = new List<ProcessarNovaMineracao>();
+                
+                    \tpublic void CarregarMineracaoAnterior()
+                    \t{
+                        \t\tConsole.WriteLine("Carregando mineração anterior de jogador convidado");
+                        \t}
+                
+                        \tpublic void ProcessarNovaMineracao()
+                        \t{
+                            \t\tConsole.WriteLine("Processando nova mineração para jogador convidado");
+                            \t}
+                }
+                `
+            },
+        ]
+    }, {
         id: '13',
         title: "C#: PARTE 2: OCP - O Princípio Aberto/Fechado (Open/Closed Principle - OCP)",
         description: "é um dos princípios do SOLID, um conjunto de princípios de design de software que visam promover a construção de código mais modular, extensível e de fácil manutenção.",
