@@ -14,8 +14,232 @@ type MyNestedObject = {
 
 export const contentBlog: IContentBlog[] = [
     {
+        id: '20',
+        title: "C#: Com os hooks, mergulhe em um balé de código, onde componentes dançam em perfeita sincronia, criando uma sinfonia de eficiência e reutilização, cativando todos que testemunham a magia dos hooks em ação.",
+        description: "Trazer funcionalidades avançadas e uma melhor organização do código. Eles permitem que os desenvolvedores extraiam e reutilizem lógicas comuns entre os componentes de forma mais elegante e eficiente.",
+        link: "/programming/post",
+        post: [
+            {
+                text: `é possível gerenciar o estado de um componente, fazer requisições a APIs, manipular o ciclo de vida dos componentes e lidar com outros aspectos importantes do desenvolvimento de interfaces de usuário.`,
+            }, {
+                text: "ferramenta poderosa para desenvolvedores React, proporcionando uma maneira mais eficiente e cativante de lidar com o estado, o ciclo de vida e outras funcionalidades essenciais no desenvolvimento de aplicações web modernas.",
+                code: `using System;
+
+                // Iniciando Programa
+                // Classe abstrata chamada RoboCompras
+                // Funções: visitarLugar -> visitar -> lugar
+                // Funções: proximoPasso -> executar -> passos
+                // Funções: gastosAteOLugar -> valor -> gasto
+                    \t// verificaSefoiGeradoCupom -> verifica -> cupom
+                    \t// pegarCupom -> pegar -> cupom
+                // Funções: carregarProduto -> pegar -> produto
+                
+                /* Classes -> derivadas -> override */
+                // SelecionarProduto -> selecionar -> produto
+                // ComprarProduto -> comprar -> Produto
+                class Program
+                {
+                    \tstatic void Main(string[] args)
+                    \t{
+                        \t\ttry
+                        \t\t{
+                            \t\t\tConsole.WriteLine("--- Demonstração do método utilizando template");
+                            \t\t\tConsole.WriteLine("--- Criaremos o método RoboCompras -> Frutas ---");
+                            \t\t\tRoboCompras roboCompras = new Maca();
+                            \t\t\troboCompras.ComprarProduto();
+                            \t\t\tConsole.WriteLine(" Criando um novo robô ");
+                            \t\t\troboCompras = new Banana();
+                            \t\t\troboCompras.ComprarProduto();
+                        \t\t}
+                        \t\tcatch (Exception ex)
+                        \t\t{
+                            \t\t\tConsole.WriteLine($"Mensagem: {ex}");
+                        \t\t}
+                    \t}
+                }
+                
+                // <Sumario>
+                // ComprarProduto -> Estrutura dos passo a passo
+                // </Sumario>
+                public abstract class RoboCompras
+                {
+                    \t// passo 1:
+                    \tprotected void visitarMercado()
+                    \t{
+                        \t\tConsole.WriteLine("1. Vá visitar o mercado agora por gentileza");
+                    \t}
+                
+                    // passo 2:
+                    protected abstract void selecionarProduto();
+                
+                    // passo 3:
+                    protected void gastosAteOLugar()
+                    {
+                        \tConsole.WriteLine("3. Gerando contas de pagamento");
+                    }
+                
+                    // passo 4:
+                    protected void carregarProduto()
+                    {
+                        \tConsole.WriteLine("4. O Produto foi pego");
+                    }
+                
+                    // Método Completo
+                    public void ComprarProduto()
+                    {
+                        \t// Passo 1:
+                        \tvisitarMercado();
+                
+                        \t// Passo 2:
+                        \tselecionarProduto();
+                        \tif (verificaSefoiGeradoCupom())
+                        \t{
+                            \t\tpegarCupom();
+                        \t}
+                
+                        \t// Passo 3:
+                        \tgastosAteOLugar();
+                
+                        \t// Passo 4:
+                        \tcarregarProduto();
+                    }
+                
+                    protected virtual void pegarCupom()
+                    {
+                        \t\tConsole.WriteLine("\t Guia do cupom foi Pega");
+                    }
+                
+                    protected virtual bool verificaSefoiGeradoCupom()
+                    {
+                        \t\treturn false;
+                    }
+                }
+                
+                // Criando a classe completa: Maca
+                public class Maca : RoboCompras
+                {
+                    \tprotected override bool verificaSefoiGeradoCupom()
+                    \t{
+                        \t\treturn true;
+                    \t}
+                
+                    \tprotected override void selecionarProduto()
+                    \t{
+                        \t\tConsole.WriteLine("2. Pegando Maçã");
+                    \t}
+                }
+                
+                // Criando a classe completa: Banana
+                public class Banana : RoboCompras
+                {
+                    \tprotected override void selecionarProduto()
+                    \t{
+                        \t\tConsole.WriteLine("2. Pegando banana");
+                    \t}
+                }
+                `
+            }
+        ]
+    },{
+        id: '19',
+        title: "C#: Desvende o potencial ilimitado do seu código, adicionando recursos com maestria através do envoltório mágico dos wrappers!",
+        description: "é uma técnica poderosa na programação que permite estender a funcionalidade de um objeto ou componente existente sem modificar seu código original.",
+        link: "/programming/post",
+        post: [
+            {
+                text: `Os wrappers funcionam como intermediários entre o código existente e as novas funcionalidades desejadas. Eles encapsulam o objeto original e fornecem uma interface adicional, permitindo a adição de novos métodos, propriedades ou comportamentos.`,
+            }, {
+                text: "Abraçe o poder da modularidade e flexibilidade ao separar o código mutável utilizando a mágica arte das fábricas!",
+                code: `using System;
+
+                class Program
+                {
+                    \tstatic void Main(string[] args)
+                    \t{
+                        \t\ttry
+                        \t\t{
+                            \t\t\t//  Criando Leao
+                            \t\t\tFabricarMonstro fabricarMonstro = new FabricarLeao();
+                            \t\t\t7u8IMonstro monstro = fabricarMonstro.fazerMonstro("black");
+                            \t\t\tmonstro.mostrarMonstro();
+                            \t\t\t// Criando tigres
+                            \t\t\tfabricarMonstro = new FabricarTigre();
+                            \t\t\tmonstro = fabricarMonstro.fazerMonstro("blue");
+                            \t\t\tmonstro.mostrarMonstro();
+                        \t\t}
+                        \t\tcatch (Exception ex)
+                        \t\t{
+                            \t\t\tConsole.WriteLine($"Mensagem: {ex.Message}");
+                        \t\t}
+                    \t}
+                }
+                
+                // Regiao dos monstros
+                interface IMonstro
+                {
+                    \t\tvoid mostrarMonstro();
+                }
+                
+                class Tigre : IMonstro
+                {
+                    \tpublic Tigre()
+                    \t{
+                        \t\tConsole.WriteLine("\t O tigre foi criado.");
+                    \t}
+                
+                    \tpublic void mostrarMonstro()
+                    \t{
+                        \t\tConsole.WriteLine("\"ROAAAAAAAAAARRRRRRRR\"");
+                    \t}
+                }
+                
+                class Leao : IMonstro
+                {
+                    \tpublic Leao()
+                    \t{
+                        \t\tConsole.WriteLine("\t Leao foi criado.");
+                    \t}
+                
+                    \tpublic void mostrarMonstro()
+                    \t{
+                        \t\tConsole.WriteLine("\t Uf!! Roarddss!!");
+                    \t}
+                }
+                
+                // Regiao de fabricacao
+                abstract class FabricarMonstro
+                {
+                    \tpublic IMonstro fazerMonstro(string cor)
+                    \t{
+                        \t\tConsole.WriteLine($"\t O mosntro criado com a cor: {cor}");
+                        \t\tIMonstro monstro = criarMonstro();
+                        \t\treturn monstro;
+                    \t}
+                
+                    \tpublic abstract IMonstro criarMonstro();
+                }
+                
+                class FabricarTigre : FabricarMonstro
+                {
+                    \tpublic override IMonstro criarMonstro()
+                    \t{
+                        \t\treturn new Tigre();
+                    \t}
+                }
+                
+                class FabricarLeao : FabricarMonstro
+                {
+                    \tpublic override IMonstro criarMonstro()
+                    \t{
+                        \t\treturn new Leao();
+                    \t}
+                }
+                `
+            }
+        ]
+    },{
         id: '18',
-        title: "Desvende o poder da modularidade: Crie com maestria usando fábricas!",
+        title: "C#: Desvende o poder da modularidade: Crie com maestria usando fábricas!",
         description: "Com a técnica das Fábricas, você ganha flexibilidade, escalabilidade e uma base sólida para aprimorar o seu código sem medo. Prepare-se para dominar o caos e criar um software resiliente e elegante. Separe, crie e transforme o seu código usando Fábricas!",
         link: "/programming/post",
         post: [
@@ -112,7 +336,7 @@ export const contentBlog: IContentBlog[] = [
         ]
     }, {
         id: '17',
-        title: "O princípio DRY sugere que cada parte do conhecimento em um sistema de software deve ter uma representação única, uma única fonte confiável e autoritativa.",
+        title: "C#: O princípio DRY sugere que cada parte do conhecimento em um sistema de software deve ter uma representação única, uma única fonte confiável e autoritativa.",
         description: "DRY Principle enfatiza a importância de evitar a repetição desnecessária de informações ou lógica em um programa. Quando você repete código em várias partes do seu sistema, aumenta a complexidade, a dificuldade de manutenção e o risco de introduzir erros. Além disso, torna o código mais difícil de ser alterado e atualizado no futuro.",
         link: "/programming/post",
         post: [
