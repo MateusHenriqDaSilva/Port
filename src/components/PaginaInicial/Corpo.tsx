@@ -24,12 +24,12 @@ export default function Corpo() {
                 <div className={styles.linhaReta6}></div>
             </div>
             <div className={styles.espacoQuadrado}>
-                <Link href='/programming' className={styles.quadrado1}>Programming</Link>
-                <Link href='/psychology' className={styles.quadrado2}>Psychology</Link>
-                <Link href='/communication' className={styles.quadrado3}>Communication</Link>
-                <Link href='/digitalMarketing' className={styles.quadrado4}>Digital Marketing</Link>
-                <Link href='/design' className={styles.quadrado5}>Design</Link>
-                <Link href='/relationship' className={styles.quadrado6}>Relationship</Link>
+                <Link href='/Programacao' className={styles.quadrado1}>Programacao</Link>
+                <Link href='/Engenharia' className={styles.quadrado2}>Engenharia</Link>
+                <Link href='/Comunicacao' className={styles.quadrado3}>Comunicacao</Link>
+                <Link href='/Marketing' className={styles.quadrado4}>Marketing</Link>
+                <Link href='/Inteligencia' className={styles.quadrado5}>Inteligencia</Link>
+                <Link href='/Seguranca' className={styles.quadrado6}>Relacoes</Link>
             </div>
         </div>
     )

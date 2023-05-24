@@ -1,0 +1,9 @@
+.ContainerGlobal{
+    display: flex;
+    height: 60px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    align-items: center;
+}

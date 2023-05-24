@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+.containerGlobal{
+    width: 100%;
+}
+
+.containerText{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.constainerSelecao{
+    padding: 20px;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(238, 238, 238);
+    align-items: center;
+    flex-direction: column;
+}
+
+.constainerSelecao:hover{
+    padding: 20px;
+    width: 100%;
+    background: rgb(255, 164, 164);
+    background: linear-gradient(rgb(255, 255, 255), rgb(255, 196, 196));
+    cursor: pointer;
+}
+
+.title {
+    color: black;
+    font-size: 16px;
+}
+
+.description {
+    font-size: 14px;
+    color: black;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+@media only screen and (max-width: 800px) {
+    .containerGlobal{
+        width: 100%;
+    }
+    
+    .containerText{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .constainerSelecao{
+        padding: 20px 5px;
+        width: 100%;
+        border: 1px solid rgb(218, 218, 218);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .constainerSelecao:hover{
+        padding: 20px 5px;
+        width: 100%;
+        border: 1px solid rgb(218, 218, 218);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .title {
+        color: black;
+        font-size: 16px;
+    }
+    
+    .description {
+        font-size: 14px;
+        color: black;
+        font-family: 'Rajdhani', sans-serif;
+    }
+}
