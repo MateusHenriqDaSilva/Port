@@ -1,6 +1,6 @@
-import styles from '../../styles/cabecalhoCommunication.module.css'
+import styles from '../../styles/cabecalhoComunicacao.module.css'
 
-export default function CabecalhoCommunication() {
+export default function CabecalhoComunicacao() {
     return (
         <div className={styles.ContainerGlobal}>
             <h1>Communication under construction</h1>

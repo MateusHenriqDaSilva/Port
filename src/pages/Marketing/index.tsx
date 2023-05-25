@@ -1,9 +1,9 @@
-import CabecalhoDigitalMarketing from "../../components/DigitalMarketing/CabecalhoDigitalMarketing";
+import CabecalhoMarketing from "../../components/Marketing/CabecalhoMarketing";
 
-export default function DigitalMarketing() {
+export default function Marketing() {
     return (
         <>
-            <CabecalhoDigitalMarketing />
+            <CabecalhoMarketing />
         </>
     )
 }

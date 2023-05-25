@@ -1,6 +1,6 @@
-import CabecalhoCommunication from "../../components/Communication/CabecalhoCommunication";
+import CabecalhoCommunication from "../../components/Comunicacao/CabecalhoComunicacao";
 
-export default function Communication() {
+export default function Comunicacao() {
     return (
         <>
             <CabecalhoCommunication />

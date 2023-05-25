@@ -32,7 +32,7 @@ const trabalhos = [
     },
 ]
 
-export default function CorpoProgramming() {
+export default function CorpoSeguranca() {
     return (
         <div className={styles.ContainerGlobal}>
             <div className={styles.cartaoEspaco}>

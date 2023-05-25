@@ -1,7 +1,7 @@
-import CabecalhoRelationship from "../../components/Relationship/CabecalhoRelationship";
+import CabecalhoSeguranca from "../../components/Seguranca/CabecalhoSeguranca";
 
-export default function Relationship() {
+export default function Seguranca() {
     return (
-        <CabecalhoRelationship />
+        <CabecalhoSeguranca />
     )
 }
