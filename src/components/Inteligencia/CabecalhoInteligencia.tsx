@@ -1,9 +1,12 @@
-import styles from '../../styles/cabecalhoDesign.module.css'
+import Link from 'next/link'
+import styles from '../../styles/cabecalhoInteligencia.module.css'
 
 export default function CabecalhoInteligencia() {
     return (
         <div className={styles.ContainerGlobal}>
-            <h1>Design under construction</h1>
+            <Link href="/" passHref>
+                <h1>Inteligencia</h1>
+            </Link>
         </div>
     )
 }

@@ -5,7 +5,6 @@ import { conteudoBlogEngenharia } from './DadosPostEngenharia'
 export default function CorpoEngenharia() {
     return (
         <div className={styles.ContainerGlobal}>
-            {/* <SubCabecalhoEngenharia />  */}
             {/* <SelecaoMenuEngenharia /> */}
             {
                 conteudoBlogEngenharia.map((element, index) => (
