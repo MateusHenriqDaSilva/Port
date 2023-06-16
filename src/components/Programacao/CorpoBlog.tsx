@@ -12,17 +12,18 @@ interface MyObject {
     title?: string
     description?: string
     link?: string
+    video?: string
     post: MyNestedObject[];
 }
 
 export default function CorpoBlog(props: MyObject) {
     return (
-        <div className={styles.containerItem}>
-            <Link href={`${props.link}${props.id}`} passHref>
+        <Link href={`${props.link}${props.id}`} passHref>
+            <div className={styles.containerItem}>
                 <h1 className={styles.title}>{props.title}</h1>
                 <h1 className={styles.description}>{props.description}</h1>
-            </Link>
-        </div >
+            </div>
+        </Link>
     )
 }
 
