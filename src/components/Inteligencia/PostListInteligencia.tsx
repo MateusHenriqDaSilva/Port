@@ -1,4 +1,4 @@
-import style from '../../styles/postListInteligencia.module.css'
+import style from '../../styles/postList.module.css'
 import Image from 'next/image';
 
 interface MyNestedObject {
