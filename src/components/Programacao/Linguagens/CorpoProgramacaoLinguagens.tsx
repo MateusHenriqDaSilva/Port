@@ -190,7 +190,7 @@ const Linguagens = [
     }
 ]
 
-export default function SubCabecalhoCorpoProgramacaoLinguagens() {
+export default function CorpoProgramacaoLinguagens() {
     const [popUp1, setPopUp1] = useState(true)
     const [popUp2, setPopUp2] = useState(false)
     const [popUp3, setPopUp3] = useState(false)

@@ -29,7 +29,7 @@ export default function Corpo() {
                 <Link href='/Comunicacao' className={styles.quadrado3}>Comunicacao</Link>
                 <Link href='/Marketing' className={styles.quadrado4}>Marketing</Link>
                 <Link href='/Inteligencia' className={styles.quadrado5}>Inteligencia</Link>
-                <Link href='/Seguranca' className={styles.quadrado6}>Relacoes</Link>
+                <Link href='/Seguranca' className={styles.quadrado6}>Segurança</Link>
             </div>
         </div>
     )

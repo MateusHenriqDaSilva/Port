@@ -1,9 +1,10 @@
-import CabecalhoCommunication from "../../components/Comunicacao/CabecalhoComunicacao";
+import Cabecalho from "@/src/components/Programacao/Cabecalho"
+import styles from "../../styles/pagina.module.css"
 
 export default function Comunicacao() {
     return (
-        <>
-            <CabecalhoCommunication />
-        </>
+        <div className={styles.container}>
+            <Cabecalho titulo="Comunicação" />
+        </div>
     )
 }   

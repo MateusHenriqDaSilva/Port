@@ -1,11 +1,10 @@
-import CabecalhoFramework from "@/src/components/Programacao/Framework/CabecalhoFramework";
+import Cabecalho from "@/src/components/Programacao/Cabecalho";
 import CorpoFramework from "@/src/components/Programacao/Framework/CorpoFramework";
-import SubCabecalhoFramework from "@/src/components/Programacao/Framework/SubCabecalhoFramework";
 
 export default function Framework() {
     return (
         <>
-            <CabecalhoFramework />
+            <Cabecalho titulo="Framework "/>
             <CorpoFramework /> 
         </>
     )

@@ -2,14 +2,12 @@
 import Link from 'next/link'
 import styles from '../../../styles/corpoProjects.module.css'
 
-// Typagem
 type Projetos = [{
     name: string
     description: string
     url: string
 }]
 
-//List Object
 const listaDeProjetos: Projetos = [
     {
         name: 'Projeto angular inicial components',

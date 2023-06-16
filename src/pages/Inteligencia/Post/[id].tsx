@@ -1,7 +1,7 @@
 
 import { useRouter } from 'next/router'
-import PostListInteligencia from '@/src/components/Inteligencia/PostListInteligencia'
 import { conteudoBlogInteligencia } from '@/src/components/Inteligencia/DadosPostInteligencia'
+import PostList from '@/src/components/Programacao/PostList'
 
 export default function Post() {
     const router = useRouter()
@@ -13,7 +13,7 @@ export default function Post() {
                 conteudoBlogInteligencia.map((element, index) => {
                     if (element.id == id) {
                         return (
-                            <PostListInteligencia key={index} id={element.id} title={element.title} description={element.description} post={element.post} />
+                            <PostList key={index} id={element.id} title={element.title} description={element.description} link={element.link} post={element.post} />
                         )
                     }
                 })

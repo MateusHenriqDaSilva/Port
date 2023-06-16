@@ -1,16 +1,16 @@
-import CorpoBlogEngenharia from "@/src/components/Engenharia/CorpoBlogEngenharia";
-import CabecalhoEngenharia from "../../components/Engenharia/CabecalhoEngenharia";
 import styles from "../../styles/engenharia.module.css"
 import { conteudoBlogEngenharia } from "@/src/components/Engenharia/DadosPostEngenharia";
+import Cabecalho from "@/src/components/Programacao/Cabecalho";
+import CorpoBlog from "@/src/components/Programacao/CorpoBlog";
 
 export default function Engenharia() {
     return (
         <div className={styles.container}>
-            <CabecalhoEngenharia />
+            <Cabecalho titulo="Engenharia"/>
             <div className={styles.postagens}>
                 {
                     conteudoBlogEngenharia.map((element, index) => (
-                        <CorpoBlogEngenharia key={index} id={element.id} title={element.title} description={element.description} link={element.link} post={element.post} />
+                        <CorpoBlog key={index} id={element.id} title={element.title} description={element.description} link={element.link} post={element.post} />
                     ))
                 }
             </div>

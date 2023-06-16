@@ -1,13 +1,13 @@
-import styles from "../../styles/programming.module.css"
+import styles from "../../styles/pagina.module.css"
 import SelecaoMenu from "../../components/Programacao/SelecaoMenuProgramacao";
 import CorpoBlog from "@/src/components/Programacao/CorpoBlog";
 import { contentBlog } from "@/src/components/Programacao/DadosPost";
-import CabecalhoProgramacao from "@/src/components/Programacao/CabecalhoProgramacao";
+import Cabecalho from "@/src/components/Programacao/Cabecalho";
 
 export default function Programacao() {
     return (
         <div className={styles.container}>
-            <CabecalhoProgramacao />
+            <Cabecalho titulo={"Programação"} />
             <SelecaoMenu />
             <div className={styles.postagens}>
                 {

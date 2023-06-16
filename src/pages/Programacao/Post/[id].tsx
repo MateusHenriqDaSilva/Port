@@ -1,5 +1,5 @@
 
-import PostList from '@/src/components/Programacao/PostListProgramacao'
+import PostList from '@/src/components/Programacao/PostList'
 import { contentBlog } from '@/src/components/Programacao/DadosPost'
 import { useRouter } from 'next/router'
 

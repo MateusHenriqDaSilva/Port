@@ -10,14 +10,16 @@ type MyNestedObject = {
     header?: string
     text: string
     code?: string
+    img?: any
 }
 
+const link = "/Programacao/Post/"
 export const contentBlog: IContentBlog[] = [
     {
         id: '21',
         title: "C#: Desvende a essência da simplicidade ao simplificar sistemas complexos com a elegância e eficiência das fachadas, abrindo caminho para uma experiência harmoniosa e descomplicada.",
         description: "simplificar sistemas complexos usando fachadas é proporcionar uma abordagem eficiente e acessível para lidar com a complexidade inerente aos sistemas.",
-        link: "/programming/post",
+        link: link,
         post: [
             {
                 text: "interfaces simplificadas e coesas, as fachadas permitem que os usuários interajam com o sistema de forma intuitiva, ocultando a complexidade dos componentes internos. Isso resulta em maior usabilidade, manutenção simplificada e evolução facilitada do sistema, capacitando indivíduos e organizações a enfrentar desafios complexos com confiança e eficiência.",
@@ -92,7 +94,7 @@ export const contentBlog: IContentBlog[] = [
         id: '20',
         title: "C#: Com os hooks, mergulhe em um balé de código, onde componentes dançam em perfeita sincronia, criando uma sinfonia de eficiência e reutilização, cativando todos que testemunham a magia dos hooks em ação.",
         description: "Trazer funcionalidades avançadas e uma melhor organização do código. Eles permitem que os desenvolvedores extraiam e reutilizem lógicas comuns entre os componentes de forma mais elegante e eficiente.",
-        link: "/programming/post",
+        link: link,
         post: [
             {
                 text: `é possível gerenciar o estado de um componente, fazer requisições a APIs, manipular o ciclo de vida dos componentes e lidar com outros aspectos importantes do desenvolvimento de interfaces de usuário.`,
@@ -219,7 +221,7 @@ export const contentBlog: IContentBlog[] = [
         id: '19',
         title: "C#: Desvende o potencial ilimitado do seu código, adicionando recursos com maestria através do envoltório mágico dos wrappers!",
         description: "é uma técnica poderosa na programação que permite estender a funcionalidade de um objeto ou componente existente sem modificar seu código original.",
-        link: "/programming/post",
+        link: link,
         post: [
             {
                 text: `Os wrappers funcionam como intermediários entre o código existente e as novas funcionalidades desejadas. Eles encapsulam o objeto original e fornecem uma interface adicional, permitindo a adição de novos métodos, propriedades ou comportamentos.`,
@@ -316,7 +318,7 @@ export const contentBlog: IContentBlog[] = [
         id: '18',
         title: "C#: Desvende o poder da modularidade: Crie com maestria usando fábricas!",
         description: "Com a técnica das Fábricas, você ganha flexibilidade, escalabilidade e uma base sólida para aprimorar o seu código sem medo. Prepare-se para dominar o caos e criar um software resiliente e elegante. Separe, crie e transforme o seu código usando Fábricas!",
-        link: "/programming/post",
+        link: link,
         post: [
             {
                 text: `Imagine um mundo onde o código mutável não é mais um emaranhado de incertezas e dores de cabeça. Com a técnica "Separate Changeable Code Using Factories" (Separe o Código Mutável Usando Fábricas), você desvenda os segredos para desvincular o indomável.`,
@@ -413,7 +415,7 @@ export const contentBlog: IContentBlog[] = [
         id: '17',
         title: "C#: O princípio DRY sugere que cada parte do conhecimento em um sistema de software deve ter uma representação única, uma única fonte confiável e autoritativa.",
         description: "DRY Principle enfatiza a importância de evitar a repetição desnecessária de informações ou lógica em um programa. Quando você repete código em várias partes do seu sistema, aumenta a complexidade, a dificuldade de manutenção e o risco de introduzir erros. Além disso, torna o código mais difícil de ser alterado e atualizado no futuro.",
-        link: "/programming/post",
+        link: link,
         post: [
             {
                 text: `O princípio DRY nos ensina que, na programação e em muitos aspectos da vida, evitar a repetição desnecessária nos torna mais eficientes, nos poupa tempo e nos permite criar com consistência. O DRY é como um molde mágico que nos ajuda a esculpir nossas criações com maestria, economizando esforços e nos permitindo brilhar em tudo o que fazemos!`,
@@ -535,7 +537,7 @@ export const contentBlog: IContentBlog[] = [
         id: '16',
         title: "C# PARTE 5: Princípio da Inversão de Dependência - DIP",
         description: "DIP é um princípio da programação orientada a objetos que estabelece que os módulos de alto nível não devem depender diretamente dos módulos de baixo nível. Em vez disso, ambos devem depender de abstrações",
-        link: "/programming/post",
+        link: link,
         post: [
             {
                 text: `No mágico mundo do código, o Princípio da Inversão de Dependência (DIP) é como a dança encantada que permite que os módulos se libertem das amarras das implementações concretas e se movam harmoniosamente com a flexibilidade das abstrações`,
@@ -596,7 +598,7 @@ export const contentBlog: IContentBlog[] = [
         id: '15',
         title: "C#: PARTE 4: ISP é um princípio da programação orientada a objetos que promove a divisão de interfaces em partes menores e coesas",
         description: "O ISP declara que as interfaces devem ser específicas para os requisitos de cada cliente, evitando que as classes dependam de métodos que não são relevantes para elas. Em vez de ter uma única interface abrangente que abarque todos os métodos possíveis, o ISP incentiva a criação de várias interfaces mais especializadas",
-        link: "/programming/post",
+        link: link,
         post: [
             {
                 text: `Imagine que você está montando um quebra-cabeça incrível com várias peças. O Princípio da Segregação de Interfaces (ISP) é como dividir as peças em conjuntos menores e temáticos, para que você possa escolher apenas os conjuntos de peças que se encaixam no seu quebra-cabeça e descartar as peças que não são relevantes. Dessa forma, você evita bagunça, economiza tempo e cria uma imagem perfeita do seu quebra-cabeça, sem se preocupar com peças fora do lugar.`,
@@ -690,7 +692,7 @@ export const contentBlog: IContentBlog[] = [
         id: '14',
         title: "C#: PARTE 3: O Princípio da Substituição de Liskov (LSP)",
         description: "LSP diz que você pode substituir uma classe base por qualquer uma de suas classes derivadas sem quebrar o funcionamento do programa",
-        link: "/programming/post",
+        link: link,
         post: [
             {
                 header: `Se um objeto parece um pato, nada como um pato e faz quack como um pato, então pode ser tratado como um pato!`,
@@ -806,7 +808,7 @@ export const contentBlog: IContentBlog[] = [
         id: '13',
         title: "C#: PARTE 2: OCP - O Princípio Aberto/Fechado (Open/Closed Principle - OCP)",
         description: "é um dos princípios do SOLID, um conjunto de princípios de design de software que visam promover a construção de código mais modular, extensível e de fácil manutenção.",
-        link: "/programming/post",
+        link: link,
         post: [
             {
                 text: `Um produto mais flexível, fácil de manter e adaptável às necessidades dos clientes. Você mantém o softwate fechado para modificações e aberto para extensões, permitindo que ele evolua e cresça sem comprometer sua integridade e qualidade`,
@@ -965,7 +967,7 @@ export const contentBlog: IContentBlog[] = [
         id: '12',
         title: "C#: PARTE 1: SRP - Desvendando os segredos dos Princípios Importantes: a chave para um código magnético e irresistível. ",
         description: "Desvendando a essência do desenvolvimento de software de elite, encontramos um acrônimo mágico chamado SOLID. Prepare-se para embarcar em uma jornada de descoberta, onde os segredos para criar sistemas robustos, flexíveis e de fácil manutenção serão revelados, Cada princípio desbloqueia novas possibilidades, aprimorando nossas habilidades como desenvolvedores e transformando nosso código em uma obra-prima técnica.",
-        link: "/programming/post",
+        link: link,
         post: [
             {
                 text: `Desbravar o mundo de SOLID é como encontrar um tesouro escondido no vasto universo da programação, Cada princípio desbloqueia novas possibilidades, aprimorando nossas habilidades como desenvolvedores e transformando nosso código em uma obra-prima técnica`,
@@ -1144,7 +1146,7 @@ export const contentBlog: IContentBlog[] = [
         id: '11',
         title: "C#: O poderoso impacto de um simples comentário transformador.",
         description: "Compreensão e manutenção do código, Colaboração e trabalho em equipe, Legibilidade e clareza, Documentação, Depuração e resolução de problemas",
-        link: "/programming/post",
+        link: link,
         post: [
             {
                 text: `Utilização de comentários na programação é essencial para melhorar a compreensão, a colaboração, a legibilidade e a manutenção do código`,
@@ -1231,7 +1233,7 @@ export const contentBlog: IContentBlog[] = [
         id: '10',
         title: "C# Classes abstratas ou interface?",
         description: "Classes abstratas e interfaces são conceitos fundamentais na programação orientada a objetos. Ambos são mecanismos para definir contratos ou estruturas que as classes devem seguir, mas existem diferenças importantes entre eles",
-        link: "/programming/post",
+        link: link,
         post: [
             {
                 text: `classe abstrata é uma classe que não pode ser instanciada diretamente, ou seja, você não pode criar objetos dessa classe. Ela serve como um modelo para outras classes que estendem ou herdam dela`,
@@ -1369,7 +1371,7 @@ class Program
         id: '9',
         title: "C# Codigos Flexiveis com Polimorfismo",
         description: "Polimorfismo é a capacidade de um objeto assumir muitas formas. Em C#, isso é feito através de herança e interfaces. O polimorfismo permite que um objeto seja tratado como um objeto de sua classe base ou como um objeto de uma de suas classes derivadas. Isso significa que, em vez de escrever código separado para cada classe derivada, você pode escrever um código genérico para a classe base e usá-lo com todas as classes derivadas",
-        link: "/programming/post",
+        link: link,
         post: [
             {
                 text: `Aprender polimorfismo em C# é importante porque é um conceito fundamental da programação orientada a objetos e permite criar um código mais flexível, modular e reutilizável`,
@@ -1513,7 +1515,7 @@ class Program
         id: '8',
         title: "Responsive",
         description: "A responsividade é uma técnica de desenvolvimento de interfaces que permite que um site ou aplicativo se adapte a diferentes tamanhos de tela e dispositivos, garantindo que o conteúdo seja exibido de maneira clara e legível em todas as resoluções",
-        link: "/programming/post",
+        link: link,
         post: [
             {
                 text: `Aumento do uso de dispositivos móveis para navegar na internet, a responsividade tornou-se uma necessidade para garantir que seu site ou aplicativo seja acessível a todos os usuários`,
@@ -1712,7 +1714,7 @@ class Program
         id: '7',
         title: "CSS",
         description: "É uma ferramenta poderosa que pode ajudá-lo a levar o design do seu website para o próximo nível",
-        link: "/programming/post",
+        link: link,
         post: [
             {
                 header: "Benefícios do CSS é que ele permite separar o design e o layout do seu site do próprio conteúdo",
@@ -1851,7 +1853,7 @@ class Program
         id: '6',
         title: "Lendo atributos HTML com CSS",
         description: "Os atributos CSS de um elemento, é possível identificar quais estilos estão sendo aplicados e quais não estão. Isso pode ajudar a resolver problemas de layout e de compatibilidade entre diferentes navegadores",
-        link: "/programming/post",
+        link: link,
         post: [
             {
                 header: "Ao ler os atributos CSS, é possível criar animações em JavaScript ou em outras bibliotecas para manipular a aparência do elemento",
@@ -1913,7 +1915,7 @@ class Program
         id: '5',
         title: "Trabalhando com imagens e videos em HTML",
         description: "Imagens e os vídeos são partes essenciais do mundo digital em que vivemos atualmente. Esses elementos visuais têm o poder de transmitir mensagens e informações de maneira mais clara e eficaz do que o texto simples",
-        link: "/programming/post",
+        link: link,
         post: [
             {
                 text: `Adicionando imagem na sua pagina`,
@@ -2006,7 +2008,7 @@ class Program
         id: '4',
         title: "Semantica do HTML",
         description: "Garantir que o conteúdo da sua página seja compreensível, acessível e indexável, resultando em uma melhor experiência do usuário e maior alcance da sua mensagem",
-        link: "/programming/post",
+        link: link,
         post: [
             {
                 header: "Fornecer significado e estrutura para o conteúdo de uma página web",
@@ -2125,7 +2127,7 @@ class Program
         id: '3',
         title: "Tags e Atributos",
         description: "Com as tags, podemos estruturar o conteúdo de nossas páginas, definindo seções, parágrafos, títulos, imagens e muito mais",
-        link: "/programming/post",
+        link: link,
         post: [
             {
                 header: "Alterando os textos em sua pagina",
@@ -2203,7 +2205,7 @@ class Program
         id: '2',
         title: "Estrutura de página em HTML",
         description: "Organizar seu conteúdo em seções lógicas e hierarquias claras, garantindo que seu site seja fácil de navegar e usar",
-        link: "/programming/post",
+        link: link,
         post: [
             {
                 header: "Criar páginas mais acessíveis e amigáveis para motores de busca",
@@ -2266,7 +2268,7 @@ class Program
         id: '1',
         title: "Iniciando HTML",
         description: "Primeiros passos com HTML do zero",
-        link: "/programming/post",
+        link: link,
         post: [
             {
                 header: "Cabecalho / Titulo",

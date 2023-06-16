@@ -1,12 +1,12 @@
-import CabecalhoProgramacaoLinguagens from "@/src/components/Programacao/Linguagens/CabecalhoProgramacaoLinguagens";
-import SubCabecalhoCorpoProgramacaoLinguagens from "@/src/components/Programacao/Linguagens/SubCabecalhoCorpoProgramacaoLinguagens";
+import Cabecalho from '@/src/components/Programacao/Cabecalho';
 import style from '../../../styles/linguagens.module.css'
+import CorpoProgramacaoLinguagens from "@/src/components/Programacao/Linguagens/CorpoProgramacaoLinguagens";
 
 export default function Programminglanguages() {
     return (
         <div className={style.containerGlobal}>
-            <CabecalhoProgramacaoLinguagens />
-            <SubCabecalhoCorpoProgramacaoLinguagens />
+            <Cabecalho titulo="Linguagens" />
+            <CorpoProgramacaoLinguagens />
         </div>
     )
 }

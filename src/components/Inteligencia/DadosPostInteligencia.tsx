@@ -1,10 +1,9 @@
-
 type IContentBlog = {
     id: string
     title: string
     description: string
+    link?: string
     post: MyNestedObject[]
-
 }
 
 type MyNestedObject = {
@@ -14,11 +13,13 @@ type MyNestedObject = {
     img?: any
 }
 
+const link = "/Inteligencia/Post/"
 export const conteudoBlogInteligencia: IContentBlog[] = [
     {
         id: '1',
         title: "A estrutura funcional e o comportamento dos neurônios são elementos fundamentais para compreendermos o funcionamento do sistema nervoso e a transmissão de informações no cérebro.",
         description: "Os neurônios são células especializadas, compostas por um corpo celular que contém o núcleo e diversas ramificações chamadas dendritos e axônios.",
+        link: link,
         post: [
             {
                 header: "Cada neurônio possui uma estrutura única que permite a comunicação com outros neurônios por meio de sinapses.",

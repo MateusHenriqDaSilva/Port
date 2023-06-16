@@ -1,10 +1,10 @@
-import CabecalhoProjetos from "@/src/components/Programacao/Projetos/CabecalhoProjetos";
+import Cabecalho from "@/src/components/Programacao/Cabecalho";
 import CorpoProjects from "@/src/components/Programacao/Projetos/CorpoProjetos";
 
 export default function Projetos() {
     return (
         <>
-            <CabecalhoProjetos />
+            <Cabecalho titulo="Projetos" />
             <CorpoProjects />
         </>
     )

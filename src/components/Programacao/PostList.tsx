@@ -1,4 +1,4 @@
-import style from '../../styles/postListProgramacao.module.css'
+import style from '../../styles/postList.module.css'
 
 interface MyNestedObject {
     header?: string
@@ -13,8 +13,6 @@ interface MyObject {
     link?: string
     post: MyNestedObject[];
 }
-
-
 
 export default function PostList(props: MyObject) {
     const spaces = '\u00A0\u00A0\u00A0\u00A0';

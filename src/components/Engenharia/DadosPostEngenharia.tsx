@@ -6,7 +6,6 @@ type IContentBlog = {
     description: string
     link?: string
     post: MyNestedObject[]
-
 }
 
 type MyNestedObject = {
@@ -16,12 +15,13 @@ type MyNestedObject = {
     img?: any
 }
 
+const link = "/Engenharia/Post/"
 export const conteudoBlogEngenharia: IContentBlog[] = [
     {
         id: '2',
         title: "Desvendando as Engrenagens: Um Perfil Operacional que Impulsiona a Sinergia em Sistemas Multiagentes Normativos",
         description: "Parte 1 - Introdução: Na fascinante jornada da Engenharia de Software, testemunhamos uma evolução constante, repleta de mudanças significativas e um crescimento exponencial. Essa transformação está moldando um impacto profundo em nosso futuro. Mas como podemos garantir que essa revolução seja justa e cativante?",
-        link: "/programming/post",
+        link: link,
         post: [
             {
                 header: "Desvendando a Confiabilidade: A Busca por Software Impecável",
@@ -122,7 +122,7 @@ export const conteudoBlogEngenharia: IContentBlog[] = [
         id: '1',
         title: "Engenharia de Software IA: Construindo um Futuro Justo e Inovador",
         description: "Parte 1 - Introdução: Na fascinante jornada da Engenharia de Software, testemunhamos uma evolução constante, repleta de mudanças significativas e um crescimento exponencial. Essa transformação está moldando um impacto profundo em nosso futuro. Mas como podemos garantir que essa revolução seja justa e cativante?",
-        link: "/programming/post",
+        link: link,
         post: [
             {
                 header: "Dizemos adeus às crenças baseadas em boatos, dando lugar a fatos e dados concretos.",
