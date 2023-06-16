@@ -17,13 +17,11 @@ interface MyObject {
 
 export default function CorpoBlogEngenharia(props: MyObject) {
     return (
-        <div className={styles.containerGlobal}>
+        <div className={styles.containerItem}>
             <Link href={`/Engenharia/Post/${props.id}`} passHref>
-                <div className={styles.constainerSelecao} key={props.id}>
-                    <div className={styles.containerText} >
-                        <h1 className={styles.title}>{props.title}</h1>
-                        <h1 className={styles.description}>{props.description}</h1>
-                    </div>
+                <div className={styles.containerText} >
+                    <h1 className={styles.title}>{props.title}</h1>
+                    <h1 className={styles.description}>{props.description}</h1>
                 </div>
             </Link>
         </div>

@@ -1,10 +1,12 @@
 .containerGlobal {
     display: flex;
+    height: 100%;
     width: 100%;
     align-items: center;
     color: black;
     justify-content: center;
     flex-direction: column;
+    background: whitesmoke;
 }
 
 .borda{
@@ -27,7 +29,6 @@
     display: flex;
     width: 30%;
     height: 300px;
-    border: 1px solid rgb(197, 197, 197);
     justify-content: center;
     align-items: center;
     flex-direction: row;

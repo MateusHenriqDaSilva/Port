@@ -1,44 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
-.containerGlobal{
-    width: 100%;
-}
-
-.containerText{
-    width: 30%;
+.containerItem{
     display: flex;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    background: white;
+    text-align: center;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    margin: 20px;
+    box-shadow: 0px 3px 3px black;
 }
 
-.constainerSelecao{
-    padding: 20px;
-    width: 100%;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    border: 1px solid rgb(238, 238, 238);
-    align-items: center;
-    flex-direction: column;
-}
-
-.constainerSelecao:hover{
-    padding: 20px;
-    width: 100%;
-    background: rgb(181, 255, 164);
-    background: linear-gradient(rgb(255, 255, 255), rgb(209, 255, 196));
-    cursor: pointer;
+.containerItem:hover{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    background: white;
+    margin: 20px;
+    box-shadow: 0px 3px 3px rgb(0, 187, 0);
 }
 
 .title {
     color: black;
-    font-size: 16px;
+    font-size: 13px;
+    padding: 0px 20px;
 }
 
 .description {
-    font-size: 14px;
+    font-size: 12px;
     color: black;
     font-family: 'Rajdhani', sans-serif;
+    padding: 0px 20px;
 }
 
 @media only screen and (max-width: 800px) {

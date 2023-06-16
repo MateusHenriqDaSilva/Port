@@ -6,7 +6,6 @@ export default function Framework() {
     return (
         <>
             <CabecalhoFramework />
-            {/* <SubCabecalhoFramework /> */}
             <CorpoFramework /> 
         </>
     )

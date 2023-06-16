@@ -12,7 +12,7 @@ export default function Corpo() {
                     alt='Mateus Henrique'
                     src={imagem}
                     width={800}
-                    height={800}
+                    height={700}
                 />
             </div>
             <div className={styles.espacoLinha}>

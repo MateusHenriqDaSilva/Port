@@ -3,13 +3,12 @@ import { useRouter } from 'next/router'
 import PostListInteligencia from '@/src/components/Inteligencia/PostListInteligencia'
 import { conteudoBlogInteligencia } from '@/src/components/Inteligencia/DadosPostInteligencia'
 
-
 export default function Post() {
     const router = useRouter()
     const { id } = router.query
 
     return (
-        <div>
+        <div >
             {
                 conteudoBlogInteligencia.map((element, index) => {
                     if (element.id == id) {

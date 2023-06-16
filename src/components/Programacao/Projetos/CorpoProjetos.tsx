@@ -19,7 +19,6 @@ const listaDeProjetos: Projetos = [
 ]
 
 export default function CorpoProjetos() {
-    //Return Interface
     return (
         <div className={styles.containerGlobal}>
             {
