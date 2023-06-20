@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@100&family=Instrument+Serif&display=swap');
+
 
 .containerGlobal {
     display: flex;
@@ -45,7 +47,8 @@
 
 .text {
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Foldit', cursive;
+    font-family: 'Instrument Serif', serif;
     font-size: 13px;
     font-weight: 100;
 }
