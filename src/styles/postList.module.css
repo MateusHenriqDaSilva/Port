@@ -61,7 +61,6 @@
 .containerCode {
     display: flex;
     width: 100%;
-    border-radius: 20px;
     flex-direction: column;
     font-size: 13px;
     color: black;
@@ -75,7 +74,7 @@
     font-size: 12px;
 }
 
-.contianerImage {
+.containerImage {
     display: flex;
     justify-content: center;
 }
@@ -92,6 +91,11 @@
     width: 360px;
 }
 
+.containerImageTamanho {
+    height: 640px;
+    width: 360px;
+}
+
 
 @media only screen and (max-width: 800px) {
     .contentBlog {
@@ -104,6 +108,11 @@
     }
 
     .containerVideoTamanho{
+        height: 100%;
+        width: 100%;
+    }
+
+    .containerImageTamanho {
         height: 100%;
         width: 100%;
     }

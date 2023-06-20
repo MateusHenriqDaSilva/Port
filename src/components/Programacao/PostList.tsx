@@ -99,18 +99,15 @@ export default function PostList(props: MyObject) {
                                 </div>
                                 <div className={style.containerImage}>
                                     <Image
+                                        className={style.containerImageTamanho}
                                         src={element?.img}
-                                        width={500}
-                                        height={500}
                                         alt="Mateus Henrique Canvas"
                                     />
                                 </div>
                                 <div className={style.containerVideo}>
                                     <ReactPlayer
-                                        className='react-player'
+                                        className={style.containerVideoTamanho}
                                         url={element.video}
-                                        width='100%'
-                                        height='100%'
                                         controls
                                     />
                                 </div>
