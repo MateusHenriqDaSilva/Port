@@ -1,4 +1,4 @@
-import styles from "../../styles/pagina.module.css"
+import styles from "../../styles/estrutura.module.css"
 import SelecaoMenu from "../../components/Programacao/SelecaoMenuProgramacao";
 import CorpoBlog from "@/src/components/Programacao/CorpoBlog";
 import { contentBlog } from "@/src/components/Programacao/DadosPost";

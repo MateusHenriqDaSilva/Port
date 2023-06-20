@@ -80,8 +80,15 @@
 .containerVideo {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: 20px;
 }
+
+.containerVideoTamanho {
+    height: 640px;
+    width: 360px;
+}
+
 
 @media only screen and (max-width: 800px) {
     .contentBlog {
@@ -91,5 +98,10 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
+    }
+
+    .containerVideoTamanho{
+        height: 100%;
+        width: 100%;
     }
 }

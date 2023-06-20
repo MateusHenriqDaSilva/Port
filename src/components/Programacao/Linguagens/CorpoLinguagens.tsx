@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import styles from '../../../styles/subCabecalhoCorpoProgramacaoLinguagens.module.css'
+import styles from '../../../styles/CorpoLinguagens.module.css'
 import EstruturaSelecao from '../EstruturaSelecao'
 
 const Linguagens = [
@@ -190,7 +190,7 @@ const Linguagens = [
     }
 ]
 
-export default function CorpoProgramacaoLinguagens() {
+export default function CorpoLinguagens() {
     const [popUp1, setPopUp1] = useState(true)
     const [popUp2, setPopUp2] = useState(false)
     const [popUp3, setPopUp3] = useState(false)

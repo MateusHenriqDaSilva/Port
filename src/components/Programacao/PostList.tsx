@@ -74,15 +74,11 @@ export default function PostList(props: MyObject) {
                                         }
                                     </div>
                                     <div className={style.containerVideo}>
-                                        <div className='player-wrapper'>
-                                            <ReactPlayer
-                                                className='react-player'
-                                                url={element.video}
-                                                width='100%'
-                                                height='100%'
-                                                controls
-                                            />
-                                        </div>
+                                        <ReactPlayer
+                                            className={style.containerVideoTamanho}
+                                            url={element.video}
+                                            controls
+                                        />
                                     </div>
                                 </div>
                             )

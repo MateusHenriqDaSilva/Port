@@ -1,4 +1,4 @@
-import styles from "../../styles/inteligencia.module.css"
+import styles from "../../styles/estrutura.module.css"
 import { conteudoBlogInteligencia } from "@/src/components/Inteligencia/DadosPostInteligencia";
 import Cabecalho from "@/src/components/Programacao/Cabecalho";
 import CorpoBlog from "@/src/components/Programacao/CorpoBlog";

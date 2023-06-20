@@ -1,5 +1,5 @@
 import Cabecalho from "@/src/components/Programacao/Cabecalho"
-import styles from "../../styles/pagina.module.css"
+import styles from "../../styles/estrutura.module.css"
 
 export default function Comunicacao() {
     return (
