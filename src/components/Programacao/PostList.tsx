@@ -49,9 +49,8 @@ export default function PostList(props: MyObject) {
                                     </div>
                                     <div className={style.contianerImage}>
                                         <Image
+                                            className={style.containerImageTamanho}
                                             src={element?.img}
-                                            width={500}
-                                            height={500}
                                             alt="Mateus Henrique Canvas"
                                         />
                                     </div>
