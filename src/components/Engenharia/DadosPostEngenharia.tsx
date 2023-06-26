@@ -19,6 +19,63 @@ type MyNestedObject = {
 const link = "/Engenharia/Post/"
 export const conteudoBlogEngenharia: IContentBlog[] = [
     {
+        id: '4',
+        title: "Tipos de serviço em nuvem",
+        description: "1. Infraestrutura como serviço (IaaS) | 2. Plataforma como serviço (PaaS) | 3. Software como serviço (SaaS)",
+        link: link,
+        post: [
+            {
+                text: `1. Infraestrutura como serviço (IaaS)
+                * Objetivo
+                    Infraestrutura como Serviço (IaaS): O objetivo de IaaS é fornecer serviços de infraestrutura pela Internet. Com IaaS, você pode contratar uma infraestrutura de TI (rede, servidores para armazenamento, firewall, datacenter, etc) totalmente hospedada na nuvem e pagar pelo serviço num modelo de aluguel.
+            
+                * Vantagens
+                    1.1 - Ajuda a reduzir custos;
+                    1.2 - É flexível – não depende de espaço físico;
+                    1.3 - Ágil e efetivo de manter e configurar;
+                    1.4 - Seguro para armazenar os dados da empresa, funcionários, clientes e fornecedores;
+                    1.5 - Previne imprevistos e facilita a continuidade dos negócios;
+                    1.6 - Fácil de obter suporte;
+                    1.7 - Permite que a equipe acesse tudo pela internet, de qualquer lugar no mundo
+            
+                * Desvantagens
+                    1.8 - Depende de conexão com a internet para acesso;
+                    1.9 - Não fornece ferramentas e sistemas para que a equipe de desenvolvimento teste seus produtos e trabalhe neles diretamente na nuvem mas isso pode ser resolvido com outros tipos de serviço em nuvem; 
+                    1.1.1 - Não permite que a empresa que o contrata ofereça seus serviços / softwares / apps na nuvem
+            
+            2. Plataforma como serviço (PaaS)
+                * Objetivo
+                    Plataforma como Serviço (PaaS): O objetivo de PaaS é fornecer uma plataforma e um ambiente para permitir que os desenvolvedores criem, testem e implantem aplicativos sem a necessidade de gerenciar a infraestrutura subjacente.
+            
+                * Vantagens
+                    2.1 - Agilidade na implementação
+                    2.2 - Padronização dos processos
+                    2.3 - Redução de custos
+                    2.4 - Maior controle dos ativos de TI
+                
+                * Desvantagens
+                    2.1 - Menor controle sobre a infraestrutura
+            
+            3. Software como serviço (SaaS)
+                * Objetivo
+                    Software como Serviço (SaaS): O objetivo de SaaS é fornecer aplicativos pela Internet para a realização das mais variadas tarefas, de forma remota. Com SaaS, os usuários podem acessar aplicações de qualquer dispositivo e local sem a necessidade de instalar ou atualizar softwares.
+            
+                * Vantagens
+                    3.1 - Acesso de qualquer lugar, em qualquer dispositivo
+                    3.2 - Não requer atualizações ou instalações
+                    3.3 - Escalabilidade
+                    3.4 - Redução de custos
+            
+                * Desvantagens
+                    3.5 - Exige um controle de acesso mais forte
+                    3.6 - Dependência de fornecedor
+                    3.7 - Segurança e conformidade (para empresas)
+            
+                * Exemplos: Microsoft 365, Microsoft Dynamics 365 e Netflix são exemplos de software como um serviço.`,
+                video: "https://www.youtube.com/watch?v=xIg-TawdqZY&t=67s",
+            }
+        ]
+    }, {
         id: '3',
         title: "Modelos de implantação de nuvem",
         description: "1. Nuvem pública | 2. Nuvem privada | 3. Nuvem híbrida",
