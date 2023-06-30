@@ -19,6 +19,198 @@ type MyNestedObject = {
 const link = "/Engenharia/Post/"
 export const conteudoBlogEngenharia: IContentBlog[] = [
     {
+        id: '7',
+        title: "Serviços Azure PT2",
+        description: "7. Storage Account | 8. Data Lake | 9. SQL",
+        link: link,
+        post: [
+            {
+                text: `7. Storage Account
+                * Objetivo:
+                    O objetivo da Storage Account é fornecer um espaço de armazenamento na nuvem do Azure para os seus objetos de dados, que incluem: blobs, arquivos, filas e tabelas. Com a Storage Account, você pode:
+            
+                * Vantagens:
+                    7.1 - Espaço de armazenamento na nuvem para os seus objetos de dados, como blobs, arquivos, filas e tabelas
+                    7.2 - Acesso aos seus dados de armazenamento de qualquer lugar do mundo por HTTP ou HTTPS
+                    7.3 - Durabilidade e alta disponibilidade dos seus dados de armazenamento com opções de redundância
+                    7.4 - Segurança dos seus dados de armazenamento com criptografia, controle de acesso e firewall
+                    7.5 - Escalabilidade e economia do seu espaço de armazenamento conforme a demanda e o uso
+                
+                * Desvantagens:
+                    7.6 - Você precisa gerenciar o Azure para que ele tenha efeito. Embora você reduza seus gastos de capital com hardware e manutenção de TI localmente, ainda precisará de alguém para gerenciar seus dados com eficácia.
+                    7.7 - Você pode ter que pagar mais por alguns recursos ou serviços que não estão incluídos no tipo de conta de armazenamento que você escolheu. Por exemplo, se você quiser usar o NFS (Network File System) nos Arquivos do Azure, você precisará usar o tipo de conta de compartilhamentos de arquivos premium.
+                    7.8 - Você pode ter limitações de desempenho ou latência dependendo da opção de redundância que você selecionou para sua conta de armazenamento. Por exemplo, se você escolher o GRS (armazenamento com redundância geográfica), seus dados serão replicados em uma região secundária a centenas de quilômetros de distância da região primária, o que pode afetar a velocidade de acesso
+            
+            8. Data Lake
+                * Objetivo:
+                    O objetivo da Azure Data Lake é fornecer uma solução de data lake corporativa baseada em nuvem, que permite armazenar e analisar dados de qualquer tamanho, tipo e velocidade em um único lugar. O Azure Data Lake Storage Gen2 é um conjunto de funcionalidades dedicadas à análise de Big Data, criado no Armazenamento de Blobs do Azure. Com o Azure Data Lake, você pode capturar dados de qualquer tipo e velocidade de ingestão em um único local e assim facilitar o seu acesso e análise usando várias estruturas
+                
+                * Vantagens:
+                    8.1 - Rápida inserção de dados
+                    8.2 - Baixo custo de implementação
+                    8.3 - Compatibilidade com ferramentas de ciência de dados
+                    8.4 - Escalabilidade
+                    8.5 - Colaboração
+                    8.6 - Acessos sem suporte de TI
+                    8.7 - Disponibilidade de dados a qualquer momento
+                    8.8 - Acessos simultâneos
+                    8.9 - Insights para tomada de decisão
+                    8.1.1 - Mais flexibilidade
+            
+                * Desvantagens:
+                    8.1.2 - O armazenamento de dados no formato nativo pode exigir a reformatação manual de diferentes fontes que entram no lago em formatos não padronizados.
+                    8.1.3 - O baixo custo de armazenamento pode levar à inclusão de todo e qualquer dado gerado pela empresa no data lake, sem organização e documentação, tornando-o um “pântano de dados”.
+                    8.1.4 - Os usuários do data lake ficam próximos dos dados brutos, mas têm que investir muito tempo na preparação dos dados do que realmente nas regras de negócio.
+                    8.1.5 - A falta de controle de qualidade e governança dos dados pode levar a dados corrompidos, duplicados ou inconsistentes.
+                    8.1.6 - A segurança e a privacidade dos dados podem ser comprometidas se não houver políticas e ferramentas adequadas para proteger o acesso e o uso dos dados.
+            
+            9. SQL
+                * Objetivo:
+                    O objetivo do Azure SQL é fornecer uma família de serviços de banco de dados SQL na nuvem que sejam inteligentes, seguros e escaláveis. O Azure SQL permite que você migre, modernize e inove com os serviços de banco de dados SQL mais recentes
+            
+                * Vantagens:
+                    9.1 - Simplificação do gerenciamento de desempenho e ajuda aos desenvolvedores a compilar aplicativos com mais rapidez e eficiência com recursos de computação que são escalados automaticamente com base na demanda da carga de trabalho.
+                    9.2 - Uso de versões completas do SQL Server na nuvem sem a necessidade de gerenciar nenhum hardware local.
+                    9.3 - Benefício Híbrido do Azure para SQL Server, que fornece benefícios econômicos para mover cargas de trabalho altamente virtualizadas para o Azure.
+                    9.4 - Suporte a uma grande variedade de linguagens, frameworks, banco de dados e sistemas operacionais, do Windows ao Linux, do SQL Server ao Oracle e do C# ao Java.
+                    9.5 - Camadas de proteção, controles internos e detecção inteligente de ameaças que mantêm os seus dados seguros.
+                    9.6 - IA interna e alta disponibilidade que mantêm o desempenho de pico e a durabilidade com um SLA de até 99,995%.
+                    9.7 - Hiperescala que se adapta aos requisitos em constante mudança, escalonando rapidamente o armazenamento para até 100 TB.
+                    9.8 - Flexibilidade para escolher entre diferentes opções de implantação da borda para a nuvem e executar o SQL do Azure localmente e em ambientes multinuvem com os serviços de dados habilitados para o Azure Arc.
+            
+                * Desvantagens:
+                    9.9 - Você precisará gerenciar o Azure para que tenha efeito. Embora você reduza seus gastos de capital com hardware e manutenção de TI localmente, ainda precisará de alguém para gerenciar seus dados com eficácia. O Microsoft Azure não ajuda você a gerenciar seu data center baseado em nuvem.
+                    9.1.1 - Você pode encontrar alguns recursos ausentes ou limitados. O Azure SQL não oferece todos os recursos que o SQL Server possui, como o SQL Agent, o Service Broker e o Linked Server. Alguns recursos podem estar disponíveis apenas em determinados níveis de serviço ou opções de implantação.
+                    9.1.2 - Você pode enfrentar problemas de compatibilidade ou migração. Nem todos os bancos de dados do SQL Server podem ser migrados diretamente para o Azure SQL sem modificações. Você pode precisar usar ferramentas como o Data Migration Assistant ou o Azure Database Migration Service para avaliar e resolver quaisquer problemas de compatibilidade antes da migração.
+                    9.1.3 - Você pode ter menos controle sobre o desempenho e a disponibilidade. Como o Azure SQL é um serviço gerenciado, você depende da Microsoft para fornecer atualizações, backups, ajustes e recuperação de desastres. Isso pode limitar sua capacidade de personalizar ou otimizar seu banco de dados de acordo com suas necessidades específicas. Além disso, você pode estar sujeito a interrupções ou atrasos causados por fatores fora de seu controle, como falhas de rede ou indisponibilidade do serviço.`,
+                video: "https://www.youtube.com/watch?v=VdzMNi5tiD0&t=376s&ab_channel=Odi%C3%A1riodeumtecn%C3%B3logo",
+            }
+        ]
+    },{
+        id: '6',
+        title: "Serviços Azure PT2",
+        description: "4. Logic Apps | 5. Kubernetes Service | 6. Data Services",
+        link: link,
+        post: [
+            {
+                text: `4. Logic Apps
+                * Objetivo: 
+                    O objetivo do Logic Apps é fornecer uma plataforma de integração como serviço (iPaaS) que permite que você crie e execute fluxos de trabalho automatizados com pouco ou nenhum código.
+            
+                * Vantagens:
+                    4.1 - Criar soluções de integração avançadas para os principais cenários empresariais e B2B
+                    4.2 - Conectar seus aplicativos, dados, serviços e sistemas usando gatilhos e associações controlados por eventos
+                    4.3 - Desenvolver e implantar fluxos de trabalho em qualquer lugar, seja na nuvem, localmente ou internamente
+                    4.4 - Aproveitar centenas de conectores prontos para uso ou criar os seus
+                    4.5 - Simplificar desafios complexos de orquestração com a extensão Durable Functions
+                
+                * Desvantagens:
+                    4.6 - Necessidade de gerenciar o plano do serviço de aplicativo e os recursos associados se optar por hospedar fluxos de trabalho em um plano do serviço de aplicativo
+                    4.7 - Limitações de tempo de execução e memória para fluxos de trabalho hospedados no plano de consumo
+                    4.8 - Necessidade de adaptar o código do fluxo de trabalho às especificações do Logic Apps
+                    4.9 - Menor controle sobre o ambiente de execução em comparação com as máquinas virtuais ou os contêineres
+            
+            5. Kubernetes Service
+                * Objetivo: 
+                    Simplifica a implantação de um cluster do Kubernetes gerenciado no Azure, transferindo a sobrecarga operacional para o Azure. Como um serviço Kubernetes hospedado, o Azure lida com tarefas críticas, como monitoramento da integridade e manutenção
+                
+                * Vantagens:
+                    5.1 - Variedade de serviços de dados e análises na nuvem para atender a diferentes necessidades e cenários
+                    5.2 - Serviços totalmente gerenciados que reduzem a complexidade e o custo de gerenciar a infraestrutura de dados
+                    5.3 - Serviços sem servidor que permitem escalar sob demanda e pagar apenas pelo que usar
+                    5.4 - Serviços de inteligência artificial e machine learning que permitem extrair insights e valor dos dados
+                    5.5 - Ferramentas de visualização e exploração de dados que facilitam o entendimento e a tomada de decisão baseada em dados
+            
+                * Desvantagens:
+                    5.6 - Necessidade de gerenciar os recursos e os custos associados aos serviços de dados na nuvem
+                    5.7 - Limitações de recursos e funcionalidades dependendo do tipo e do nível de preço escolhido
+                    5.8 - Necessidade de adaptar os dados e as aplicações às especificações dos serviços de dados na nuvem
+                    5.9 - Restrições de localização e região para alguns serviços de dados na nuvem
+            
+            6. Data Services
+                * Objetivo:
+                    objetivo do Azure Data Services é fornecer uma variedade de serviços de dados e análises na nuvem que permitem que você colete, armazene, processe e visualize seus dados de forma escalável, segura e econômica. Com o Azure Data Services, você pode criar e gerenciar bancos de dados relacionais e não relacionais, integrar, transformar e analisar dados de diversas fontes, aplicar inteligência artificial e machine learning aos seus dados e visualizar e explorar seus dados com ferramentas interativas.
+                
+                * Vantagens:
+                    6.1 - Variedade de serviços de dados e análises na nuvem para atender a diferentes necessidades e cenários
+                    6.2 - Serviços totalmente gerenciados que reduzem a complexidade e o custo de gerenciar a infraestrutura de dados
+                    6.3 - Serviços sem servidor que permitem escalar sob demanda e pagar apenas pelo que usar
+                    6.4 - Serviços de inteligência artificial e machine learning que permitem extrair insights e valor dos dados
+                    6.5 - Ferramentas de visualização e exploração de dados que facilitam o entendimento e a tomada de decisão baseada em dados
+            
+                * Desvantagens:
+                    6.6 - Você precisa gerenciar o Azure para que ele tenha efeito. Embora você reduza seus gastos de capital com hardware e manutenção de TI localmente, ainda precisará de alguém para gerenciar seus dados com eficácia.
+                    6.7 - Você pode ter restrições de localização para a transferência de dados. Por exemplo, o Azure Data Box só pode ser enviado dentro do mesmo país ou região de destino, e não cruzará nenhuma fronteira internacional, exceto na UE (União Europeia).
+                    6.8 - Você pode ter menos participação de mercado e recursos do que a AWS (Amazon Web Services), que é a líder em serviços em nuvem. Por exemplo, em 2021, enquanto a AWS comandava 33% do nicho no mercado, a Azure conseguiu 20% de expressão`,
+                video: "https://youtu.be/oxHsLZWmNjI",
+            }
+        ]
+    },{
+        id: '5',
+        title: "Serviços Azure",
+        description: "1. Virtual Machines | 2. App Service | 3. Functions",
+        link: link,
+        post: [
+            {
+                text: `1. Virtual Machines
+                * Objetivo:
+                    O objetivo do Azure Virtual Machines é oferecer a flexibilidade da virtualização para uma grande variedade de soluções de computação na nuvem do Azure, com suporte para Linux, Windows Server, SQL Server, Oracle, IBM, SAP e muito mais. Com o Azure Virtual Machines, você pode:
+            
+                * Beneficio:
+                    1.1 - Flexibilidade da virtualização para uma grande variedade de soluções de computação na nuvem do Azure
+                    1.2 - Criação e execução de máquinas virtuais do Linux e do Windows em segundos e redução de custos com cobrança por segundo e descontos por período
+                    1.3 - Migração de cargas de trabalho críticas e de negócios para a infraestrutura do Azure e aprimoramento da eficiência operacional
+                    1.4 - Aproveitamento da alta disponibilidade, da escalabilidade e da segurança da infraestrutura de nuvem do Azure
+                    1.5 - Reutilização de licenças locais para executar VMs do Windows Server no Azure com o Benefício Híbrido do Azure
+                    1.6 - Obtenção de mais três anos de atualizações de segurança estendidas gratuitas para o Windows Server 2012 e 2012 R2 ao migrar para o Azure
+            
+                * Desvantagens
+                    1.7 - Necessidade de um hardware potente para suportar vários sistemas operacionais e aplicativos em máquinas virtuais
+                    1.8 - Instabilidade e sobrecarga da CPU quando várias máquinas virtuais operam simultaneamente
+                    1.9 - Necessidade de manter e atualizar o sistema operacional e o software das máquinas virtuais
+                    1.1.1 - Menor eficiência e portabilidade em comparação com os contêineres
+            
+            2. App Service
+                * Objetivo: 
+                    O Azure App Service é um serviço HTTP para hospedar aplicativos Web, APIs REST e back-ends móveis. Você pode desenvolver na sua linguagem favorita, seja .NET, .NET Core, Java, Node.js, PHP ou Python. Os aplicativos são executados e escalonados com facilidade em ambientes baseados em Windows e Linux
+            
+                * Beneficio:
+                    2.1 - Serviço HTTP baseado em PaaS para hospedar aplicativos web, APIs REST e back-ends móveis na nuvem do Azure
+                    2.2 - Suporte para várias linguagens de programação, como .NET, .NET Core, Java, Node.js, PHP ou Python
+                    2.3 - Execução e dimensionamento de aplicativos em ambientes baseados em Windows e Linux
+                    2.4 - Aproveitamento dos recursos do Azure para o aplicativo, como segurança, balanceamento de carga, dimensionamento automático e gerenciamento automatizado
+                    2.5 - Uso das capacidades de DevOps, como implantação contínua a partir do Azure DevOps, GitHub, Docker Hub e outras fontes, gerenciamento de pacotes, ambientes de teste e domínio personalizado e certificados TLS/SSL
+                    2.7 - Escolha entre centenas de conectores para sistemas corporativos (como SAP), serviços SaaS (como Salesforce) e serviços da internet (como Facebook)
+                    2.8 - Acesso a dados locais usando Conexões Híbridas e Redes Virtuais do Azure
+                    2.9 - Autenticação de usuários com o Azure Active Directory, Google, Facebook, Twitter ou conta Microsoft
+                    2.1.1 - Escolha entre uma extensa lista de modelos de aplicativos no Azure Marketplace, como WordPress, Joomla e Drupal
+            
+                * Desvantagens:
+                    2.1.2 - Necessidade de gerenciar o plano do serviço de aplicativo e os recursos associados
+                    2.1.3 - Limitações de recursos e funcionalidades dependendo do tipo de preço escolhido
+                    2.1.4 - Necessidade de adaptar o aplicativo às especificações do App Service
+                    2.1.5 - Menor controle sobre o ambiente de hospedagem em comparação com as máquinas virtuais
+            
+            3. Functions
+                * Objetivo: 
+                    O objetivo do Azure Functions é fornecer uma solução sem servidor que permite que você escreva menos código, mantenha menos infraestrutura e economize nos custos. Com o Azure Functions, você pode:
+            
+                * Vantagens:
+                    3.1 - Execução de funções de código sem servidor e orientadas a eventos em sua linguagem de programação favorita
+                    3.2 - Resposta a eventos e conexão fácil a outros serviços do Azure usando gatilhos e associações
+                    3.3 - Desenvolvimento e teste local usando ferramentas integradas de desenvolvimento e CI/CD
+                    3.4 - Dimensionamento automático sem servidor com base na demanda e pagamento por uso
+                    3.5 - Simplificação de desafios complexos de orquestração com a extensão Durable Functions
+                
+                * Desvantagens
+                    3.6 - Necessidade de gerenciar o plano do serviço de aplicativo e os recursos associados se optar por hospedar funções em um plano do serviço de aplicativo
+                    3.7 - Limitações de tempo de execução e memória para funções hospedadas no plano de consumo
+                    3.8 - Necessidade de adaptar o código da função às especificações do Azure Functions
+                    3.9 - Menor controle sobre o ambiente de execução em comparação com as máquinas virtuais`,
+                video: "https://www.youtube.com/watch?v=vuk_mPI4kwA&t=13s&ab_channel=Odi%C3%A1riodeumtecn%C3%B3logo",
+            }
+        ]
+    },{
         id: '4',
         title: "Tipos de serviço em nuvem",
         description: "1. Infraestrutura como serviço (IaaS) | 2. Plataforma como serviço (PaaS) | 3. Software como serviço (SaaS)",
