@@ -20,7 +20,7 @@ const link = "/Engenharia/Post/"
 export const conteudoBlogEngenharia: IContentBlog[] = [
     {
         id: '7',
-        title: "Serviços Azure PT2",
+        title: "Serviços Azure PT3",
         description: "7. Storage Account | 8. Data Lake | 9. SQL",
         link: link,
         post: [
