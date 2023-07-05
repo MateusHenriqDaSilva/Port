@@ -1,6 +1,7 @@
 import style from '../../styles/postList.module.css'
 import Image from 'next/image';
 import ReactPlayer from 'react-player/youtube'
+import WhatsAppButton from './WhatsAppButton';
 
 interface MyNestedObject {
     header?: string
@@ -132,6 +133,7 @@ export default function PostList(props: MyObject) {
                         }
                     })
                 }
+            <WhatsAppButton text="Olha essa postagem no Blog do Mateus :)" />
             </div>
         </div>
     )

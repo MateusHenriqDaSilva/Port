@@ -1,5 +1,6 @@
 import styles from "../../styles/corpoBlog.module.css"
 import Link from 'next/link'
+import WhatsAppButton from "./WhatsAppButton"
 
 interface MyNestedObject {
     header?: string
@@ -22,6 +23,7 @@ export default function CorpoBlog(props: MyObject) {
             <div className={styles.containerItem}>
                 <h1 className={styles.title}>{props.title}</h1>
                 <h1 className={styles.description}>{props.description}</h1>
+                <WhatsAppButton text="Olha essa postagem no Blog do Mateus :)" />
             </div>
         </Link>
     )
