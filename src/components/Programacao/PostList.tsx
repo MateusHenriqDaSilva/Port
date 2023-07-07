@@ -133,7 +133,7 @@ export default function PostList(props: MyObject) {
                         }
                     })
                 }
-            <WhatsAppButton text="Olha essa postagem no Blog do Mateus :)" />
+            <WhatsAppButton text={`Olha essa postagem no Blog do Mateus :), ${props.link, props.id} `} />
             </div>
         </div>
     )

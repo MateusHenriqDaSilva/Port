@@ -21,9 +21,10 @@ export default function CorpoBlog(props: MyObject) {
     return (
         <Link href={`${props.link}${props.id}`} passHref>
             <div className={styles.containerItem}>
+                {props.link}
                 <h1 className={styles.title}>{props.title}</h1>
                 <h1 className={styles.description}>{props.description}</h1>
-                <WhatsAppButton text={`Olha essa postagem no Blog do Mateus :) ${props.link}${props.id}`} />
+                <WhatsAppButton text={`Olha essa postagem no Blog do Mateus : https://www.mateushenrique.blog.br/${props.link, props.id})`} />
             </div>
         </Link>
     )
