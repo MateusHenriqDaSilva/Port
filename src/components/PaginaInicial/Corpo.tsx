@@ -3,7 +3,6 @@ import Image from 'next/image'
 import imagem from '../../../public/fotoMateus.png'
 import Link from 'next/link'
 
-
 export default function Corpo() {
     return (
         <div className={styles.imagemEspacoGlobal}>
