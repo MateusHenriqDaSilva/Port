@@ -275,7 +275,7 @@ export default function CorpoFramework() {
     return (
         <div className={styles.containerGlobal}>
             <div className={styles.borda}></div>
-            <h1 className={styles.titulo}></h1>
+            <h1 className={styles.titulo}>Hard Skill</h1>
             <div className={styles.containerEspaco}>
                 <div className={styles.containerLabels}>
                     <div className={styles.coluna1}>
