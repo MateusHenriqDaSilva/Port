@@ -14,7 +14,8 @@
 }
 
 .titulo{
-    font-size: 13px;
+    font-size: 26px;
+    color: #cacaca;
 }
 
 .containerEspaco{
@@ -128,7 +129,8 @@
     }
     
     .titulo{
-        font-size: 13px;
+        font-size: 26px;
+        color: #cacaca;
     }
     
     .containerEspaco{
